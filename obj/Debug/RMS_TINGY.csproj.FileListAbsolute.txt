@@ -82,3 +82,5 @@ C:\Users\ngock\OneDrive\Desktop\Test\obj\Debug\RMS_TINGY.csproj.CoreCompileInput
 C:\Users\ngock\OneDrive\Desktop\Test\obj\Debug\RMS_TINGY.csproj.CopyComplete
 C:\Users\ngock\OneDrive\Desktop\Test\obj\Debug\RMS_TINGY.exe
 C:\Users\ngock\OneDrive\Desktop\Test\obj\Debug\RMS_TINGY.pdb
+C:\Users\ngock\OneDrive\Desktop\Test\bin\Debug\Guna.UI.dll
+C:\Users\ngock\OneDrive\Desktop\Test\obj\Debug\RMS_TINGY.AllUserControl.UC_AddToBill.resources

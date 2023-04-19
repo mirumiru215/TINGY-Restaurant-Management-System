@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.BillingLabel = new System.Windows.Forms.Label();
             this.line1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
             this.TotalLabel = new System.Windows.Forms.Label();
             this.itemList = new System.Windows.Forms.Label();
+            this.elipseBilling = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.SuspendLayout();
             // 
             // BillingLabel
@@ -86,6 +88,7 @@
             this.btnMenu.Size = new System.Drawing.Size(200, 31);
             this.btnMenu.TabIndex = 2;
             this.btnMenu.Text = "Print";
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // TotalLabel
             // 
@@ -134,5 +137,6 @@
         private Guna.UI2.WinForms.Guna2Button btnMenu;
         private System.Windows.Forms.Label TotalLabel;
         private System.Windows.Forms.Label itemList;
+        private Guna.UI2.WinForms.Guna2Elipse elipseBilling;
     }
 }

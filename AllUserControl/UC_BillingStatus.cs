@@ -21,5 +21,10 @@ namespace RMS_TINGY.AllUserControl
         {
 
         }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

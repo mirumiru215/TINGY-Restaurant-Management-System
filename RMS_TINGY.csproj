@@ -33,9 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\Documents\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>packages\Guna.UI2.WinForms.2.0.4.4\lib\net48\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -57,6 +61,12 @@
     </Compile>
     <Compile Include="AllUserControl\UC_Add.Designer.cs">
       <DependentUpon>UC_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllUserControl\UC_AddToBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllUserControl\UC_AddToBill.Designer.cs">
+      <DependentUpon>UC_AddToBill.cs</DependentUpon>
     </Compile>
     <Compile Include="AllUserControl\UC_Menu.cs">
       <SubType>UserControl</SubType>
@@ -93,6 +103,9 @@
     <Compile Include="SQLControl.cs" />
     <EmbeddedResource Include="AllUserControl\UC_Add.resx">
       <DependentUpon>UC_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllUserControl\UC_AddToBill.resx">
+      <DependentUpon>UC_AddToBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllUserControl\UC_BillingStatus.resx">
       <DependentUpon>UC_BillingStatus.cs</DependentUpon>

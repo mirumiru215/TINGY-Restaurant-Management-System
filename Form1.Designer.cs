@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.UCPanel = new System.Windows.Forms.Panel();
+            this.uC_Menu1 = new RMS_TINGY.AllUserControl.UC_Menu();
             this.sidebarPanel = new System.Windows.Forms.Panel();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.btnStaff = new Guna.UI2.WinForms.Guna2Button();
@@ -39,7 +40,7 @@
             this.logoPanel = new System.Windows.Forms.Panel();
             this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.uC_Menu1 = new RMS_TINGY.AllUserControl.UC_Menu();
+            this.uC_Order1 = new RMS_TINGY.AllUserControl.UC_Order();
             this.UCPanel.SuspendLayout();
             this.sidebarPanel.SuspendLayout();
             this.SuspendLayout();
@@ -47,6 +48,7 @@
             // UCPanel
             // 
             this.UCPanel.BackColor = System.Drawing.Color.White;
+            this.UCPanel.Controls.Add(this.uC_Order1);
             this.UCPanel.Controls.Add(this.uC_Menu1);
             this.UCPanel.Location = new System.Drawing.Point(272, 0);
             this.UCPanel.Margin = new System.Windows.Forms.Padding(2);
@@ -54,6 +56,15 @@
             this.UCPanel.Size = new System.Drawing.Size(1088, 768);
             this.UCPanel.TabIndex = 1;
             this.UCPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.UCPanel_Paint);
+            // 
+            // uC_Menu1
+            // 
+            this.uC_Menu1.BackColor = System.Drawing.Color.White;
+            this.uC_Menu1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Menu1.Name = "uC_Menu1";
+            this.uC_Menu1.Size = new System.Drawing.Size(1088, 768);
+            this.uC_Menu1.TabIndex = 0;
+            this.uC_Menu1.Load += new System.EventHandler(this.uC_Menu1_Load);
             // 
             // sidebarPanel
             // 
@@ -186,14 +197,13 @@
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
-            // uC_Menu1
+            // uC_Order1
             // 
-            this.uC_Menu1.BackColor = System.Drawing.Color.White;
-            this.uC_Menu1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Menu1.Name = "uC_Menu1";
-            this.uC_Menu1.Size = new System.Drawing.Size(1088, 768);
-            this.uC_Menu1.TabIndex = 0;
-            this.uC_Menu1.Load += new System.EventHandler(this.uC_Menu1_Load);
+            this.uC_Order1.BackColor = System.Drawing.Color.White;
+            this.uC_Order1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Order1.Name = "uC_Order1";
+            this.uC_Order1.Size = new System.Drawing.Size(1088, 768);
+            this.uC_Order1.TabIndex = 1;
             // 
             // Form1
             // 
@@ -209,6 +219,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.UCPanel.ResumeLayout(false);
             this.sidebarPanel.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -226,6 +237,7 @@
         private Guna.UI2.WinForms.Guna2Button btnExit;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private AllUserControl.UC_Menu uC_Menu1;
+        private AllUserControl.UC_Order uC_Order1;
     }
 }
 

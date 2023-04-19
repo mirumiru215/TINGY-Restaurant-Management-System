@@ -31,21 +31,41 @@
             this.components = new System.ComponentModel.Container();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.uC_BillingStatus1 = new RMS_TINGY.AllUserControl.UC_BillingStatus();
             this.Table_1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.Table_3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.Table_4 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.Table_5 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.Table_6 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.Table_2 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.elipseOrder = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.btnAddToBill = new Guna.UI2.WinForms.Guna2Button();
+            this.panelforbtn = new System.Windows.Forms.Panel();
+            this.btnBack = new Guna.UI2.WinForms.Guna2Button();
+            this.uC_AddToBill1 = new RMS_TINGY.AllUserControl.UC_AddToBill();
+            this.OrderPanel = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
+            this.panelforbtn.SuspendLayout();
+            this.OrderPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(844, 0);
+            this.panel1.Controls.Add(this.uC_BillingStatus1);
+            this.panel1.Location = new System.Drawing.Point(597, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(243, 768);
             this.panel1.TabIndex = 0;
+            // 
+            // uC_BillingStatus1
+            // 
+            this.uC_BillingStatus1.BackColor = System.Drawing.Color.White;
+            this.uC_BillingStatus1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.uC_BillingStatus1.Location = new System.Drawing.Point(0, 0);
+            this.uC_BillingStatus1.Name = "uC_BillingStatus1";
+            this.uC_BillingStatus1.Size = new System.Drawing.Size(241, 766);
+            this.uC_BillingStatus1.TabIndex = 0;
             // 
             // Table_1
             // 
@@ -60,11 +80,12 @@
             this.Table_1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.Table_1.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold);
             this.Table_1.ForeColor = System.Drawing.Color.Black;
-            this.Table_1.Location = new System.Drawing.Point(100, 58);
+            this.Table_1.Location = new System.Drawing.Point(21, 60);
             this.Table_1.Name = "Table_1";
             this.Table_1.Size = new System.Drawing.Size(238, 137);
             this.Table_1.TabIndex = 1;
             this.Table_1.Text = "Table 1";
+            this.Table_1.Click += new System.EventHandler(this.Table_1_Click);
             // 
             // Table_3
             // 
@@ -79,7 +100,7 @@
             this.Table_3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.Table_3.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold);
             this.Table_3.ForeColor = System.Drawing.Color.Black;
-            this.Table_3.Location = new System.Drawing.Point(100, 298);
+            this.Table_3.Location = new System.Drawing.Point(21, 300);
             this.Table_3.Name = "Table_3";
             this.Table_3.Size = new System.Drawing.Size(238, 137);
             this.Table_3.TabIndex = 1;
@@ -98,7 +119,7 @@
             this.Table_4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.Table_4.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold);
             this.Table_4.ForeColor = System.Drawing.Color.Black;
-            this.Table_4.Location = new System.Drawing.Point(506, 298);
+            this.Table_4.Location = new System.Drawing.Point(286, 300);
             this.Table_4.Name = "Table_4";
             this.Table_4.Size = new System.Drawing.Size(238, 137);
             this.Table_4.TabIndex = 1;
@@ -117,7 +138,7 @@
             this.Table_5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.Table_5.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold);
             this.Table_5.ForeColor = System.Drawing.Color.Black;
-            this.Table_5.Location = new System.Drawing.Point(100, 545);
+            this.Table_5.Location = new System.Drawing.Point(21, 547);
             this.Table_5.Name = "Table_5";
             this.Table_5.Size = new System.Drawing.Size(238, 137);
             this.Table_5.TabIndex = 1;
@@ -136,7 +157,7 @@
             this.Table_6.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.Table_6.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold);
             this.Table_6.ForeColor = System.Drawing.Color.Black;
-            this.Table_6.Location = new System.Drawing.Point(506, 545);
+            this.Table_6.Location = new System.Drawing.Point(286, 547);
             this.Table_6.Name = "Table_6";
             this.Table_6.Size = new System.Drawing.Size(238, 137);
             this.Table_6.TabIndex = 1;
@@ -155,17 +176,84 @@
             this.Table_2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.Table_2.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold);
             this.Table_2.ForeColor = System.Drawing.Color.Black;
-            this.Table_2.Location = new System.Drawing.Point(506, 58);
+            this.Table_2.Location = new System.Drawing.Point(286, 60);
             this.Table_2.Name = "Table_2";
             this.Table_2.Size = new System.Drawing.Size(238, 137);
             this.Table_2.TabIndex = 1;
             this.Table_2.Text = "Table 2";
+            // 
+            // elipseOrder
+            // 
+            this.elipseOrder.TargetControl = this;
+            // 
+            // btnAddToBill
+            // 
+            this.btnAddToBill.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddToBill.BorderRadius = 26;
+            this.btnAddToBill.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnAddToBill.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(113)))), ((int)(((byte)(127)))));
+            this.btnAddToBill.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddToBill.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddToBill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddToBill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddToBill.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
+            this.btnAddToBill.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddToBill.ForeColor = System.Drawing.Color.Black;
+            this.btnAddToBill.Location = new System.Drawing.Point(90, 3);
+            this.btnAddToBill.Name = "btnAddToBill";
+            this.btnAddToBill.Size = new System.Drawing.Size(200, 31);
+            this.btnAddToBill.TabIndex = 5;
+            this.btnAddToBill.Text = "Add To Bill";
+            this.btnAddToBill.Click += new System.EventHandler(this.btnAddToBill_Click);
+            // 
+            // panelforbtn
+            // 
+            this.panelforbtn.Controls.Add(this.btnAddToBill);
+            this.panelforbtn.Controls.Add(this.btnBack);
+            this.panelforbtn.Location = new System.Drawing.Point(3, 13);
+            this.panelforbtn.Name = "panelforbtn";
+            this.panelforbtn.Size = new System.Drawing.Size(313, 41);
+            this.panelforbtn.TabIndex = 2;
+            // 
+            // btnBack
+            // 
+            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBack.FillColor = System.Drawing.Color.White;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
+            this.btnBack.Location = new System.Drawing.Point(18, 3);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(35, 35);
+            this.btnBack.TabIndex = 2;
+            this.btnBack.Text = "<";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // uC_AddToBill1
+            // 
+            this.uC_AddToBill1.BackColor = System.Drawing.Color.White;
+            this.uC_AddToBill1.Location = new System.Drawing.Point(0, 0);
+            this.uC_AddToBill1.Name = "uC_AddToBill1";
+            this.uC_AddToBill1.Size = new System.Drawing.Size(588, 712);
+            this.uC_AddToBill1.TabIndex = 0;
+            // 
+            // OrderPanel
+            // 
+            this.OrderPanel.Controls.Add(this.uC_AddToBill1);
+            this.OrderPanel.Location = new System.Drawing.Point(3, 60);
+            this.OrderPanel.Name = "OrderPanel";
+            this.OrderPanel.Size = new System.Drawing.Size(589, 712);
+            this.OrderPanel.TabIndex = 3;
             // 
             // UC_Order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.OrderPanel);
+            this.Controls.Add(this.panelforbtn);
             this.Controls.Add(this.Table_6);
             this.Controls.Add(this.Table_4);
             this.Controls.Add(this.Table_5);
@@ -176,6 +264,9 @@
             this.Name = "UC_Order";
             this.Size = new System.Drawing.Size(1088, 768);
             this.Load += new System.EventHandler(this.UC_Order_Load);
+            this.panel1.ResumeLayout(false);
+            this.panelforbtn.ResumeLayout(false);
+            this.OrderPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -190,5 +281,12 @@
         private Guna.UI2.WinForms.Guna2GradientButton Table_5;
         private Guna.UI2.WinForms.Guna2GradientButton Table_6;
         private Guna.UI2.WinForms.Guna2GradientButton Table_2;
+        private Guna.UI.WinForms.GunaElipse elipseOrder;
+        private UC_BillingStatus uC_BillingStatus1;
+        private Guna.UI2.WinForms.Guna2Button btnAddToBill;
+        private System.Windows.Forms.Panel panelforbtn;
+        private Guna.UI2.WinForms.Guna2Button btnBack;
+        private System.Windows.Forms.Panel OrderPanel;
+        private UC_AddToBill uC_AddToBill1;
     }
 }
