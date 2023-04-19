@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllUserControl\UC_Add.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllUserControl\UC_Add.Designer.cs">
+      <DependentUpon>UC_Add.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllUserControl\UC_Statistic.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AllUserControl\UC_Add.resx">
+      <DependentUpon>UC_Add.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AllUserControl\UC_BillingStatus.resx">
       <DependentUpon>UC_BillingStatus.cs</DependentUpon>
     </EmbeddedResource>

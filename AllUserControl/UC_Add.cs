@@ -16,5 +16,7 @@ namespace RMS_TINGY.AllUserControl
         {
             InitializeComponent();
         }
+
+
     }
 }
