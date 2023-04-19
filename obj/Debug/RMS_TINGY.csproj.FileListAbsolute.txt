@@ -12,3 +12,19 @@ C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programmi
 C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\obj\Debug\RMS_TINGY.exe
 C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\obj\Debug\RMS_TINGY.pdb
 C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\obj\Debug\RMS_TINGY.AllUserControl.UC_Statistic.resources
+C:\Users\ngock\OneDrive\Desktop\MainProject\bin\Debug\RMS_TINGY.exe.config
+C:\Users\ngock\OneDrive\Desktop\MainProject\bin\Debug\RMS_TINGY.exe
+C:\Users\ngock\OneDrive\Desktop\MainProject\bin\Debug\RMS_TINGY.pdb
+C:\Users\ngock\OneDrive\Desktop\MainProject\bin\Debug\Guna.UI2.dll
+C:\Users\ngock\OneDrive\Desktop\MainProject\obj\Debug\RMS_TINGY.csproj.AssemblyReference.cache
+C:\Users\ngock\OneDrive\Desktop\MainProject\obj\Debug\RMS_TINGY.csproj.SuggestedBindingRedirects.cache
+C:\Users\ngock\OneDrive\Desktop\MainProject\obj\Debug\RMS_TINGY.AllUserControl.UC_BillingStatus.resources
+C:\Users\ngock\OneDrive\Desktop\MainProject\obj\Debug\RMS_TINGY.AllUserControl.UC_Order.resources
+C:\Users\ngock\OneDrive\Desktop\MainProject\obj\Debug\RMS_TINGY.AllUserControl.UC_Statistic.resources
+C:\Users\ngock\OneDrive\Desktop\MainProject\obj\Debug\RMS_TINGY.Form1.resources
+C:\Users\ngock\OneDrive\Desktop\MainProject\obj\Debug\RMS_TINGY.Properties.Resources.resources
+C:\Users\ngock\OneDrive\Desktop\MainProject\obj\Debug\RMS_TINGY.csproj.GenerateResource.cache
+C:\Users\ngock\OneDrive\Desktop\MainProject\obj\Debug\RMS_TINGY.csproj.CoreCompileInputs.cache
+C:\Users\ngock\OneDrive\Desktop\MainProject\obj\Debug\RMS_TINGY.csproj.CopyComplete
+C:\Users\ngock\OneDrive\Desktop\MainProject\obj\Debug\RMS_TINGY.exe
+C:\Users\ngock\OneDrive\Desktop\MainProject\obj\Debug\RMS_TINGY.pdb
