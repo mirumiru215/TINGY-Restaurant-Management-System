@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace RMS_TINGY.AllUserControl
 {
-    public partial class UC_Order : UserControl
+    public partial class UC_Add : UserControl
     {
-        public UC_Order()
+        public UC_Add()
         {
             InitializeComponent();
-        }
-
-        private void UC_Order_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

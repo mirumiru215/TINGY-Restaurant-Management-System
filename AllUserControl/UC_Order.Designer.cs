@@ -165,6 +165,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.Table_6);
             this.Controls.Add(this.Table_4);
             this.Controls.Add(this.Table_5);
@@ -174,6 +175,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "UC_Order";
             this.Size = new System.Drawing.Size(1088, 768);
+            this.Load += new System.EventHandler(this.UC_Order_Load);
             this.ResumeLayout(false);
 
         }

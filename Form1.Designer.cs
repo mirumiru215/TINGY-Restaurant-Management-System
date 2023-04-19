@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.UCPanel = new System.Windows.Forms.Panel();
-            this.functionPanel = new System.Windows.Forms.Panel();
             this.sidebarPanel = new System.Windows.Forms.Panel();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.btnStaff = new Guna.UI2.WinForms.Guna2Button();
@@ -46,21 +45,12 @@
             // UCPanel
             // 
             this.UCPanel.BackColor = System.Drawing.Color.White;
-            this.UCPanel.Location = new System.Drawing.Point(272, 72);
-            this.UCPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.UCPanel.Location = new System.Drawing.Point(272, 0);
+            this.UCPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.UCPanel.Name = "UCPanel";
-            this.UCPanel.Size = new System.Drawing.Size(1088, 696);
+            this.UCPanel.Size = new System.Drawing.Size(1088, 768);
             this.UCPanel.TabIndex = 1;
             this.UCPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.UCPanel_Paint);
-            // 
-            // functionPanel
-            // 
-            this.functionPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
-            this.functionPanel.Location = new System.Drawing.Point(272, 0);
-            this.functionPanel.Name = "functionPanel";
-            this.functionPanel.Size = new System.Drawing.Size(1088, 72);
-            this.functionPanel.TabIndex = 2;
-            this.functionPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.functionPanel_Paint);
             // 
             // sidebarPanel
             // 
@@ -87,7 +77,7 @@
             this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.btnExit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(61, 700);
+            this.btnExit.Location = new System.Drawing.Point(60, 637);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(150, 45);
             this.btnExit.TabIndex = 4;
@@ -198,12 +188,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(85)))));
-            this.ClientSize = new System.Drawing.Size(1360, 768);
+            this.ClientSize = new System.Drawing.Size(1167, 718);
             this.Controls.Add(this.sidebarPanel);
-            this.Controls.Add(this.functionPanel);
             this.Controls.Add(this.UCPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -214,7 +203,6 @@
 
         #endregion
         private System.Windows.Forms.Panel UCPanel;
-        private System.Windows.Forms.Panel functionPanel;
         private System.Windows.Forms.Panel sidebarPanel;
         private Guna.UI2.WinForms.Guna2Button btnMenu;
         private System.Windows.Forms.Panel logoPanel;

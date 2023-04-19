@@ -1,6 +1,6 @@
 ﻿namespace RMS_TINGY.AllUserControl
 {
-    partial class UC_Statistic
+    partial class UC_Add
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,35 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Statistic));
-            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // label1
+            // panel1
             // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(34, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 68);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Statistic";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1088, 50);
+            this.panel1.TabIndex = 0;
             // 
-            // UC_Statistic
+            // UC_Add
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.label1);
-            this.Name = "UC_Statistic";
-            this.Size = new System.Drawing.Size(1088, 760);
+            this.Controls.Add(this.panel1);
+            this.Name = "UC_Add";
+            this.Size = new System.Drawing.Size(1088, 768);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
+
+        private System.Windows.Forms.Panel panel1;
     }
 }
