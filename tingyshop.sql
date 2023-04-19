@@ -1,6 +1,6 @@
 create database tingyshop
 
-create table newTingy(
+create table dishDetails(
 mid int NOT NULL IDENTITY(1,1) primary key,
 cname varchar(250) not null,
 ntype varchar(250) not null,
@@ -10,5 +10,5 @@ sdishes varchar(250) not null,
 price bigint not null
 );
 
-select * from newTingy
+select * from dishDetails
 GO
