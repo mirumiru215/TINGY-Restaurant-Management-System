@@ -44,7 +44,8 @@ namespace RMS_TINGY
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-
+            uC_Menu1.Visible = true;
+            uC_Menu1.BringToFront();
         }
 
         private void btnStatistic_Click(object sender, EventArgs e)
@@ -60,6 +61,11 @@ namespace RMS_TINGY
         private void btnStaff_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void uC_Menu1_Load(object sender, EventArgs e)
+        {
+            uC_Menu1.Visible = false;
         }
     }
 }

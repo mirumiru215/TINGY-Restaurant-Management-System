@@ -39,14 +39,17 @@
             this.logoPanel = new System.Windows.Forms.Panel();
             this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.uC_Menu1 = new RMS_TINGY.AllUserControl.UC_Menu();
+            this.UCPanel.SuspendLayout();
             this.sidebarPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // UCPanel
             // 
             this.UCPanel.BackColor = System.Drawing.Color.White;
+            this.UCPanel.Controls.Add(this.uC_Menu1);
             this.UCPanel.Location = new System.Drawing.Point(272, 0);
-            this.UCPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.UCPanel.Margin = new System.Windows.Forms.Padding(2);
             this.UCPanel.Name = "UCPanel";
             this.UCPanel.Size = new System.Drawing.Size(1088, 768);
             this.UCPanel.TabIndex = 1;
@@ -183,6 +186,15 @@
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
+            // uC_Menu1
+            // 
+            this.uC_Menu1.BackColor = System.Drawing.Color.White;
+            this.uC_Menu1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Menu1.Name = "uC_Menu1";
+            this.uC_Menu1.Size = new System.Drawing.Size(1088, 768);
+            this.uC_Menu1.TabIndex = 0;
+            this.uC_Menu1.Load += new System.EventHandler(this.uC_Menu1_Load);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -192,10 +204,11 @@
             this.Controls.Add(this.sidebarPanel);
             this.Controls.Add(this.UCPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.UCPanel.ResumeLayout(false);
             this.sidebarPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -211,6 +224,7 @@
         private Guna.UI2.WinForms.Guna2Button btnOrder;
         private Guna.UI2.WinForms.Guna2Button btnExit;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private AllUserControl.UC_Menu uC_Menu1;
     }
 }
 

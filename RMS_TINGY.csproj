@@ -58,6 +58,12 @@
     <Compile Include="AllUserControl\UC_Add.Designer.cs">
       <DependentUpon>UC_Add.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllUserControl\UC_Menu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllUserControl\UC_Menu.Designer.cs">
+      <DependentUpon>UC_Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllUserControl\UC_Statistic.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllUserControl\UC_BillingStatus.resx">
       <DependentUpon>UC_BillingStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllUserControl\UC_Menu.resx">
+      <DependentUpon>UC_Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllUserControl\UC_Order.resx">
       <DependentUpon>UC_Order.cs</DependentUpon>

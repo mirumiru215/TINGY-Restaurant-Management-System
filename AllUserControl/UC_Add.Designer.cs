@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Add));
             this.btnBrowse = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picsDisplay = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -52,10 +53,8 @@
             this.labelName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.textPrice = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnBack = new Guna.UI2.WinForms.Guna2Button();
+            this.elipseAdd = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picsDisplay)).BeginInit();
-            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnBrowse
@@ -67,10 +66,10 @@
             this.btnBrowse.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnBrowse.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
             this.btnBrowse.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
-            this.btnBrowse.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBrowse.ForeColor = System.Drawing.Color.White;
-            this.btnBrowse.Location = new System.Drawing.Point(892, 499);
-            this.btnBrowse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBrowse.Location = new System.Drawing.Point(696, 435);
+            this.btnBrowse.Margin = new System.Windows.Forms.Padding(2);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(115, 31);
             this.btnBrowse.TabIndex = 78;
@@ -81,8 +80,8 @@
             this.picsDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picsDisplay.FillColor = System.Drawing.Color.Transparent;
             this.picsDisplay.ImageRotate = 0F;
-            this.picsDisplay.Location = new System.Drawing.Point(646, 367);
-            this.picsDisplay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picsDisplay.Location = new System.Drawing.Point(450, 303);
+            this.picsDisplay.Margin = new System.Windows.Forms.Padding(2);
             this.picsDisplay.Name = "picsDisplay";
             this.picsDisplay.Size = new System.Drawing.Size(226, 163);
             this.picsDisplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -98,8 +97,8 @@
             this.imgImg.ImageOffset = new System.Drawing.Point(0, 0);
             this.imgImg.ImageRotate = 0F;
             this.imgImg.ImageSize = new System.Drawing.Size(40, 40);
-            this.imgImg.Location = new System.Drawing.Point(592, 332);
-            this.imgImg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.imgImg.Location = new System.Drawing.Point(396, 268);
+            this.imgImg.Margin = new System.Windows.Forms.Padding(2);
             this.imgImg.Name = "imgImg";
             this.imgImg.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.imgImg.Size = new System.Drawing.Size(50, 35);
@@ -108,11 +107,11 @@
             // labelImg
             // 
             this.labelImg.BackColor = System.Drawing.Color.Transparent;
-            this.labelImg.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelImg.Location = new System.Drawing.Point(646, 332);
-            this.labelImg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelImg.Location = new System.Drawing.Point(450, 268);
+            this.labelImg.Margin = new System.Windows.Forms.Padding(2);
             this.labelImg.Name = "labelImg";
-            this.labelImg.Size = new System.Drawing.Size(60, 24);
+            this.labelImg.Size = new System.Drawing.Size(55, 26);
             this.labelImg.TabIndex = 75;
             this.labelImg.Text = "Image";
             // 
@@ -125,8 +124,8 @@
             this.imgMoney.ImageOffset = new System.Drawing.Point(0, 0);
             this.imgMoney.ImageRotate = 0F;
             this.imgMoney.ImageSize = new System.Drawing.Size(50, 50);
-            this.imgMoney.Location = new System.Drawing.Point(592, 216);
-            this.imgMoney.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.imgMoney.Location = new System.Drawing.Point(396, 152);
+            this.imgMoney.Margin = new System.Windows.Forms.Padding(2);
             this.imgMoney.Name = "imgMoney";
             this.imgMoney.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.imgMoney.Size = new System.Drawing.Size(50, 41);
@@ -141,8 +140,8 @@
             this.imgTime.ImageOffset = new System.Drawing.Point(0, 0);
             this.imgTime.ImageRotate = 0F;
             this.imgTime.ImageSize = new System.Drawing.Size(50, 50);
-            this.imgTime.Location = new System.Drawing.Point(110, 549);
-            this.imgTime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.imgTime.Location = new System.Drawing.Point(23, 476);
+            this.imgTime.Margin = new System.Windows.Forms.Padding(2);
             this.imgTime.Name = "imgTime";
             this.imgTime.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.imgTime.Size = new System.Drawing.Size(59, 56);
@@ -157,8 +156,8 @@
             this.imgType.ImageOffset = new System.Drawing.Point(0, 0);
             this.imgType.ImageRotate = 0F;
             this.imgType.ImageSize = new System.Drawing.Size(50, 50);
-            this.imgType.Location = new System.Drawing.Point(120, 431);
-            this.imgType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.imgType.Location = new System.Drawing.Point(33, 358);
+            this.imgType.Margin = new System.Windows.Forms.Padding(2);
             this.imgType.Name = "imgType";
             this.imgType.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.imgType.Size = new System.Drawing.Size(40, 53);
@@ -173,8 +172,8 @@
             this.imgIngre.ImageOffset = new System.Drawing.Point(0, 0);
             this.imgIngre.ImageRotate = 0F;
             this.imgIngre.ImageSize = new System.Drawing.Size(50, 50);
-            this.imgIngre.Location = new System.Drawing.Point(112, 315);
-            this.imgIngre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.imgIngre.Location = new System.Drawing.Point(25, 242);
+            this.imgIngre.Margin = new System.Windows.Forms.Padding(2);
             this.imgIngre.Name = "imgIngre";
             this.imgIngre.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.imgIngre.Size = new System.Drawing.Size(48, 52);
@@ -189,8 +188,8 @@
             this.imgName.ImageOffset = new System.Drawing.Point(0, 0);
             this.imgName.ImageRotate = 0F;
             this.imgName.ImageSize = new System.Drawing.Size(70, 70);
-            this.imgName.Location = new System.Drawing.Point(110, 216);
-            this.imgName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.imgName.Location = new System.Drawing.Point(23, 143);
+            this.imgName.Margin = new System.Windows.Forms.Padding(2);
             this.imgName.Name = "imgName";
             this.imgName.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.imgName.Size = new System.Drawing.Size(48, 41);
@@ -203,10 +202,10 @@
             this.btnReset.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnReset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnReset.FillColor = System.Drawing.Color.Black;
-            this.btnReset.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.White;
-            this.btnReset.Location = new System.Drawing.Point(890, 609);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReset.Location = new System.Drawing.Point(694, 545);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(2);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(117, 37);
             this.btnReset.TabIndex = 69;
@@ -221,10 +220,10 @@
             this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
             this.btnSave.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
-            this.btnSave.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(740, 609);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Location = new System.Drawing.Point(544, 545);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(117, 37);
             this.btnSave.TabIndex = 68;
@@ -240,8 +239,8 @@
             this.btnLogo.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnLogo.ImageRotate = 0F;
             this.btnLogo.ImageSize = new System.Drawing.Size(100, 100);
-            this.btnLogo.Location = new System.Drawing.Point(78, 79);
-            this.btnLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogo.Location = new System.Drawing.Point(2, 0);
+            this.btnLogo.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogo.Name = "btnLogo";
             this.btnLogo.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnLogo.Size = new System.Drawing.Size(91, 83);
@@ -261,8 +260,8 @@
             "7 A.M - 9 A.M",
             "12 A.M - 2 P.M",
             "6 P.M - 8 P.M"});
-            this.textServe.Location = new System.Drawing.Point(173, 609);
-            this.textServe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textServe.Location = new System.Drawing.Point(86, 536);
+            this.textServe.Margin = new System.Windows.Forms.Padding(2);
             this.textServe.Name = "textServe";
             this.textServe.Size = new System.Drawing.Size(283, 36);
             this.textServe.TabIndex = 66;
@@ -283,8 +282,8 @@
             "Drinks",
             "Dessert",
             "Other"});
-            this.textType.Location = new System.Drawing.Point(173, 494);
-            this.textType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textType.Location = new System.Drawing.Point(86, 421);
+            this.textType.Margin = new System.Windows.Forms.Padding(2);
             this.textType.Name = "textType";
             this.textType.Size = new System.Drawing.Size(283, 36);
             this.textType.TabIndex = 65;
@@ -300,7 +299,7 @@
             this.textIngre.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textIngre.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textIngre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textIngre.Location = new System.Drawing.Point(173, 377);
+            this.textIngre.Location = new System.Drawing.Point(86, 304);
             this.textIngre.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textIngre.Name = "textIngre";
             this.textIngre.PasswordChar = '\0';
@@ -320,7 +319,7 @@
             this.textDish.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textDish.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textDish.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textDish.Location = new System.Drawing.Point(173, 270);
+            this.textDish.Location = new System.Drawing.Point(86, 197);
             this.textDish.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textDish.Name = "textDish";
             this.textDish.PasswordChar = '\0';
@@ -332,55 +331,55 @@
             // labelPrice
             // 
             this.labelPrice.BackColor = System.Drawing.Color.Transparent;
-            this.labelPrice.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPrice.Location = new System.Drawing.Point(646, 225);
-            this.labelPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPrice.Location = new System.Drawing.Point(450, 161);
+            this.labelPrice.Margin = new System.Windows.Forms.Padding(2);
             this.labelPrice.Name = "labelPrice";
-            this.labelPrice.Size = new System.Drawing.Size(51, 24);
+            this.labelPrice.Size = new System.Drawing.Size(46, 26);
             this.labelPrice.TabIndex = 61;
             this.labelPrice.Text = "Price";
             // 
             // labelServe
             // 
             this.labelServe.BackColor = System.Drawing.Color.Transparent;
-            this.labelServe.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelServe.Location = new System.Drawing.Point(173, 567);
-            this.labelServe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelServe.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelServe.Location = new System.Drawing.Point(86, 494);
+            this.labelServe.Margin = new System.Windows.Forms.Padding(2);
             this.labelServe.Name = "labelServe";
-            this.labelServe.Size = new System.Drawing.Size(134, 24);
+            this.labelServe.Size = new System.Drawing.Size(125, 26);
             this.labelServe.TabIndex = 60;
             this.labelServe.Text = "Servable Time";
             // 
             // labelType
             // 
             this.labelType.BackColor = System.Drawing.Color.Transparent;
-            this.labelType.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelType.Location = new System.Drawing.Point(173, 447);
-            this.labelType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelType.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelType.Location = new System.Drawing.Point(86, 374);
+            this.labelType.Margin = new System.Windows.Forms.Padding(2);
             this.labelType.Name = "labelType";
-            this.labelType.Size = new System.Drawing.Size(48, 24);
+            this.labelType.Size = new System.Drawing.Size(46, 26);
             this.labelType.TabIndex = 59;
             this.labelType.Text = "Type";
             // 
             // labelIngre
             // 
             this.labelIngre.BackColor = System.Drawing.Color.Transparent;
-            this.labelIngre.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIngre.Location = new System.Drawing.Point(173, 332);
-            this.labelIngre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelIngre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIngre.Location = new System.Drawing.Point(86, 259);
+            this.labelIngre.Margin = new System.Windows.Forms.Padding(2);
             this.labelIngre.Name = "labelIngre";
-            this.labelIngre.Size = new System.Drawing.Size(97, 24);
+            this.labelIngre.Size = new System.Drawing.Size(87, 26);
             this.labelIngre.TabIndex = 58;
             this.labelIngre.Text = "Ingredient";
             // 
             // labelName
             // 
             this.labelName.BackColor = System.Drawing.Color.Transparent;
-            this.labelName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelName.Location = new System.Drawing.Point(173, 225);
-            this.labelName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName.Location = new System.Drawing.Point(86, 152);
+            this.labelName.Margin = new System.Windows.Forms.Padding(2);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(101, 24);
+            this.labelName.Size = new System.Drawing.Size(96, 26);
             this.labelName.TabIndex = 57;
             this.labelName.Text = "Dish Name";
             // 
@@ -388,9 +387,9 @@
             // 
             this.label.AutoSize = false;
             this.label.BackColor = System.Drawing.Color.Transparent;
-            this.label.Font = new System.Drawing.Font("Arial Rounded MT Bold", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.Location = new System.Drawing.Point(173, 99);
-            this.label.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.Location = new System.Drawing.Point(97, 20);
+            this.label.Margin = new System.Windows.Forms.Padding(2);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(302, 40);
             this.label.TabIndex = 56;
@@ -407,7 +406,7 @@
             this.textPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textPrice.Location = new System.Drawing.Point(646, 261);
+            this.textPrice.Location = new System.Drawing.Point(450, 197);
             this.textPrice.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textPrice.Name = "textPrice";
             this.textPrice.PasswordChar = '\0';
@@ -416,36 +415,15 @@
             this.textPrice.Size = new System.Drawing.Size(282, 29);
             this.textPrice.TabIndex = 64;
             // 
-            // guna2Panel1
+            // elipseAdd
             // 
-            this.guna2Panel1.Controls.Add(this.btnBack);
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1088, 59);
-            this.guna2Panel1.TabIndex = 79;
-            // 
-            // btnBack
-            // 
-            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBack.FillColor = System.Drawing.Color.White;
-            this.btnBack.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
-            this.btnBack.Location = new System.Drawing.Point(3, 3);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(64, 53);
-            this.btnBack.TabIndex = 0;
-            this.btnBack.Text = "<";
+            this.elipseAdd.TargetControl = this;
             // 
             // UC_Add
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.picsDisplay);
             this.Controls.Add(this.imgImg);
@@ -472,7 +450,6 @@
             this.Name = "UC_Add";
             this.Size = new System.Drawing.Size(1088, 768);
             ((System.ComponentModel.ISupportInitialize)(this.picsDisplay)).EndInit();
-            this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -503,7 +480,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel labelName;
         private Guna.UI2.WinForms.Guna2HtmlLabel label;
         private Guna.UI2.WinForms.Guna2TextBox textPrice;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Button btnBack;
+        private Guna.UI2.WinForms.Guna2Elipse elipseAdd;
     }
 }
