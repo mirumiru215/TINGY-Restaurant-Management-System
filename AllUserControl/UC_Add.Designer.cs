@@ -81,6 +81,7 @@
             this.btnBrowse.Size = new System.Drawing.Size(115, 31);
             this.btnBrowse.TabIndex = 78;
             this.btnBrowse.Text = "Browse...";
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // picsDisplay
             // 
@@ -121,6 +122,7 @@
             this.btnReset.Size = new System.Drawing.Size(117, 37);
             this.btnReset.TabIndex = 69;
             this.btnReset.Text = "RESET";
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnSave
             // 
@@ -139,6 +141,7 @@
             this.btnSave.Size = new System.Drawing.Size(117, 37);
             this.btnSave.TabIndex = 68;
             this.btnSave.Text = "SAVE";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // textServe
             // 

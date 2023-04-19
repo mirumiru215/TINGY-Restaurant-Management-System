@@ -90,6 +90,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLControl.cs" />
     <EmbeddedResource Include="AllUserControl\UC_Add.resx">
       <DependentUpon>UC_Add.cs</DependentUpon>
     </EmbeddedResource>
