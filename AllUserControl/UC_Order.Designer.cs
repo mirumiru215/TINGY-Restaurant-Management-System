@@ -80,7 +80,7 @@
             this.Table_1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.Table_1.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold);
             this.Table_1.ForeColor = System.Drawing.Color.Black;
-            this.Table_1.Location = new System.Drawing.Point(21, 60);
+            this.Table_1.Location = new System.Drawing.Point(25, 123);
             this.Table_1.Name = "Table_1";
             this.Table_1.Size = new System.Drawing.Size(238, 137);
             this.Table_1.TabIndex = 1;
@@ -100,11 +100,12 @@
             this.Table_3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.Table_3.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold);
             this.Table_3.ForeColor = System.Drawing.Color.Black;
-            this.Table_3.Location = new System.Drawing.Point(21, 300);
+            this.Table_3.Location = new System.Drawing.Point(25, 314);
             this.Table_3.Name = "Table_3";
             this.Table_3.Size = new System.Drawing.Size(238, 137);
             this.Table_3.TabIndex = 1;
             this.Table_3.Text = "Table 3";
+            this.Table_3.Click += new System.EventHandler(this.Table_3_Click);
             // 
             // Table_4
             // 
@@ -119,11 +120,12 @@
             this.Table_4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.Table_4.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold);
             this.Table_4.ForeColor = System.Drawing.Color.Black;
-            this.Table_4.Location = new System.Drawing.Point(286, 300);
+            this.Table_4.Location = new System.Drawing.Point(290, 314);
             this.Table_4.Name = "Table_4";
             this.Table_4.Size = new System.Drawing.Size(238, 137);
             this.Table_4.TabIndex = 1;
             this.Table_4.Text = "Table 4";
+            this.Table_4.Click += new System.EventHandler(this.Table_4_Click);
             // 
             // Table_5
             // 
@@ -138,11 +140,12 @@
             this.Table_5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.Table_5.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold);
             this.Table_5.ForeColor = System.Drawing.Color.Black;
-            this.Table_5.Location = new System.Drawing.Point(21, 547);
+            this.Table_5.Location = new System.Drawing.Point(25, 504);
             this.Table_5.Name = "Table_5";
             this.Table_5.Size = new System.Drawing.Size(238, 137);
             this.Table_5.TabIndex = 1;
             this.Table_5.Text = "Table 5";
+            this.Table_5.Click += new System.EventHandler(this.Table_5_Click);
             // 
             // Table_6
             // 
@@ -157,11 +160,12 @@
             this.Table_6.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.Table_6.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold);
             this.Table_6.ForeColor = System.Drawing.Color.Black;
-            this.Table_6.Location = new System.Drawing.Point(286, 547);
+            this.Table_6.Location = new System.Drawing.Point(290, 504);
             this.Table_6.Name = "Table_6";
             this.Table_6.Size = new System.Drawing.Size(238, 137);
             this.Table_6.TabIndex = 1;
             this.Table_6.Text = "Table 6";
+            this.Table_6.Click += new System.EventHandler(this.Table_6_Click);
             // 
             // Table_2
             // 
@@ -176,11 +180,12 @@
             this.Table_2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.Table_2.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold);
             this.Table_2.ForeColor = System.Drawing.Color.Black;
-            this.Table_2.Location = new System.Drawing.Point(286, 60);
+            this.Table_2.Location = new System.Drawing.Point(290, 123);
             this.Table_2.Name = "Table_2";
             this.Table_2.Size = new System.Drawing.Size(238, 137);
             this.Table_2.TabIndex = 1;
             this.Table_2.Text = "Table 2";
+            this.Table_2.Click += new System.EventHandler(this.Table_2_Click);
             // 
             // elipseOrder
             // 
@@ -210,7 +215,7 @@
             // 
             this.panelforbtn.Controls.Add(this.btnAddToBill);
             this.panelforbtn.Controls.Add(this.btnBack);
-            this.panelforbtn.Location = new System.Drawing.Point(3, 13);
+            this.panelforbtn.Location = new System.Drawing.Point(3, 15);
             this.panelforbtn.Name = "panelforbtn";
             this.panelforbtn.Size = new System.Drawing.Size(313, 41);
             this.panelforbtn.TabIndex = 2;
@@ -234,7 +239,7 @@
             // uC_AddToBill1
             // 
             this.uC_AddToBill1.BackColor = System.Drawing.Color.White;
-            this.uC_AddToBill1.Location = new System.Drawing.Point(0, 0);
+            this.uC_AddToBill1.Location = new System.Drawing.Point(1, 0);
             this.uC_AddToBill1.Name = "uC_AddToBill1";
             this.uC_AddToBill1.Size = new System.Drawing.Size(588, 712);
             this.uC_AddToBill1.TabIndex = 0;
@@ -242,7 +247,7 @@
             // OrderPanel
             // 
             this.OrderPanel.Controls.Add(this.uC_AddToBill1);
-            this.OrderPanel.Location = new System.Drawing.Point(3, 60);
+            this.OrderPanel.Location = new System.Drawing.Point(3, 62);
             this.OrderPanel.Name = "OrderPanel";
             this.OrderPanel.Size = new System.Drawing.Size(589, 712);
             this.OrderPanel.TabIndex = 3;

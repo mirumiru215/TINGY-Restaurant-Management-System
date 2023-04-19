@@ -28,6 +28,17 @@ namespace RMS_TINGY
             da.Fill(ds);
             return ds;
         }
+        public void setData(string query) //insertion deletion updation
+        {
+            SqlConnection con = getConnection();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            con.Open();
+            cmd.CommandText = query;
+            cmd.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("Data Processed Successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
         public void setData(string query, byte[] images) //insertion deletion updation
         {
             SqlConnection con = getConnection();

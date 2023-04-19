@@ -16,6 +16,15 @@ namespace RMS_TINGY.AllUserControl
     {
         SQLControl fn = new SQLControl();
         String query;
+
+        private string _tablenumber;
+
+        public string tableNumber
+        {
+            get { return _tablenumber; }
+            set { _tablenumber = value; }
+        }
+
         public UC_AddToBill()
         {
             InitializeComponent();
@@ -23,10 +32,16 @@ namespace RMS_TINGY.AllUserControl
 
         private void UC_AddToBill_Enter(object sender, EventArgs e)
         {
+            amountextbox.Text = "";
+            string number = tableNumber;
+            textTablenum.Text = number;
             query = "select * from dishDetails";
             DataSet ds = fn.getData(query);
             AddToBillDataView.DataSource = ds.Tables[0];
             AddToBillDataView.Columns[AddToBillDataView.Columns.Count - 1].Visible = false;
+            AddToBillDataView.Columns[AddToBillDataView.Columns.Count - 3].Visible = false;
+            AddToBillDataView.Columns[AddToBillDataView.Columns.Count - 4].Visible = false;
+            AddToBillDataView.Columns[AddToBillDataView.Columns.Count - 5].Visible = false;
 
         }
         int bid;
@@ -52,5 +67,28 @@ namespace RMS_TINGY.AllUserControl
                 picsDisplay.Image = Image.FromStream(mstream);
             }
         }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+
+            if (amountextbox.Text != "" && Int64.Parse(amountextbox.Text) >= 1 && textTablenum.Text != "" && namelabel.Text != "")
+            {
+                String cname = namelabel.Text;
+                Int64 price = Int64.Parse(pricelabel.Text);
+                Int64 dprice = price* Int64.Parse(amountextbox.Text);
+                query = "insert into TableBill" + textTablenum.Text + " (dname,amount,price,dprice) values('" + cname + "'," + Int64.Parse(amountextbox.Text) + "," + price + "," + dprice +")";
+                fn.setData(query);
+            }
+            else
+            {
+                MessageBox.Show("Invalid Table Number or Amount.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void AddToBillDataView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
     }
 }
