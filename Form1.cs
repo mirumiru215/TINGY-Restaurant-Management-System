@@ -22,37 +22,42 @@ namespace RMS_TINGY
             Application.Exit();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void UCPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void functionPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        private void logoPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void sidebarPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void guna2Button3_Click(object sender, EventArgs e)
+        private void btnMenu_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void guna2Button4_Click(object sender, EventArgs e)
+        private void btnStatistic_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void btnOrder_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStaff_Click(object sender, EventArgs e)
         {
 
         }
