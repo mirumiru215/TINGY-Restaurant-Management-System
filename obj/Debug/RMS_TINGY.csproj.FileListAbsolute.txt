@@ -1,0 +1,14 @@
+C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\bin\Debug\RMS_TINGY.exe.config
+C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\bin\Debug\RMS_TINGY.exe
+C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\bin\Debug\RMS_TINGY.pdb
+C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\bin\Debug\Guna.UI2.dll
+C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\obj\Debug\RMS_TINGY.csproj.AssemblyReference.cache
+C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\obj\Debug\RMS_TINGY.csproj.SuggestedBindingRedirects.cache
+C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\obj\Debug\RMS_TINGY.Form1.resources
+C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\obj\Debug\RMS_TINGY.Properties.Resources.resources
+C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\obj\Debug\RMS_TINGY.csproj.GenerateResource.cache
+C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\obj\Debug\RMS_TINGY.csproj.CoreCompileInputs.cache
+C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\obj\Debug\RMS_TINGY.csproj.CopyComplete
+C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\obj\Debug\RMS_TINGY.exe
+C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\obj\Debug\RMS_TINGY.pdb
+C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\obj\Debug\RMS_TINGY.AllUserControl.UC_Statistic.resources
