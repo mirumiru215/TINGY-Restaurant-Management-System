@@ -63,3 +63,4 @@ C:\Users\ngock\OneDrive\Desktop\MainPJ\obj\Debug\RMS_TINGY.csproj.CoreCompileInp
 C:\Users\ngock\OneDrive\Desktop\MainPJ\obj\Debug\RMS_TINGY.csproj.CopyComplete
 C:\Users\ngock\OneDrive\Desktop\MainPJ\obj\Debug\RMS_TINGY.exe
 C:\Users\ngock\OneDrive\Desktop\MainPJ\obj\Debug\RMS_TINGY.pdb
+D:\STUDY\CODE\HK222_LTNC\Learn\wpf\obj\Debug\RMS_TINGY.AllUserControl.UC_Menu.resources

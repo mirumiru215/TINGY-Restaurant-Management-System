@@ -32,16 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Add));
             this.btnBrowse = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picsDisplay = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.imgImg = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labelImg = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.imgMoney = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.imgTime = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.imgType = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.imgIngre = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.imgName = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnReset = new Guna.UI2.WinForms.Guna2Button();
             this.btnSave = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnLogo = new Guna.UI2.WinForms.Guna2ImageButton();
             this.textServe = new Guna.UI2.WinForms.Guna2ComboBox();
             this.textType = new Guna.UI2.WinForms.Guna2ComboBox();
             this.textIngre = new Guna.UI2.WinForms.Guna2TextBox();
@@ -54,7 +47,21 @@
             this.label = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.textPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.elipseAdd = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.picBoxAdd = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.picBoxName = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.picBoxIngre = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.picBoxType = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.picBoxTime = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.picBoxMoney = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.picBoxImg = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picsDisplay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxAdd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxIngre)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxType)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxTime)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxMoney)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxImg)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBrowse
@@ -68,7 +75,7 @@
             this.btnBrowse.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.btnBrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBrowse.ForeColor = System.Drawing.Color.White;
-            this.btnBrowse.Location = new System.Drawing.Point(696, 435);
+            this.btnBrowse.Location = new System.Drawing.Point(724, 435);
             this.btnBrowse.Margin = new System.Windows.Forms.Padding(2);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(115, 31);
@@ -80,7 +87,7 @@
             this.picsDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picsDisplay.FillColor = System.Drawing.Color.Transparent;
             this.picsDisplay.ImageRotate = 0F;
-            this.picsDisplay.Location = new System.Drawing.Point(450, 303);
+            this.picsDisplay.Location = new System.Drawing.Point(478, 303);
             this.picsDisplay.Margin = new System.Windows.Forms.Padding(2);
             this.picsDisplay.Name = "picsDisplay";
             this.picsDisplay.Size = new System.Drawing.Size(226, 163);
@@ -88,112 +95,16 @@
             this.picsDisplay.TabIndex = 77;
             this.picsDisplay.TabStop = false;
             // 
-            // imgImg
-            // 
-            this.imgImg.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.imgImg.Enabled = false;
-            this.imgImg.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.imgImg.Image = ((System.Drawing.Image)(resources.GetObject("imgImg.Image")));
-            this.imgImg.ImageOffset = new System.Drawing.Point(0, 0);
-            this.imgImg.ImageRotate = 0F;
-            this.imgImg.ImageSize = new System.Drawing.Size(40, 40);
-            this.imgImg.Location = new System.Drawing.Point(396, 268);
-            this.imgImg.Margin = new System.Windows.Forms.Padding(2);
-            this.imgImg.Name = "imgImg";
-            this.imgImg.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.imgImg.Size = new System.Drawing.Size(50, 35);
-            this.imgImg.TabIndex = 76;
-            // 
             // labelImg
             // 
             this.labelImg.BackColor = System.Drawing.Color.Transparent;
             this.labelImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelImg.Location = new System.Drawing.Point(450, 268);
+            this.labelImg.Location = new System.Drawing.Point(478, 268);
             this.labelImg.Margin = new System.Windows.Forms.Padding(2);
             this.labelImg.Name = "labelImg";
             this.labelImg.Size = new System.Drawing.Size(55, 26);
             this.labelImg.TabIndex = 75;
             this.labelImg.Text = "Image";
-            // 
-            // imgMoney
-            // 
-            this.imgMoney.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.imgMoney.Enabled = false;
-            this.imgMoney.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.imgMoney.Image = ((System.Drawing.Image)(resources.GetObject("imgMoney.Image")));
-            this.imgMoney.ImageOffset = new System.Drawing.Point(0, 0);
-            this.imgMoney.ImageRotate = 0F;
-            this.imgMoney.ImageSize = new System.Drawing.Size(50, 50);
-            this.imgMoney.Location = new System.Drawing.Point(396, 152);
-            this.imgMoney.Margin = new System.Windows.Forms.Padding(2);
-            this.imgMoney.Name = "imgMoney";
-            this.imgMoney.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.imgMoney.Size = new System.Drawing.Size(50, 41);
-            this.imgMoney.TabIndex = 74;
-            // 
-            // imgTime
-            // 
-            this.imgTime.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.imgTime.Enabled = false;
-            this.imgTime.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.imgTime.Image = ((System.Drawing.Image)(resources.GetObject("imgTime.Image")));
-            this.imgTime.ImageOffset = new System.Drawing.Point(0, 0);
-            this.imgTime.ImageRotate = 0F;
-            this.imgTime.ImageSize = new System.Drawing.Size(50, 50);
-            this.imgTime.Location = new System.Drawing.Point(23, 476);
-            this.imgTime.Margin = new System.Windows.Forms.Padding(2);
-            this.imgTime.Name = "imgTime";
-            this.imgTime.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.imgTime.Size = new System.Drawing.Size(59, 56);
-            this.imgTime.TabIndex = 73;
-            // 
-            // imgType
-            // 
-            this.imgType.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.imgType.Enabled = false;
-            this.imgType.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.imgType.Image = ((System.Drawing.Image)(resources.GetObject("imgType.Image")));
-            this.imgType.ImageOffset = new System.Drawing.Point(0, 0);
-            this.imgType.ImageRotate = 0F;
-            this.imgType.ImageSize = new System.Drawing.Size(50, 50);
-            this.imgType.Location = new System.Drawing.Point(33, 358);
-            this.imgType.Margin = new System.Windows.Forms.Padding(2);
-            this.imgType.Name = "imgType";
-            this.imgType.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.imgType.Size = new System.Drawing.Size(40, 53);
-            this.imgType.TabIndex = 72;
-            // 
-            // imgIngre
-            // 
-            this.imgIngre.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.imgIngre.Enabled = false;
-            this.imgIngre.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.imgIngre.Image = ((System.Drawing.Image)(resources.GetObject("imgIngre.Image")));
-            this.imgIngre.ImageOffset = new System.Drawing.Point(0, 0);
-            this.imgIngre.ImageRotate = 0F;
-            this.imgIngre.ImageSize = new System.Drawing.Size(50, 50);
-            this.imgIngre.Location = new System.Drawing.Point(25, 242);
-            this.imgIngre.Margin = new System.Windows.Forms.Padding(2);
-            this.imgIngre.Name = "imgIngre";
-            this.imgIngre.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.imgIngre.Size = new System.Drawing.Size(48, 52);
-            this.imgIngre.TabIndex = 71;
-            // 
-            // imgName
-            // 
-            this.imgName.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.imgName.Enabled = false;
-            this.imgName.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.imgName.Image = ((System.Drawing.Image)(resources.GetObject("imgName.Image")));
-            this.imgName.ImageOffset = new System.Drawing.Point(0, 0);
-            this.imgName.ImageRotate = 0F;
-            this.imgName.ImageSize = new System.Drawing.Size(70, 70);
-            this.imgName.Location = new System.Drawing.Point(23, 143);
-            this.imgName.Margin = new System.Windows.Forms.Padding(2);
-            this.imgName.Name = "imgName";
-            this.imgName.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.imgName.Size = new System.Drawing.Size(48, 41);
-            this.imgName.TabIndex = 70;
             // 
             // btnReset
             // 
@@ -204,7 +115,7 @@
             this.btnReset.FillColor = System.Drawing.Color.Black;
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.White;
-            this.btnReset.Location = new System.Drawing.Point(694, 545);
+            this.btnReset.Location = new System.Drawing.Point(722, 545);
             this.btnReset.Margin = new System.Windows.Forms.Padding(2);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(117, 37);
@@ -222,29 +133,12 @@
             this.btnSave.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(544, 545);
+            this.btnSave.Location = new System.Drawing.Point(572, 545);
             this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(117, 37);
             this.btnSave.TabIndex = 68;
             this.btnSave.Text = "SAVE";
-            // 
-            // btnLogo
-            // 
-            this.btnLogo.BackColor = System.Drawing.SystemColors.Control;
-            this.btnLogo.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnLogo.Enabled = false;
-            this.btnLogo.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnLogo.Image = ((System.Drawing.Image)(resources.GetObject("btnLogo.Image")));
-            this.btnLogo.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnLogo.ImageRotate = 0F;
-            this.btnLogo.ImageSize = new System.Drawing.Size(100, 100);
-            this.btnLogo.Location = new System.Drawing.Point(2, 0);
-            this.btnLogo.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLogo.Name = "btnLogo";
-            this.btnLogo.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnLogo.Size = new System.Drawing.Size(91, 83);
-            this.btnLogo.TabIndex = 67;
             // 
             // textServe
             // 
@@ -332,7 +226,7 @@
             // 
             this.labelPrice.BackColor = System.Drawing.Color.Transparent;
             this.labelPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPrice.Location = new System.Drawing.Point(450, 161);
+            this.labelPrice.Location = new System.Drawing.Point(478, 161);
             this.labelPrice.Margin = new System.Windows.Forms.Padding(2);
             this.labelPrice.Name = "labelPrice";
             this.labelPrice.Size = new System.Drawing.Size(46, 26);
@@ -388,7 +282,7 @@
             this.label.AutoSize = false;
             this.label.BackColor = System.Drawing.Color.Transparent;
             this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.Location = new System.Drawing.Point(97, 20);
+            this.label.Location = new System.Drawing.Point(97, 27);
             this.label.Margin = new System.Windows.Forms.Padding(2);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(302, 40);
@@ -406,7 +300,7 @@
             this.textPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textPrice.Location = new System.Drawing.Point(450, 197);
+            this.textPrice.Location = new System.Drawing.Point(478, 197);
             this.textPrice.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textPrice.Name = "textPrice";
             this.textPrice.PasswordChar = '\0';
@@ -419,23 +313,101 @@
             // 
             this.elipseAdd.TargetControl = this;
             // 
+            // picBoxAdd
+            // 
+            this.picBoxAdd.Image = ((System.Drawing.Image)(resources.GetObject("picBoxAdd.Image")));
+            this.picBoxAdd.ImageRotate = 0F;
+            this.picBoxAdd.Location = new System.Drawing.Point(24, 3);
+            this.picBoxAdd.Name = "picBoxAdd";
+            this.picBoxAdd.Size = new System.Drawing.Size(68, 64);
+            this.picBoxAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxAdd.TabIndex = 79;
+            this.picBoxAdd.TabStop = false;
+            // 
+            // picBoxName
+            // 
+            this.picBoxName.Image = ((System.Drawing.Image)(resources.GetObject("picBoxName.Image")));
+            this.picBoxName.ImageRotate = 0F;
+            this.picBoxName.Location = new System.Drawing.Point(24, 135);
+            this.picBoxName.Name = "picBoxName";
+            this.picBoxName.Size = new System.Drawing.Size(55, 52);
+            this.picBoxName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxName.TabIndex = 80;
+            this.picBoxName.TabStop = false;
+            // 
+            // picBoxIngre
+            // 
+            this.picBoxIngre.Image = ((System.Drawing.Image)(resources.GetObject("picBoxIngre.Image")));
+            this.picBoxIngre.ImageRotate = 0F;
+            this.picBoxIngre.Location = new System.Drawing.Point(31, 249);
+            this.picBoxIngre.Name = "picBoxIngre";
+            this.picBoxIngre.Size = new System.Drawing.Size(48, 45);
+            this.picBoxIngre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxIngre.TabIndex = 81;
+            this.picBoxIngre.TabStop = false;
+            // 
+            // picBoxType
+            // 
+            this.picBoxType.Cursor = System.Windows.Forms.Cursors.Default;
+            this.picBoxType.Image = ((System.Drawing.Image)(resources.GetObject("picBoxType.Image")));
+            this.picBoxType.ImageRotate = 0F;
+            this.picBoxType.Location = new System.Drawing.Point(31, 367);
+            this.picBoxType.Name = "picBoxType";
+            this.picBoxType.Size = new System.Drawing.Size(50, 42);
+            this.picBoxType.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxType.TabIndex = 82;
+            this.picBoxType.TabStop = false;
+            // 
+            // picBoxTime
+            // 
+            this.picBoxTime.Image = ((System.Drawing.Image)(resources.GetObject("picBoxTime.Image")));
+            this.picBoxTime.ImageRotate = 0F;
+            this.picBoxTime.Location = new System.Drawing.Point(33, 483);
+            this.picBoxTime.Name = "picBoxTime";
+            this.picBoxTime.Size = new System.Drawing.Size(48, 48);
+            this.picBoxTime.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxTime.TabIndex = 83;
+            this.picBoxTime.TabStop = false;
+            // 
+            // picBoxMoney
+            // 
+            this.picBoxMoney.Image = ((System.Drawing.Image)(resources.GetObject("picBoxMoney.Image")));
+            this.picBoxMoney.ImageRotate = 0F;
+            this.picBoxMoney.Location = new System.Drawing.Point(422, 152);
+            this.picBoxMoney.Name = "picBoxMoney";
+            this.picBoxMoney.Size = new System.Drawing.Size(45, 43);
+            this.picBoxMoney.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxMoney.TabIndex = 84;
+            this.picBoxMoney.TabStop = false;
+            // 
+            // picBoxImg
+            // 
+            this.picBoxImg.Image = ((System.Drawing.Image)(resources.GetObject("picBoxImg.Image")));
+            this.picBoxImg.ImageRotate = 0F;
+            this.picBoxImg.Location = new System.Drawing.Point(428, 264);
+            this.picBoxImg.Name = "picBoxImg";
+            this.picBoxImg.Size = new System.Drawing.Size(39, 37);
+            this.picBoxImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxImg.TabIndex = 85;
+            this.picBoxImg.TabStop = false;
+            // 
             // UC_Add
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.picBoxImg);
+            this.Controls.Add(this.picBoxMoney);
+            this.Controls.Add(this.picBoxTime);
+            this.Controls.Add(this.picBoxType);
+            this.Controls.Add(this.picBoxIngre);
+            this.Controls.Add(this.picBoxName);
+            this.Controls.Add(this.picBoxAdd);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.picsDisplay);
-            this.Controls.Add(this.imgImg);
             this.Controls.Add(this.labelImg);
-            this.Controls.Add(this.imgMoney);
-            this.Controls.Add(this.imgTime);
-            this.Controls.Add(this.imgType);
-            this.Controls.Add(this.imgIngre);
-            this.Controls.Add(this.imgName);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.btnLogo);
             this.Controls.Add(this.textServe);
             this.Controls.Add(this.textType);
             this.Controls.Add(this.textIngre);
@@ -450,6 +422,13 @@
             this.Name = "UC_Add";
             this.Size = new System.Drawing.Size(1088, 768);
             ((System.ComponentModel.ISupportInitialize)(this.picsDisplay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxAdd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxIngre)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxType)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxTime)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxMoney)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxImg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -459,16 +438,9 @@
 
         private Guna.UI2.WinForms.Guna2GradientButton btnBrowse;
         private Guna.UI2.WinForms.Guna2PictureBox picsDisplay;
-        private Guna.UI2.WinForms.Guna2ImageButton imgImg;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelImg;
-        private Guna.UI2.WinForms.Guna2ImageButton imgMoney;
-        private Guna.UI2.WinForms.Guna2ImageButton imgTime;
-        private Guna.UI2.WinForms.Guna2ImageButton imgType;
-        private Guna.UI2.WinForms.Guna2ImageButton imgIngre;
-        private Guna.UI2.WinForms.Guna2ImageButton imgName;
         private Guna.UI2.WinForms.Guna2Button btnReset;
         private Guna.UI2.WinForms.Guna2GradientButton btnSave;
-        private Guna.UI2.WinForms.Guna2ImageButton btnLogo;
         private Guna.UI2.WinForms.Guna2ComboBox textServe;
         private Guna.UI2.WinForms.Guna2ComboBox textType;
         private Guna.UI2.WinForms.Guna2TextBox textIngre;
@@ -481,5 +453,12 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel label;
         private Guna.UI2.WinForms.Guna2TextBox textPrice;
         private Guna.UI2.WinForms.Guna2Elipse elipseAdd;
+        private Guna.UI2.WinForms.Guna2PictureBox picBoxMoney;
+        private Guna.UI2.WinForms.Guna2PictureBox picBoxTime;
+        private Guna.UI2.WinForms.Guna2PictureBox picBoxType;
+        private Guna.UI2.WinForms.Guna2PictureBox picBoxIngre;
+        private Guna.UI2.WinForms.Guna2PictureBox picBoxAdd;
+        private Guna.UI2.WinForms.Guna2PictureBox picBoxName;
+        private Guna.UI2.WinForms.Guna2PictureBox picBoxImg;
     }
 }
