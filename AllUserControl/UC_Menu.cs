@@ -80,5 +80,10 @@ namespace RMS_TINGY.AllUserControl
         private void MenuDataView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
         }
+
+        private void funcPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -98,5 +98,9 @@ namespace RMS_TINGY.AllUserControl
             totalprice.Text = totalP.ToString();
         }
 
+        private void BillStatusDataView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

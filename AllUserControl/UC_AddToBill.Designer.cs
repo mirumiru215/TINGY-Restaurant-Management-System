@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_AddToBill));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.picBoxAdd = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.elipseAddToBill = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -63,9 +63,9 @@
             // 
             this.picBoxAdd.Image = ((System.Drawing.Image)(resources.GetObject("picBoxAdd.Image")));
             this.picBoxAdd.ImageRotate = 0F;
-            this.picBoxAdd.Location = new System.Drawing.Point(13, -7);
+            this.picBoxAdd.Location = new System.Drawing.Point(15, 0);
             this.picBoxAdd.Name = "picBoxAdd";
-            this.picBoxAdd.Size = new System.Drawing.Size(68, 64);
+            this.picBoxAdd.Size = new System.Drawing.Size(60, 60);
             this.picBoxAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxAdd.TabIndex = 81;
             this.picBoxAdd.TabStop = false;
@@ -74,13 +74,13 @@
             // 
             this.label.AutoSize = false;
             this.label.BackColor = System.Drawing.Color.Transparent;
-            this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.Location = new System.Drawing.Point(86, 17);
-            this.label.Margin = new System.Windows.Forms.Padding(2);
+            this.label.Font = new System.Drawing.Font("Segoe UI", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.Location = new System.Drawing.Point(80, 15);
+            this.label.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(302, 40);
+            this.label.Size = new System.Drawing.Size(260, 50);
             this.label.TabIndex = 80;
-            this.label.Text = "ADD TO BILL";
+            this.label.Text = "Add To Bill";
             // 
             // AddToBillDataView
             // 
@@ -88,32 +88,33 @@
             this.AddToBillDataView.AllowUserToDeleteRows = false;
             this.AddToBillDataView.AllowUserToResizeColumns = false;
             this.AddToBillDataView.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.AddToBillDataView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.AddToBillDataView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.AddToBillDataView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.AddToBillDataView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.AddToBillDataView.ColumnHeadersVisible = false;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.AddToBillDataView.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.AddToBillDataView.DefaultCellStyle = dataGridViewCellStyle3;
             this.AddToBillDataView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.AddToBillDataView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.AddToBillDataView.Location = new System.Drawing.Point(3, 101);
+            this.AddToBillDataView.Location = new System.Drawing.Point(0, 100);
             this.AddToBillDataView.Name = "AddToBillDataView";
             this.AddToBillDataView.ReadOnly = true;
             this.AddToBillDataView.RowHeadersVisible = false;
-            this.AddToBillDataView.Size = new System.Drawing.Size(582, 185);
+            this.AddToBillDataView.RowHeadersWidth = 51;
+            this.AddToBillDataView.Size = new System.Drawing.Size(588, 185);
             this.AddToBillDataView.TabIndex = 82;
             this.AddToBillDataView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.AddToBillDataView.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -143,9 +144,9 @@
             // 
             this.picBoxIngre.Image = ((System.Drawing.Image)(resources.GetObject("picBoxIngre.Image")));
             this.picBoxIngre.ImageRotate = 0F;
-            this.picBoxIngre.Location = new System.Drawing.Point(33, 304);
+            this.picBoxIngre.Location = new System.Drawing.Point(30, 300);
             this.picBoxIngre.Name = "picBoxIngre";
-            this.picBoxIngre.Size = new System.Drawing.Size(48, 45);
+            this.picBoxIngre.Size = new System.Drawing.Size(45, 45);
             this.picBoxIngre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxIngre.TabIndex = 84;
             this.picBoxIngre.TabStop = false;
@@ -153,66 +154,66 @@
             // labelName
             // 
             this.labelName.BackColor = System.Drawing.Color.Transparent;
-            this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelName.Location = new System.Drawing.Point(86, 323);
-            this.labelName.Margin = new System.Windows.Forms.Padding(2);
+            this.labelName.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName.Location = new System.Drawing.Point(85, 320);
+            this.labelName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(108, 26);
+            this.labelName.Size = new System.Drawing.Size(106, 27);
             this.labelName.TabIndex = 83;
             this.labelName.Text = "Your Choice";
             // 
             // namelabel1
             // 
             this.namelabel1.BackColor = System.Drawing.Color.Transparent;
-            this.namelabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.namelabel1.Location = new System.Drawing.Point(222, 382);
-            this.namelabel1.Margin = new System.Windows.Forms.Padding(2);
+            this.namelabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelabel1.Location = new System.Drawing.Point(220, 380);
+            this.namelabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.namelabel1.Name = "namelabel1";
-            this.namelabel1.Size = new System.Drawing.Size(59, 26);
+            this.namelabel1.Size = new System.Drawing.Size(61, 27);
             this.namelabel1.TabIndex = 86;
             this.namelabel1.Text = "Name:";
             // 
             // pricelabel1
             // 
             this.pricelabel1.BackColor = System.Drawing.Color.Transparent;
-            this.pricelabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pricelabel1.Location = new System.Drawing.Point(222, 426);
-            this.pricelabel1.Margin = new System.Windows.Forms.Padding(2);
+            this.pricelabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pricelabel1.Location = new System.Drawing.Point(220, 420);
+            this.pricelabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pricelabel1.Name = "pricelabel1";
-            this.pricelabel1.Size = new System.Drawing.Size(51, 26);
+            this.pricelabel1.Size = new System.Drawing.Size(50, 27);
             this.pricelabel1.TabIndex = 87;
             this.pricelabel1.Text = "Price:";
             // 
             // amountlabel1
             // 
             this.amountlabel1.BackColor = System.Drawing.Color.Transparent;
-            this.amountlabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amountlabel1.Location = new System.Drawing.Point(222, 467);
-            this.amountlabel1.Margin = new System.Windows.Forms.Padding(2);
+            this.amountlabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amountlabel1.Location = new System.Drawing.Point(220, 460);
+            this.amountlabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.amountlabel1.Name = "amountlabel1";
-            this.amountlabel1.Size = new System.Drawing.Size(69, 26);
+            this.amountlabel1.Size = new System.Drawing.Size(73, 27);
             this.amountlabel1.TabIndex = 88;
             this.amountlabel1.Text = "Amount";
             // 
             // namelabel
             // 
             this.namelabel.BackColor = System.Drawing.Color.Transparent;
-            this.namelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.namelabel.Location = new System.Drawing.Point(296, 382);
-            this.namelabel.Margin = new System.Windows.Forms.Padding(2);
+            this.namelabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelabel.Location = new System.Drawing.Point(290, 380);
+            this.namelabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.namelabel.Name = "namelabel";
-            this.namelabel.Size = new System.Drawing.Size(43, 26);
+            this.namelabel.Size = new System.Drawing.Size(35, 27);
             this.namelabel.TabIndex = 89;
             this.namelabel.Text = "____";
             // 
             // pricelabel
             // 
             this.pricelabel.BackColor = System.Drawing.Color.Transparent;
-            this.pricelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pricelabel.Location = new System.Drawing.Point(296, 426);
-            this.pricelabel.Margin = new System.Windows.Forms.Padding(2);
+            this.pricelabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pricelabel.Location = new System.Drawing.Point(290, 420);
+            this.pricelabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pricelabel.Name = "pricelabel";
-            this.pricelabel.Size = new System.Drawing.Size(43, 26);
+            this.pricelabel.Size = new System.Drawing.Size(35, 27);
             this.pricelabel.TabIndex = 90;
             this.pricelabel.Text = "____";
             // 
@@ -221,10 +222,10 @@
             this.picsDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picsDisplay.FillColor = System.Drawing.Color.Transparent;
             this.picsDisplay.ImageRotate = 0F;
-            this.picsDisplay.Location = new System.Drawing.Point(38, 375);
-            this.picsDisplay.Margin = new System.Windows.Forms.Padding(2);
+            this.picsDisplay.Location = new System.Drawing.Point(40, 360);
+            this.picsDisplay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picsDisplay.Name = "picsDisplay";
-            this.picsDisplay.Size = new System.Drawing.Size(156, 118);
+            this.picsDisplay.Size = new System.Drawing.Size(160, 126);
             this.picsDisplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picsDisplay.TabIndex = 92;
             this.picsDisplay.TabStop = false;
@@ -238,19 +239,21 @@
             this.amountextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.amountextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.amountextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.amountextbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.amountextbox.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.amountextbox.ForeColor = System.Drawing.Color.Red;
             this.amountextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.amountextbox.Location = new System.Drawing.Point(296, 467);
+            this.amountextbox.Location = new System.Drawing.Point(300, 460);
+            this.amountextbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.amountextbox.Name = "amountextbox";
             this.amountextbox.PasswordChar = '\0';
             this.amountextbox.PlaceholderText = "";
             this.amountextbox.SelectedText = "";
-            this.amountextbox.Size = new System.Drawing.Size(63, 26);
+            this.amountextbox.Size = new System.Drawing.Size(60, 26);
             this.amountextbox.TabIndex = 93;
             // 
             // btnConfirm
             // 
+            this.btnConfirm.BorderRadius = 15;
             this.btnConfirm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnConfirm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnConfirm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -258,12 +261,12 @@
             this.btnConfirm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnConfirm.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
             this.btnConfirm.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
-            this.btnConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirm.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirm.ForeColor = System.Drawing.Color.White;
-            this.btnConfirm.Location = new System.Drawing.Point(419, 467);
-            this.btnConfirm.Margin = new System.Windows.Forms.Padding(2);
+            this.btnConfirm.Location = new System.Drawing.Point(400, 510);
+            this.btnConfirm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(117, 37);
+            this.btnConfirm.Size = new System.Drawing.Size(120, 40);
             this.btnConfirm.TabIndex = 94;
             this.btnConfirm.Text = "Confirm";
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
@@ -271,44 +274,44 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(222, 340);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(220, 340);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(130, 26);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(132, 27);
             this.guna2HtmlLabel1.TabIndex = 95;
-            this.guna2HtmlLabel1.Text = "Table Number.";
+            this.guna2HtmlLabel1.Text = "Table Number:";
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(2, 70);
-            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(5, 70);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(19, 22);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(19, 23);
             this.guna2HtmlLabel2.TabIndex = 97;
             this.guna2HtmlLabel2.Text = "ID";
             // 
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(201, 70);
-            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(200, 70);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(47, 22);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(46, 23);
             this.guna2HtmlLabel3.TabIndex = 98;
             this.guna2HtmlLabel3.Text = "Name";
             // 
             // guna2HtmlLabel4
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(389, 70);
-            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(390, 70);
+            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(40, 22);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(39, 23);
             this.guna2HtmlLabel4.TabIndex = 99;
             this.guna2HtmlLabel4.Text = "Price";
             // 
@@ -325,11 +328,11 @@
             // textTablenum
             // 
             this.textTablenum.BackColor = System.Drawing.Color.Transparent;
-            this.textTablenum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textTablenum.Location = new System.Drawing.Point(356, 340);
-            this.textTablenum.Margin = new System.Windows.Forms.Padding(2);
+            this.textTablenum.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textTablenum.Location = new System.Drawing.Point(360, 340);
+            this.textTablenum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textTablenum.Name = "textTablenum";
-            this.textTablenum.Size = new System.Drawing.Size(43, 26);
+            this.textTablenum.Size = new System.Drawing.Size(35, 27);
             this.textTablenum.TabIndex = 101;
             this.textTablenum.Text = "____";
             // 

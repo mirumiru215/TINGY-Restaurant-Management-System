@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RMS_TINGY.AllUserControl;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -73,6 +74,11 @@ namespace RMS_TINGY
         {
             uC_Menu1.Visible = true;
             uC_Order1.Visible = false;
+        }
+
+        private void uC_Order1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

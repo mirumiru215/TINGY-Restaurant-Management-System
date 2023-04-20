@@ -121,5 +121,10 @@ namespace RMS_TINGY.AllUserControl
             uC_BillingStatus1.Visible = false;
             uC_BillingStatus1.Visible = true;
         }
+
+        private void uC_BillingStatus1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -29,34 +29,51 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Statistic));
-            this.label1 = new System.Windows.Forms.Label();
+            this.StatisticLabel = new System.Windows.Forms.Label();
+            this.picStatistic = new Guna.UI2.WinForms.Guna2PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picStatistic)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // StatisticLabel
             // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(34, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 68);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Statistic";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.StatisticLabel.BackColor = System.Drawing.Color.White;
+            this.StatisticLabel.Font = new System.Drawing.Font("Segoe UI", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StatisticLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.StatisticLabel.Location = new System.Drawing.Point(95, 20);
+            this.StatisticLabel.Name = "StatisticLabel";
+            this.StatisticLabel.Size = new System.Drawing.Size(185, 50);
+            this.StatisticLabel.TabIndex = 0;
+            this.StatisticLabel.Text = "Statistic";
+            this.StatisticLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picStatistic
+            // 
+            this.picStatistic.Image = ((System.Drawing.Image)(resources.GetObject("picStatistic.Image")));
+            this.picStatistic.ImageRotate = 0F;
+            this.picStatistic.Location = new System.Drawing.Point(40, 20);
+            this.picStatistic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picStatistic.Name = "picStatistic";
+            this.picStatistic.Size = new System.Drawing.Size(50, 50);
+            this.picStatistic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picStatistic.TabIndex = 1;
+            this.picStatistic.TabStop = false;
             // 
             // UC_Statistic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.picStatistic);
+            this.Controls.Add(this.StatisticLabel);
             this.Name = "UC_Statistic";
-            this.Size = new System.Drawing.Size(1088, 760);
+            this.Size = new System.Drawing.Size(1088, 768);
+            ((System.ComponentModel.ISupportInitialize)(this.picStatistic)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label StatisticLabel;
+        private Guna.UI2.WinForms.Guna2PictureBox picStatistic;
     }
 }

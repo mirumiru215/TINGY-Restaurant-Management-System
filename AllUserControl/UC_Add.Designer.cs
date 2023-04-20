@@ -66,6 +66,7 @@
             // 
             // btnBrowse
             // 
+            this.btnBrowse.BorderRadius = 15;
             this.btnBrowse.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnBrowse.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnBrowse.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -73,12 +74,12 @@
             this.btnBrowse.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnBrowse.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
             this.btnBrowse.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
-            this.btnBrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBrowse.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBrowse.ForeColor = System.Drawing.Color.White;
-            this.btnBrowse.Location = new System.Drawing.Point(724, 435);
-            this.btnBrowse.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBrowse.Location = new System.Drawing.Point(720, 440);
+            this.btnBrowse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(115, 31);
+            this.btnBrowse.Size = new System.Drawing.Size(110, 30);
             this.btnBrowse.TabIndex = 78;
             this.btnBrowse.Text = "Browse...";
             this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
@@ -88,10 +89,10 @@
             this.picsDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picsDisplay.FillColor = System.Drawing.Color.Transparent;
             this.picsDisplay.ImageRotate = 0F;
-            this.picsDisplay.Location = new System.Drawing.Point(478, 303);
-            this.picsDisplay.Margin = new System.Windows.Forms.Padding(2);
+            this.picsDisplay.Location = new System.Drawing.Point(480, 300);
+            this.picsDisplay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picsDisplay.Name = "picsDisplay";
-            this.picsDisplay.Size = new System.Drawing.Size(226, 163);
+            this.picsDisplay.Size = new System.Drawing.Size(220, 170);
             this.picsDisplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picsDisplay.TabIndex = 77;
             this.picsDisplay.TabStop = false;
@@ -99,33 +100,35 @@
             // labelImg
             // 
             this.labelImg.BackColor = System.Drawing.Color.Transparent;
-            this.labelImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelImg.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelImg.Location = new System.Drawing.Point(478, 268);
-            this.labelImg.Margin = new System.Windows.Forms.Padding(2);
+            this.labelImg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelImg.Name = "labelImg";
-            this.labelImg.Size = new System.Drawing.Size(55, 26);
+            this.labelImg.Size = new System.Drawing.Size(58, 27);
             this.labelImg.TabIndex = 75;
             this.labelImg.Text = "Image";
             // 
             // btnReset
             // 
+            this.btnReset.BorderRadius = 15;
             this.btnReset.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnReset.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnReset.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnReset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnReset.FillColor = System.Drawing.Color.Black;
-            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.White;
-            this.btnReset.Location = new System.Drawing.Point(722, 545);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReset.Location = new System.Drawing.Point(720, 535);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(117, 37);
+            this.btnReset.Size = new System.Drawing.Size(120, 36);
             this.btnReset.TabIndex = 69;
             this.btnReset.Text = "RESET";
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnSave
             // 
+            this.btnSave.BorderRadius = 15;
             this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -133,12 +136,12 @@
             this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
             this.btnSave.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(572, 545);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSave.Location = new System.Drawing.Point(570, 535);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(117, 37);
+            this.btnSave.Size = new System.Drawing.Size(120, 36);
             this.btnSave.TabIndex = 68;
             this.btnSave.Text = "SAVE";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -150,17 +153,17 @@
             this.textServe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.textServe.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textServe.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textServe.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.textServe.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textServe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.textServe.ItemHeight = 30;
             this.textServe.Items.AddRange(new object[] {
             "7 A.M - 9 A.M",
             "12 A.M - 2 P.M",
             "6 P.M - 8 P.M"});
-            this.textServe.Location = new System.Drawing.Point(86, 536);
-            this.textServe.Margin = new System.Windows.Forms.Padding(2);
+            this.textServe.Location = new System.Drawing.Point(85, 535);
+            this.textServe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textServe.Name = "textServe";
-            this.textServe.Size = new System.Drawing.Size(283, 36);
+            this.textServe.Size = new System.Drawing.Size(280, 36);
             this.textServe.TabIndex = 66;
             // 
             // textType
@@ -170,7 +173,7 @@
             this.textType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.textType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textType.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.textType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.textType.ItemHeight = 30;
             this.textType.Items.AddRange(new object[] {
@@ -179,10 +182,10 @@
             "Drinks",
             "Dessert",
             "Other"});
-            this.textType.Location = new System.Drawing.Point(86, 421);
-            this.textType.Margin = new System.Windows.Forms.Padding(2);
+            this.textType.Location = new System.Drawing.Point(85, 420);
+            this.textType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textType.Name = "textType";
-            this.textType.Size = new System.Drawing.Size(283, 36);
+            this.textType.Size = new System.Drawing.Size(280, 36);
             this.textType.TabIndex = 65;
             // 
             // textIngre
@@ -194,15 +197,15 @@
             this.textIngre.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.textIngre.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.textIngre.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textIngre.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.textIngre.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textIngre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textIngre.Location = new System.Drawing.Point(86, 304);
+            this.textIngre.Location = new System.Drawing.Point(85, 300);
             this.textIngre.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textIngre.Name = "textIngre";
             this.textIngre.PasswordChar = '\0';
             this.textIngre.PlaceholderText = "";
             this.textIngre.SelectedText = "";
-            this.textIngre.Size = new System.Drawing.Size(282, 29);
+            this.textIngre.Size = new System.Drawing.Size(280, 30);
             this.textIngre.TabIndex = 63;
             // 
             // textDish
@@ -214,69 +217,69 @@
             this.textDish.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.textDish.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.textDish.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textDish.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.textDish.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDish.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textDish.Location = new System.Drawing.Point(86, 197);
+            this.textDish.Location = new System.Drawing.Point(85, 195);
             this.textDish.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textDish.Name = "textDish";
             this.textDish.PasswordChar = '\0';
             this.textDish.PlaceholderText = "";
             this.textDish.SelectedText = "";
-            this.textDish.Size = new System.Drawing.Size(282, 29);
+            this.textDish.Size = new System.Drawing.Size(280, 30);
             this.textDish.TabIndex = 62;
             // 
             // labelPrice
             // 
             this.labelPrice.BackColor = System.Drawing.Color.Transparent;
-            this.labelPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPrice.Location = new System.Drawing.Point(478, 161);
-            this.labelPrice.Margin = new System.Windows.Forms.Padding(2);
+            this.labelPrice.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPrice.Location = new System.Drawing.Point(480, 150);
+            this.labelPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelPrice.Name = "labelPrice";
-            this.labelPrice.Size = new System.Drawing.Size(46, 26);
+            this.labelPrice.Size = new System.Drawing.Size(48, 27);
             this.labelPrice.TabIndex = 61;
             this.labelPrice.Text = "Price";
             // 
             // labelServe
             // 
             this.labelServe.BackColor = System.Drawing.Color.Transparent;
-            this.labelServe.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelServe.Location = new System.Drawing.Point(86, 494);
-            this.labelServe.Margin = new System.Windows.Forms.Padding(2);
+            this.labelServe.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelServe.Location = new System.Drawing.Point(85, 495);
+            this.labelServe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelServe.Name = "labelServe";
-            this.labelServe.Size = new System.Drawing.Size(125, 26);
+            this.labelServe.Size = new System.Drawing.Size(128, 27);
             this.labelServe.TabIndex = 60;
             this.labelServe.Text = "Servable Time";
             // 
             // labelType
             // 
             this.labelType.BackColor = System.Drawing.Color.Transparent;
-            this.labelType.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelType.Location = new System.Drawing.Point(86, 374);
-            this.labelType.Margin = new System.Windows.Forms.Padding(2);
+            this.labelType.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelType.Location = new System.Drawing.Point(85, 375);
+            this.labelType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelType.Name = "labelType";
-            this.labelType.Size = new System.Drawing.Size(46, 26);
+            this.labelType.Size = new System.Drawing.Size(45, 27);
             this.labelType.TabIndex = 59;
             this.labelType.Text = "Type";
             // 
             // labelIngre
             // 
             this.labelIngre.BackColor = System.Drawing.Color.Transparent;
-            this.labelIngre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIngre.Location = new System.Drawing.Point(86, 259);
-            this.labelIngre.Margin = new System.Windows.Forms.Padding(2);
+            this.labelIngre.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIngre.Location = new System.Drawing.Point(85, 260);
+            this.labelIngre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelIngre.Name = "labelIngre";
-            this.labelIngre.Size = new System.Drawing.Size(87, 26);
+            this.labelIngre.Size = new System.Drawing.Size(94, 27);
             this.labelIngre.TabIndex = 58;
             this.labelIngre.Text = "Ingredient";
             // 
             // labelName
             // 
             this.labelName.BackColor = System.Drawing.Color.Transparent;
-            this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelName.Location = new System.Drawing.Point(86, 152);
-            this.labelName.Margin = new System.Windows.Forms.Padding(2);
+            this.labelName.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName.Location = new System.Drawing.Point(85, 150);
+            this.labelName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(96, 26);
+            this.labelName.Size = new System.Drawing.Size(100, 27);
             this.labelName.TabIndex = 57;
             this.labelName.Text = "Dish Name";
             // 
@@ -284,13 +287,14 @@
             // 
             this.label.AutoSize = false;
             this.label.BackColor = System.Drawing.Color.Transparent;
-            this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.Location = new System.Drawing.Point(97, 27);
-            this.label.Margin = new System.Windows.Forms.Padding(2);
+            this.label.Font = new System.Drawing.Font("Segoe UI", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
+            this.label.Location = new System.Drawing.Point(80, 15);
+            this.label.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(302, 40);
+            this.label.Size = new System.Drawing.Size(260, 50);
             this.label.TabIndex = 56;
-            this.label.Text = "ADD NEW DISH\r\n";
+            this.label.Text = "Add New Dish";
             // 
             // textPrice
             // 
@@ -301,9 +305,9 @@
             this.textPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.textPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.textPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.textPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textPrice.Location = new System.Drawing.Point(478, 197);
+            this.textPrice.Location = new System.Drawing.Point(480, 195);
             this.textPrice.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textPrice.Name = "textPrice";
             this.textPrice.PasswordChar = '\0';
@@ -320,9 +324,9 @@
             // 
             this.picBoxAdd.Image = ((System.Drawing.Image)(resources.GetObject("picBoxAdd.Image")));
             this.picBoxAdd.ImageRotate = 0F;
-            this.picBoxAdd.Location = new System.Drawing.Point(24, 3);
+            this.picBoxAdd.Location = new System.Drawing.Point(15, 0);
             this.picBoxAdd.Name = "picBoxAdd";
-            this.picBoxAdd.Size = new System.Drawing.Size(68, 64);
+            this.picBoxAdd.Size = new System.Drawing.Size(60, 60);
             this.picBoxAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxAdd.TabIndex = 79;
             this.picBoxAdd.TabStop = false;
@@ -331,9 +335,9 @@
             // 
             this.picBoxName.Image = ((System.Drawing.Image)(resources.GetObject("picBoxName.Image")));
             this.picBoxName.ImageRotate = 0F;
-            this.picBoxName.Location = new System.Drawing.Point(24, 135);
+            this.picBoxName.Location = new System.Drawing.Point(25, 140);
             this.picBoxName.Name = "picBoxName";
-            this.picBoxName.Size = new System.Drawing.Size(55, 52);
+            this.picBoxName.Size = new System.Drawing.Size(45, 45);
             this.picBoxName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxName.TabIndex = 80;
             this.picBoxName.TabStop = false;
@@ -342,9 +346,9 @@
             // 
             this.picBoxIngre.Image = ((System.Drawing.Image)(resources.GetObject("picBoxIngre.Image")));
             this.picBoxIngre.ImageRotate = 0F;
-            this.picBoxIngre.Location = new System.Drawing.Point(31, 249);
+            this.picBoxIngre.Location = new System.Drawing.Point(25, 250);
             this.picBoxIngre.Name = "picBoxIngre";
-            this.picBoxIngre.Size = new System.Drawing.Size(48, 45);
+            this.picBoxIngre.Size = new System.Drawing.Size(45, 45);
             this.picBoxIngre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxIngre.TabIndex = 81;
             this.picBoxIngre.TabStop = false;
@@ -354,9 +358,9 @@
             this.picBoxType.Cursor = System.Windows.Forms.Cursors.Default;
             this.picBoxType.Image = ((System.Drawing.Image)(resources.GetObject("picBoxType.Image")));
             this.picBoxType.ImageRotate = 0F;
-            this.picBoxType.Location = new System.Drawing.Point(31, 367);
+            this.picBoxType.Location = new System.Drawing.Point(25, 365);
             this.picBoxType.Name = "picBoxType";
-            this.picBoxType.Size = new System.Drawing.Size(50, 42);
+            this.picBoxType.Size = new System.Drawing.Size(45, 45);
             this.picBoxType.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxType.TabIndex = 82;
             this.picBoxType.TabStop = false;
@@ -365,9 +369,9 @@
             // 
             this.picBoxTime.Image = ((System.Drawing.Image)(resources.GetObject("picBoxTime.Image")));
             this.picBoxTime.ImageRotate = 0F;
-            this.picBoxTime.Location = new System.Drawing.Point(33, 483);
+            this.picBoxTime.Location = new System.Drawing.Point(25, 485);
             this.picBoxTime.Name = "picBoxTime";
-            this.picBoxTime.Size = new System.Drawing.Size(48, 48);
+            this.picBoxTime.Size = new System.Drawing.Size(45, 45);
             this.picBoxTime.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxTime.TabIndex = 83;
             this.picBoxTime.TabStop = false;
@@ -376,9 +380,9 @@
             // 
             this.picBoxMoney.Image = ((System.Drawing.Image)(resources.GetObject("picBoxMoney.Image")));
             this.picBoxMoney.ImageRotate = 0F;
-            this.picBoxMoney.Location = new System.Drawing.Point(422, 152);
+            this.picBoxMoney.Location = new System.Drawing.Point(420, 140);
             this.picBoxMoney.Name = "picBoxMoney";
-            this.picBoxMoney.Size = new System.Drawing.Size(45, 43);
+            this.picBoxMoney.Size = new System.Drawing.Size(45, 45);
             this.picBoxMoney.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxMoney.TabIndex = 84;
             this.picBoxMoney.TabStop = false;
@@ -387,9 +391,9 @@
             // 
             this.picBoxImg.Image = ((System.Drawing.Image)(resources.GetObject("picBoxImg.Image")));
             this.picBoxImg.ImageRotate = 0F;
-            this.picBoxImg.Location = new System.Drawing.Point(428, 264);
+            this.picBoxImg.Location = new System.Drawing.Point(420, 260);
             this.picBoxImg.Name = "picBoxImg";
-            this.picBoxImg.Size = new System.Drawing.Size(39, 37);
+            this.picBoxImg.Size = new System.Drawing.Size(45, 45);
             this.picBoxImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxImg.TabIndex = 85;
             this.picBoxImg.TabStop = false;

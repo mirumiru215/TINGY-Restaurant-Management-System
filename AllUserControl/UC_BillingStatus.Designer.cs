@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BillingLabel = new System.Windows.Forms.Label();
             this.line1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
@@ -48,10 +48,10 @@
             // BillingLabel
             // 
             this.BillingLabel.AutoSize = true;
-            this.BillingLabel.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BillingLabel.Location = new System.Drawing.Point(84, 22);
+            this.BillingLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BillingLabel.Location = new System.Drawing.Point(80, 20);
             this.BillingLabel.Name = "BillingLabel";
-            this.BillingLabel.Size = new System.Drawing.Size(63, 28);
+            this.BillingLabel.Size = new System.Drawing.Size(66, 30);
             this.BillingLabel.TabIndex = 0;
             this.BillingLabel.Text = "Bill #";
             this.BillingLabel.Click += new System.EventHandler(this.BillingLabel_Click);
@@ -79,7 +79,7 @@
             // btnMenu
             // 
             this.btnMenu.BackColor = System.Drawing.Color.Transparent;
-            this.btnMenu.BorderRadius = 26;
+            this.btnMenu.BorderRadius = 15;
             this.btnMenu.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnMenu.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnMenu.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(113)))), ((int)(((byte)(127)))));
@@ -88,11 +88,11 @@
             this.btnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
-            this.btnMenu.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenu.ForeColor = System.Drawing.Color.Black;
-            this.btnMenu.Location = new System.Drawing.Point(19, 611);
+            this.btnMenu.Location = new System.Drawing.Point(55, 620);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(200, 31);
+            this.btnMenu.Size = new System.Drawing.Size(175, 30);
             this.btnMenu.TabIndex = 2;
             this.btnMenu.Text = "Print";
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
@@ -100,10 +100,10 @@
             // TotalLabel
             // 
             this.TotalLabel.AutoSize = true;
-            this.TotalLabel.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalLabel.Location = new System.Drawing.Point(14, 479);
+            this.TotalLabel.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalLabel.Location = new System.Drawing.Point(15, 480);
             this.TotalLabel.Name = "TotalLabel";
-            this.TotalLabel.Size = new System.Drawing.Size(51, 19);
+            this.TotalLabel.Size = new System.Drawing.Size(55, 20);
             this.TotalLabel.TabIndex = 3;
             this.TotalLabel.Text = "Total: ";
             // 
@@ -123,31 +123,32 @@
             this.BillStatusDataView.AllowUserToDeleteRows = false;
             this.BillStatusDataView.AllowUserToResizeColumns = false;
             this.BillStatusDataView.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.BillStatusDataView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.BillStatusDataView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.BillStatusDataView.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.BillStatusDataView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.BillStatusDataView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.BillStatusDataView.DefaultCellStyle = dataGridViewCellStyle15;
             this.BillStatusDataView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.BillStatusDataView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.BillStatusDataView.Location = new System.Drawing.Point(0, 61);
+            this.BillStatusDataView.Location = new System.Drawing.Point(0, 60);
             this.BillStatusDataView.Name = "BillStatusDataView";
             this.BillStatusDataView.ReadOnly = true;
             this.BillStatusDataView.RowHeadersVisible = false;
-            this.BillStatusDataView.Size = new System.Drawing.Size(286, 377);
+            this.BillStatusDataView.RowHeadersWidth = 51;
+            this.BillStatusDataView.Size = new System.Drawing.Size(285, 380);
             this.BillStatusDataView.TabIndex = 83;
             this.BillStatusDataView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.BillStatusDataView.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -170,11 +171,12 @@
             this.BillStatusDataView.ThemeStyle.RowsStyle.Height = 22;
             this.BillStatusDataView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.BillStatusDataView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.BillStatusDataView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BillStatusDataView_CellContentClick);
             // 
             // tbnlabel
             // 
-            this.tbnlabel.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbnlabel.Location = new System.Drawing.Point(141, 22);
+            this.tbnlabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbnlabel.Location = new System.Drawing.Point(140, 20);
             this.tbnlabel.Name = "tbnlabel";
             this.tbnlabel.Size = new System.Drawing.Size(43, 28);
             this.tbnlabel.TabIndex = 84;
@@ -183,10 +185,10 @@
             // totalprice
             // 
             this.totalprice.AutoSize = true;
-            this.totalprice.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalprice.Location = new System.Drawing.Point(62, 479);
+            this.totalprice.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalprice.Location = new System.Drawing.Point(65, 480);
             this.totalprice.Name = "totalprice";
-            this.totalprice.Size = new System.Drawing.Size(33, 19);
+            this.totalprice.Size = new System.Drawing.Size(33, 20);
             this.totalprice.TabIndex = 85;
             this.totalprice.Text = "____";
             // 
@@ -206,7 +208,7 @@
             this.Controls.Add(this.line1);
             this.Controls.Add(this.BillingLabel);
             this.Name = "UC_BillingStatus";
-            this.Size = new System.Drawing.Size(285, 766);
+            this.Size = new System.Drawing.Size(285, 768);
             this.Load += new System.EventHandler(this.UC_BillingStatus_Load);
             this.VisibleChanged += new System.EventHandler(this.UC_BillingStatus_VisibleChanged);
             this.Enter += new System.EventHandler(this.UC_BillingStatus_Enter);
