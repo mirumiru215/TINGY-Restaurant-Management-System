@@ -44,6 +44,7 @@
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.uC_AddToBill1 = new RMS_TINGY.AllUserControl.UC_AddToBill();
             this.OrderPanel = new System.Windows.Forms.Panel();
+            this.btnRefresh = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel1.SuspendLayout();
             this.panelforbtn.SuspendLayout();
             this.OrderPanel.SuspendLayout();
@@ -55,7 +56,7 @@
             this.panel1.Controls.Add(this.uC_BillingStatus1);
             this.panel1.Location = new System.Drawing.Point(597, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(243, 768);
+            this.panel1.Size = new System.Drawing.Size(286, 768);
             this.panel1.TabIndex = 0;
             // 
             // uC_BillingStatus1
@@ -64,7 +65,7 @@
             this.uC_BillingStatus1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.uC_BillingStatus1.Location = new System.Drawing.Point(0, 0);
             this.uC_BillingStatus1.Name = "uC_BillingStatus1";
-            this.uC_BillingStatus1.Size = new System.Drawing.Size(241, 766);
+            this.uC_BillingStatus1.Size = new System.Drawing.Size(285, 766);
             this.uC_BillingStatus1.TabIndex = 0;
             // 
             // Table_1
@@ -252,11 +253,31 @@
             this.OrderPanel.Size = new System.Drawing.Size(589, 712);
             this.OrderPanel.TabIndex = 3;
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRefresh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRefresh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRefresh.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRefresh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRefresh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
+            this.btnRefresh.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(525, 2);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(68, 20);
+            this.btnRefresh.TabIndex = 87;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // UC_Order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.OrderPanel);
             this.Controls.Add(this.panelforbtn);
             this.Controls.Add(this.Table_6);
@@ -293,5 +314,6 @@
         private Guna.UI2.WinForms.Guna2Button btnBack;
         private System.Windows.Forms.Panel OrderPanel;
         private UC_AddToBill uC_AddToBill1;
+        private Guna.UI2.WinForms.Guna2GradientButton btnRefresh;
     }
 }

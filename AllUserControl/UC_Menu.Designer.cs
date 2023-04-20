@@ -52,6 +52,7 @@
             this.MenuPanel.Name = "MenuPanel";
             this.MenuPanel.Size = new System.Drawing.Size(1088, 709);
             this.MenuPanel.TabIndex = 82;
+            this.MenuPanel.Enter += new System.EventHandler(this.MenuPanel_Enter);
             // 
             // elipseMenu
             // 
@@ -110,6 +111,9 @@
             this.Name = "UC_Menu";
             this.Size = new System.Drawing.Size(1088, 768);
             this.Load += new System.EventHandler(this.UC_Menu_Load);
+            this.VisibleChanged += new System.EventHandler(this.UC_Menu_Enter);
+            this.Click += new System.EventHandler(this.UC_Menu_Enter);
+            this.Enter += new System.EventHandler(this.UC_Menu_Enter);
             this.funcPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 

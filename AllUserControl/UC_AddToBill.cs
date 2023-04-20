@@ -81,8 +81,9 @@ namespace RMS_TINGY.AllUserControl
             }
             else
             {
-                MessageBox.Show("Invalid Table Number or Amount.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Invalid Amount.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            
         }
 
         private void AddToBillDataView_CellContentClick(object sender, DataGridViewCellEventArgs e)

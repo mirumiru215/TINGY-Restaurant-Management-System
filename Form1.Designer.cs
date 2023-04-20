@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.UCPanel = new System.Windows.Forms.Panel();
+            this.uC_Order1 = new RMS_TINGY.AllUserControl.UC_Order();
             this.uC_Menu1 = new RMS_TINGY.AllUserControl.UC_Menu();
             this.sidebarPanel = new System.Windows.Forms.Panel();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
@@ -40,7 +41,6 @@
             this.logoPanel = new System.Windows.Forms.Panel();
             this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.uC_Order1 = new RMS_TINGY.AllUserControl.UC_Order();
             this.UCPanel.SuspendLayout();
             this.sidebarPanel.SuspendLayout();
             this.SuspendLayout();
@@ -56,6 +56,14 @@
             this.UCPanel.Size = new System.Drawing.Size(1088, 768);
             this.UCPanel.TabIndex = 1;
             this.UCPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.UCPanel_Paint);
+            // 
+            // uC_Order1
+            // 
+            this.uC_Order1.BackColor = System.Drawing.Color.White;
+            this.uC_Order1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Order1.Name = "uC_Order1";
+            this.uC_Order1.Size = new System.Drawing.Size(1088, 768);
+            this.uC_Order1.TabIndex = 1;
             // 
             // uC_Menu1
             // 
@@ -196,14 +204,6 @@
             this.guna2BorderlessForm1.ContainerControl = this;
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
-            // 
-            // uC_Order1
-            // 
-            this.uC_Order1.BackColor = System.Drawing.Color.White;
-            this.uC_Order1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Order1.Name = "uC_Order1";
-            this.uC_Order1.Size = new System.Drawing.Size(1088, 768);
-            this.uC_Order1.TabIndex = 1;
             // 
             // Form1
             // 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace RMS_TINGY.AllUserControl
 {
     public partial class UC_Menu : UserControl
     {
+        SQLControl fn = new SQLControl();
+        String query;
         public UC_Menu()
         {
             InitializeComponent();
@@ -22,7 +25,17 @@ namespace RMS_TINGY.AllUserControl
             btnBack.Visible = false;
             uC_Add1.Visible = false;
             MenuPanel.Visible = true;
-            
+            //query = "select * from dishDetails";
+            //DataSet ds = fn.getData(query);
+            //MenuDataView.DataSource = ds.Tables[0];
+            //MenuDataView.Columns[MenuDataView.Columns.Count - 1].Visible = false;
+            //MenuDataView.Columns[0].HeaderText = "ID";
+            //MenuDataView.Columns[1].HeaderText = "Name";
+            //MenuDataView.Columns[2].HeaderText = "Type";
+            //MenuDataView.Columns[3].HeaderText = "Ingredient";
+            //MenuDataView.Columns[4].HeaderText = "Servable Time";
+            //MenuDataView.Columns[5].HeaderText = "Price";
+
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -40,8 +53,32 @@ namespace RMS_TINGY.AllUserControl
             btnAdd.Visible = true;
             btnBack.Visible = false;
             uC_Add1.Visible = false;
+            MenuPanel.Visible = false;
             MenuPanel.Visible = true;
             MenuPanel.BringToFront();
+        }
+
+        private void UC_Menu_Enter(object sender, EventArgs e)
+        {
+            //query = "select * from dishDetails";
+            //DataSet ds = fn.getData(query);
+            //MenuDataView.DataSource = ds.Tables[0];
+            //MenuDataView.Columns[MenuDataView.Columns.Count - 1].Visible = false;
+            //MenuDataView.Columns[0].HeaderText = "ID";
+            //MenuDataView.Columns[1].HeaderText = "Name";
+            //MenuDataView.Columns[2].HeaderText = "Type";
+            //MenuDataView.Columns[3].HeaderText = "Ingredient";
+            //MenuDataView.Columns[4].HeaderText = "Servable Time";
+            //MenuDataView.Columns[5].HeaderText = "Price";
+        }
+
+        private void MenuPanel_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuDataView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
         }
     }
 }

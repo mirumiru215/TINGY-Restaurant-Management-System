@@ -71,7 +71,7 @@ namespace RMS_TINGY
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            uC_Menu1.Visible = false;
+            uC_Menu1.Visible = true;
             uC_Order1.Visible = false;
         }
     }

@@ -143,11 +143,11 @@
             this.BillStatusDataView.DefaultCellStyle = dataGridViewCellStyle3;
             this.BillStatusDataView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.BillStatusDataView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.BillStatusDataView.Location = new System.Drawing.Point(18, 80);
+            this.BillStatusDataView.Location = new System.Drawing.Point(0, 61);
             this.BillStatusDataView.Name = "BillStatusDataView";
             this.BillStatusDataView.ReadOnly = true;
             this.BillStatusDataView.RowHeadersVisible = false;
-            this.BillStatusDataView.Size = new System.Drawing.Size(201, 377);
+            this.BillStatusDataView.Size = new System.Drawing.Size(286, 377);
             this.BillStatusDataView.TabIndex = 83;
             this.BillStatusDataView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.BillStatusDataView.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -206,7 +206,7 @@
             this.Controls.Add(this.line1);
             this.Controls.Add(this.BillingLabel);
             this.Name = "UC_BillingStatus";
-            this.Size = new System.Drawing.Size(241, 766);
+            this.Size = new System.Drawing.Size(285, 766);
             this.Load += new System.EventHandler(this.UC_BillingStatus_Load);
             this.VisibleChanged += new System.EventHandler(this.UC_BillingStatus_VisibleChanged);
             this.Enter += new System.EventHandler(this.UC_BillingStatus_Enter);

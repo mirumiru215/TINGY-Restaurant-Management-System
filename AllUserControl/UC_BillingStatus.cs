@@ -97,5 +97,6 @@ namespace RMS_TINGY.AllUserControl
             }
             totalprice.Text = totalP.ToString();
         }
+
     }
 }

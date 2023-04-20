@@ -20,6 +20,7 @@ namespace RMS_TINGY.AllUserControl
 
         private void UC_Order_Load(object sender, EventArgs e)
         {
+            btnRefresh.Visible = false;
             OrderPanel.Visible = false;
             uC_BillingStatus1.Visible = false;
             uC_AddToBill1.Visible = false;
@@ -35,10 +36,12 @@ namespace RMS_TINGY.AllUserControl
             uC_BillingStatus1.Visible = true;
             uC_BillingStatus1.BringToFront();
             btnAddToBill.Visible = true;
+            btnRefresh.Visible = false;
         }
 
         private void btnAddToBill_Click(object sender, EventArgs e)
         {
+            btnRefresh.Visible = true;
             OrderPanel.Visible = true;
             uC_AddToBill1.Visible = true;
             uC_AddToBill1.BringToFront();
@@ -55,6 +58,7 @@ namespace RMS_TINGY.AllUserControl
             uC_AddToBill1.Visible = false;
             btnAddToBill.Visible = false;
             btnBack.Visible = false;
+            btnRefresh.Visible = false;
         }
 
         private void Table_2_Click(object sender, EventArgs e)
@@ -65,6 +69,7 @@ namespace RMS_TINGY.AllUserControl
             uC_BillingStatus1.Visible = true;
             uC_BillingStatus1.BringToFront();
             btnAddToBill.Visible = true;
+            btnRefresh.Visible = false;
         }
 
         private void Table_3_Click(object sender, EventArgs e)
@@ -75,6 +80,7 @@ namespace RMS_TINGY.AllUserControl
             uC_BillingStatus1.Visible = true;
             uC_BillingStatus1.BringToFront();
             btnAddToBill.Visible = true;
+            btnRefresh.Visible = false;
         }
 
         private void Table_4_Click(object sender, EventArgs e)
@@ -85,6 +91,7 @@ namespace RMS_TINGY.AllUserControl
             uC_BillingStatus1.Visible = true;
             uC_BillingStatus1.BringToFront();
             btnAddToBill.Visible = true;
+            btnRefresh.Visible = false;
         }
 
         private void Table_5_Click(object sender, EventArgs e)
@@ -95,6 +102,7 @@ namespace RMS_TINGY.AllUserControl
             uC_BillingStatus1.Visible = true;
             uC_BillingStatus1.BringToFront();
             btnAddToBill.Visible = true;
+            btnRefresh.Visible = false;
         }
 
         private void Table_6_Click(object sender, EventArgs e)
@@ -105,6 +113,13 @@ namespace RMS_TINGY.AllUserControl
             uC_BillingStatus1.Visible = true;
             uC_BillingStatus1.BringToFront();
             btnAddToBill.Visible = true;
+            btnRefresh.Visible = false;
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            uC_BillingStatus1.Visible = false;
+            uC_BillingStatus1.Visible = true;
         }
     }
 }
