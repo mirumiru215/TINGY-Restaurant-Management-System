@@ -318,6 +318,7 @@
             // 
             // elipseAdd
             // 
+            this.elipseAdd.BorderRadius = 0;
             this.elipseAdd.TargetControl = this;
             // 
             // picBoxAdd

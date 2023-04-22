@@ -1,0 +1,6 @@
+Tên (điền, tét bốc)
+Ngày sinh (calendar)
+Số điện thoại (điền, text box)
+Địa chỉ (điền, text box)
+Vị trí công việc (chọn, combo box) (đầu bếp, phục vụ, chạy bàn, lao công, bảo vệ)
+Ảnh (picture box)

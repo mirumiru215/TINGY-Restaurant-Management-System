@@ -90,3 +90,25 @@ C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programmi
 C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\obj\Debug\RMS_TINGY.AllUserControl.UC_Menu.resources
 C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\obj\Debug\RMS_TINGY.AllUserControl.UC_Order.resources
 C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\obj\Debug\RMS_TINGY.AllUserControl.UC_Homepage.resources
+E:\Lap Trinh Nang Cao\Temp2\bin\Debug\RMS_TINGY.exe.config
+E:\Lap Trinh Nang Cao\Temp2\bin\Debug\RMS_TINGY.exe
+E:\Lap Trinh Nang Cao\Temp2\bin\Debug\RMS_TINGY.pdb
+E:\Lap Trinh Nang Cao\Temp2\bin\Debug\Guna.UI2.dll
+E:\Lap Trinh Nang Cao\Temp2\obj\Debug\RMS_TINGY.csproj.AssemblyReference.cache
+E:\Lap Trinh Nang Cao\Temp2\obj\Debug\RMS_TINGY.csproj.SuggestedBindingRedirects.cache
+E:\Lap Trinh Nang Cao\Temp2\obj\Debug\RMS_TINGY.AllUserControl.UC_Add.resources
+E:\Lap Trinh Nang Cao\Temp2\obj\Debug\RMS_TINGY.AllUserControl.UC_AddToBill.resources
+E:\Lap Trinh Nang Cao\Temp2\obj\Debug\RMS_TINGY.AllUserControl.UC_BillingStatus.resources
+E:\Lap Trinh Nang Cao\Temp2\obj\Debug\RMS_TINGY.AllUserControl.UC_Homepage.resources
+E:\Lap Trinh Nang Cao\Temp2\obj\Debug\RMS_TINGY.AllUserControl.UC_Menu.resources
+E:\Lap Trinh Nang Cao\Temp2\obj\Debug\RMS_TINGY.AllUserControl.UC_Order.resources
+E:\Lap Trinh Nang Cao\Temp2\obj\Debug\RMS_TINGY.AllUserControl.UC_Statistic.resources
+E:\Lap Trinh Nang Cao\Temp2\obj\Debug\RMS_TINGY.Form1.resources
+E:\Lap Trinh Nang Cao\Temp2\obj\Debug\RMS_TINGY.Properties.Resources.resources
+E:\Lap Trinh Nang Cao\Temp2\obj\Debug\RMS_TINGY.csproj.GenerateResource.cache
+E:\Lap Trinh Nang Cao\Temp2\obj\Debug\RMS_TINGY.csproj.CoreCompileInputs.cache
+E:\Lap Trinh Nang Cao\Temp2\obj\Debug\RMS_TINGY.csproj.CopyComplete
+E:\Lap Trinh Nang Cao\Temp2\obj\Debug\RMS_TINGY.exe
+E:\Lap Trinh Nang Cao\Temp2\obj\Debug\RMS_TINGY.pdb
+E:\Lap Trinh Nang Cao\Temp2\obj\Debug\RMS_TINGY.AllUserControl.UC_Staff.resources
+E:\Lap Trinh Nang Cao\Temp2\obj\Debug\RMS_TINGY.AllUserControl.UC_StaffAddEmployee.resources

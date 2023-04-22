@@ -14,7 +14,7 @@ namespace RMS_TINGY
         protected SqlConnection getConnection()
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "data source = MSI\\THN ; database = tingyshop; integrated security = True";
+            con.ConnectionString = "data source = localhost ; database = tingyshop; integrated security = True";
             return con;
         }
         public DataSet getData(String query) //extract data from database

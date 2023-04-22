@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Statistic));
             this.StatisticLabel = new System.Windows.Forms.Label();
             this.picStatistic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.ElipseStatistic = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picStatistic)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,12 +53,16 @@
             this.picStatistic.Image = ((System.Drawing.Image)(resources.GetObject("picStatistic.Image")));
             this.picStatistic.ImageRotate = 0F;
             this.picStatistic.Location = new System.Drawing.Point(40, 20);
-            this.picStatistic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picStatistic.Margin = new System.Windows.Forms.Padding(2);
             this.picStatistic.Name = "picStatistic";
             this.picStatistic.Size = new System.Drawing.Size(50, 50);
             this.picStatistic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picStatistic.TabIndex = 1;
             this.picStatistic.TabStop = false;
+            // 
+            // ElipseStatistic
+            // 
+            this.ElipseStatistic.BorderRadius = 0;
             // 
             // UC_Statistic
             // 
@@ -76,5 +82,6 @@
         #endregion
         private System.Windows.Forms.Label StatisticLabel;
         private Guna.UI2.WinForms.Guna2PictureBox picStatistic;
+        private Guna.UI2.WinForms.Guna2Elipse ElipseStatistic;
     }
 }

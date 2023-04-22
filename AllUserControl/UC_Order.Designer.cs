@@ -194,6 +194,7 @@
             // 
             // elipseOrder
             // 
+            this.elipseOrder.Radius = 0;
             this.elipseOrder.TargetControl = this;
             // 
             // btnAddToBill
