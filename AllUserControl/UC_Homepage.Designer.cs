@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Homepage));
-            this.MenuDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.picsDisplay = new Guna.UI2.WinForms.Guna2PictureBox();
             this.labelName = new System.Windows.Forms.Label();
             this.labelType = new System.Windows.Forms.Label();
@@ -53,64 +52,15 @@
             this.searchTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.searchButton = new Guna.UI2.WinForms.Guna2Button();
             this.homepageElipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.MenuDataGridView)).BeginInit();
+            this.MenuGridDataView = new Guna.UI2.WinForms.Guna2DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.picsDisplay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxIngre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxMoney)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MenuGridDataView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // MenuDataGridView
-            // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.MenuDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.MenuDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.MenuDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.MenuDataGridView.DefaultCellStyle = dataGridViewCellStyle6;
-            this.MenuDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.MenuDataGridView.Location = new System.Drawing.Point(0, 70);
-            this.MenuDataGridView.Name = "MenuDataGridView";
-            this.MenuDataGridView.RowHeadersVisible = false;
-            this.MenuDataGridView.Size = new System.Drawing.Size(1088, 320);
-            this.MenuDataGridView.TabIndex = 0;
-            this.MenuDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.MenuDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.MenuDataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.MenuDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.MenuDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.MenuDataGridView.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.MenuDataGridView.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.MenuDataGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.MenuDataGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.MenuDataGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MenuDataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.MenuDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.MenuDataGridView.ThemeStyle.HeaderStyle.Height = 4;
-            this.MenuDataGridView.ThemeStyle.ReadOnly = false;
-            this.MenuDataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.MenuDataGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.MenuDataGridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MenuDataGridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.MenuDataGridView.ThemeStyle.RowsStyle.Height = 22;
-            this.MenuDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.MenuDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.MenuDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.MenuDataGridView_CellContentClick);
             // 
             // picsDisplay
             // 
@@ -119,6 +69,7 @@
             this.picsDisplay.Location = new System.Drawing.Point(130, 450);
             this.picsDisplay.Name = "picsDisplay";
             this.picsDisplay.Size = new System.Drawing.Size(170, 140);
+            this.picsDisplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picsDisplay.TabIndex = 1;
             this.picsDisplay.TabStop = false;
             this.picsDisplay.Click += new System.EventHandler(this.picsDisplay_Click);
@@ -318,6 +269,7 @@
             this.searchTextBox.SelectedText = "";
             this.searchTextBox.Size = new System.Drawing.Size(250, 30);
             this.searchTextBox.TabIndex = 86;
+            this.searchTextBox.Click += new System.EventHandler(this.searchTextBox_Click);
             // 
             // searchButton
             // 
@@ -334,17 +286,75 @@
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(50, 50);
             this.searchButton.TabIndex = 87;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // homepageElipse
             // 
             this.homepageElipse.BorderRadius = 0;
             this.homepageElipse.TargetControl = this;
             // 
+            // MenuGridDataView
+            // 
+            this.MenuGridDataView.AllowUserToAddRows = false;
+            this.MenuGridDataView.AllowUserToDeleteRows = false;
+            this.MenuGridDataView.AllowUserToResizeColumns = false;
+            this.MenuGridDataView.AllowUserToResizeRows = false;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.MenuGridDataView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.MenuGridDataView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.MenuGridDataView.DefaultCellStyle = dataGridViewCellStyle15;
+            this.MenuGridDataView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.MenuGridDataView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.MenuGridDataView.Location = new System.Drawing.Point(0, 100);
+            this.MenuGridDataView.Name = "MenuGridDataView";
+            this.MenuGridDataView.ReadOnly = true;
+            this.MenuGridDataView.RowHeadersVisible = false;
+            this.MenuGridDataView.RowHeadersWidth = 51;
+            this.MenuGridDataView.Size = new System.Drawing.Size(1088, 250);
+            this.MenuGridDataView.TabIndex = 88;
+            this.MenuGridDataView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.MenuGridDataView.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.MenuGridDataView.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.MenuGridDataView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.MenuGridDataView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.MenuGridDataView.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.MenuGridDataView.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.MenuGridDataView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.MenuGridDataView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.MenuGridDataView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MenuGridDataView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.MenuGridDataView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.MenuGridDataView.ThemeStyle.HeaderStyle.Height = 23;
+            this.MenuGridDataView.ThemeStyle.ReadOnly = true;
+            this.MenuGridDataView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.MenuGridDataView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.MenuGridDataView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MenuGridDataView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.MenuGridDataView.ThemeStyle.RowsStyle.Height = 22;
+            this.MenuGridDataView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.MenuGridDataView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.MenuGridDataView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.MenuGridDataView_CellClick);
+            // 
             // UC_Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.MenuGridDataView);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.searchTextBox);
             this.Controls.Add(this.picBoxMoney);
@@ -363,24 +373,23 @@
             this.Controls.Add(this.labelType);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.picsDisplay);
-            this.Controls.Add(this.MenuDataGridView);
             this.Name = "UC_Homepage";
-            this.Size = new System.Drawing.Size(1088, 708);
-            ((System.ComponentModel.ISupportInitialize)(this.MenuDataGridView)).EndInit();
+            this.Size = new System.Drawing.Size(1088, 768);
+            this.Load += new System.EventHandler(this.UC_Homepage_Load);
+            this.Enter += new System.EventHandler(this.UC_Homepage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picsDisplay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxIngre)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxType)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxMoney)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MenuGridDataView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2DataGridView MenuDataGridView;
         private Guna.UI2.WinForms.Guna2PictureBox picsDisplay;
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.Label labelType;
@@ -400,5 +409,6 @@
         private Guna.UI2.WinForms.Guna2TextBox searchTextBox;
         private Guna.UI2.WinForms.Guna2Button searchButton;
         private Guna.UI2.WinForms.Guna2Elipse homepageElipse;
+        private Guna.UI2.WinForms.Guna2DataGridView MenuGridDataView;
     }
 }

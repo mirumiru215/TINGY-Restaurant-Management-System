@@ -52,10 +52,13 @@
             // 
             // elipseMenu
             // 
+            this.elipseMenu.BorderRadius = 0;
             this.elipseMenu.TargetControl = this;
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
+            this.btnAdd.BorderRadius = 24;
             this.btnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -72,11 +75,13 @@
             // 
             // btnBack
             // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
+            this.btnBack.BorderRadius = 45;
             this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBack.FillColor = System.Drawing.Color.White;
+            this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
             this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
@@ -89,8 +94,11 @@
             // 
             // funcPanel
             // 
+            this.funcPanel.BackColor = System.Drawing.Color.White;
+            this.funcPanel.BorderColor = System.Drawing.Color.Black;
             this.funcPanel.Controls.Add(this.btnBack);
             this.funcPanel.Controls.Add(this.btnAdd);
+            this.funcPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
             this.funcPanel.Location = new System.Drawing.Point(0, 0);
             this.funcPanel.Margin = new System.Windows.Forms.Padding(2);
             this.funcPanel.Name = "funcPanel";
@@ -112,7 +120,7 @@
             this.uC_Homepage1.BackColor = System.Drawing.Color.White;
             this.uC_Homepage1.Location = new System.Drawing.Point(0, 0);
             this.uC_Homepage1.Name = "uC_Homepage1";
-            this.uC_Homepage1.Size = new System.Drawing.Size(1088, 708);
+            this.uC_Homepage1.Size = new System.Drawing.Size(1088, 768);
             this.uC_Homepage1.TabIndex = 0;
             // 
             // UC_Menu

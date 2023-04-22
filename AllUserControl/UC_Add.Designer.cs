@@ -76,7 +76,7 @@
             this.btnBrowse.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.btnBrowse.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBrowse.ForeColor = System.Drawing.Color.White;
-            this.btnBrowse.Location = new System.Drawing.Point(720, 440);
+            this.btnBrowse.Location = new System.Drawing.Point(800, 440);
             this.btnBrowse.Margin = new System.Windows.Forms.Padding(2);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(110, 30);
@@ -89,7 +89,7 @@
             this.picsDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picsDisplay.FillColor = System.Drawing.Color.Transparent;
             this.picsDisplay.ImageRotate = 0F;
-            this.picsDisplay.Location = new System.Drawing.Point(480, 300);
+            this.picsDisplay.Location = new System.Drawing.Point(560, 300);
             this.picsDisplay.Margin = new System.Windows.Forms.Padding(2);
             this.picsDisplay.Name = "picsDisplay";
             this.picsDisplay.Size = new System.Drawing.Size(220, 170);
@@ -101,7 +101,7 @@
             // 
             this.labelImg.BackColor = System.Drawing.Color.Transparent;
             this.labelImg.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelImg.Location = new System.Drawing.Point(478, 268);
+            this.labelImg.Location = new System.Drawing.Point(558, 268);
             this.labelImg.Margin = new System.Windows.Forms.Padding(2);
             this.labelImg.Name = "labelImg";
             this.labelImg.Size = new System.Drawing.Size(58, 27);
@@ -118,7 +118,7 @@
             this.btnReset.FillColor = System.Drawing.Color.Black;
             this.btnReset.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.White;
-            this.btnReset.Location = new System.Drawing.Point(720, 535);
+            this.btnReset.Location = new System.Drawing.Point(800, 535);
             this.btnReset.Margin = new System.Windows.Forms.Padding(2);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(120, 36);
@@ -138,7 +138,7 @@
             this.btnSave.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(570, 535);
+            this.btnSave.Location = new System.Drawing.Point(650, 535);
             this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(120, 36);
@@ -232,7 +232,7 @@
             // 
             this.labelPrice.BackColor = System.Drawing.Color.Transparent;
             this.labelPrice.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPrice.Location = new System.Drawing.Point(480, 150);
+            this.labelPrice.Location = new System.Drawing.Point(560, 150);
             this.labelPrice.Margin = new System.Windows.Forms.Padding(2);
             this.labelPrice.Name = "labelPrice";
             this.labelPrice.Size = new System.Drawing.Size(48, 27);
@@ -307,7 +307,7 @@
             this.textPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textPrice.Location = new System.Drawing.Point(480, 195);
+            this.textPrice.Location = new System.Drawing.Point(560, 195);
             this.textPrice.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textPrice.Name = "textPrice";
             this.textPrice.PasswordChar = '\0';
@@ -380,7 +380,7 @@
             // 
             this.picBoxMoney.Image = ((System.Drawing.Image)(resources.GetObject("picBoxMoney.Image")));
             this.picBoxMoney.ImageRotate = 0F;
-            this.picBoxMoney.Location = new System.Drawing.Point(420, 140);
+            this.picBoxMoney.Location = new System.Drawing.Point(500, 140);
             this.picBoxMoney.Name = "picBoxMoney";
             this.picBoxMoney.Size = new System.Drawing.Size(45, 45);
             this.picBoxMoney.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -391,7 +391,7 @@
             // 
             this.picBoxImg.Image = ((System.Drawing.Image)(resources.GetObject("picBoxImg.Image")));
             this.picBoxImg.ImageRotate = 0F;
-            this.picBoxImg.Location = new System.Drawing.Point(420, 260);
+            this.picBoxImg.Location = new System.Drawing.Point(500, 260);
             this.picBoxImg.Name = "picBoxImg";
             this.picBoxImg.Size = new System.Drawing.Size(45, 45);
             this.picBoxImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

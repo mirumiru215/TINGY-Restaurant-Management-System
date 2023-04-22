@@ -62,9 +62,9 @@
             this.uC_Order1.BackColor = System.Drawing.Color.White;
             this.uC_Order1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uC_Order1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Order1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.uC_Order1.Margin = new System.Windows.Forms.Padding(6);
             this.uC_Order1.Name = "uC_Order1";
-            this.uC_Order1.Size = new System.Drawing.Size(1995, 1477);
+            this.uC_Order1.Size = new System.Drawing.Size(1088, 768);
             this.uC_Order1.TabIndex = 1;
             this.uC_Order1.Load += new System.EventHandler(this.uC_Order1_Load);
             // 
@@ -72,9 +72,9 @@
             // 
             this.uC_Menu1.BackColor = System.Drawing.Color.White;
             this.uC_Menu1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Menu1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uC_Menu1.Margin = new System.Windows.Forms.Padding(4);
             this.uC_Menu1.Name = "uC_Menu1";
-            this.uC_Menu1.Size = new System.Drawing.Size(1269, 1004);
+            this.uC_Menu1.Size = new System.Drawing.Size(1088, 768);
             this.uC_Menu1.TabIndex = 0;
             this.uC_Menu1.Load += new System.EventHandler(this.uC_Menu1_Load);
             // 
@@ -205,6 +205,7 @@
             // 
             // guna2BorderlessForm1
             // 
+            this.guna2BorderlessForm1.BorderRadius = 6;
             this.guna2BorderlessForm1.ContainerControl = this;
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
@@ -214,7 +215,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(85)))));
-            this.ClientSize = new System.Drawing.Size(1167, 718);
+            this.ClientSize = new System.Drawing.Size(1360, 768);
             this.Controls.Add(this.sidebarPanel);
             this.Controls.Add(this.UCPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
