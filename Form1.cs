@@ -51,7 +51,7 @@ namespace RMS_TINGY
 
         private void btnStatistic_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnOrder_Click(object sender, EventArgs e)

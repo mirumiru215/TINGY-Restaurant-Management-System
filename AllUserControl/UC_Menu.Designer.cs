@@ -31,30 +31,24 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Menu));
             this.uC_Add1 = new RMS_TINGY.AllUserControl.UC_Add();
-            this.MenuPanel = new System.Windows.Forms.Panel();
             this.elipseMenu = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.funcPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.MenuPanel = new System.Windows.Forms.Panel();
+            this.uC_Homepage1 = new RMS_TINGY.AllUserControl.UC_Homepage();
             this.funcPanel.SuspendLayout();
+            this.MenuPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // uC_Add1
             // 
             this.uC_Add1.BackColor = System.Drawing.Color.White;
             this.uC_Add1.Location = new System.Drawing.Point(3, 62);
-            this.uC_Add1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uC_Add1.Margin = new System.Windows.Forms.Padding(4);
             this.uC_Add1.Name = "uC_Add1";
             this.uC_Add1.Size = new System.Drawing.Size(1088, 768);
             this.uC_Add1.TabIndex = 81;
-            // 
-            // MenuPanel
-            // 
-            this.MenuPanel.Location = new System.Drawing.Point(0, 60);
-            this.MenuPanel.Name = "MenuPanel";
-            this.MenuPanel.Size = new System.Drawing.Size(1088, 708);
-            this.MenuPanel.TabIndex = 82;
-            this.MenuPanel.Enter += new System.EventHandler(this.MenuPanel_Enter);
             // 
             // elipseMenu
             // 
@@ -98,11 +92,28 @@
             this.funcPanel.Controls.Add(this.btnBack);
             this.funcPanel.Controls.Add(this.btnAdd);
             this.funcPanel.Location = new System.Drawing.Point(0, 0);
-            this.funcPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.funcPanel.Margin = new System.Windows.Forms.Padding(2);
             this.funcPanel.Name = "funcPanel";
             this.funcPanel.Size = new System.Drawing.Size(1088, 60);
             this.funcPanel.TabIndex = 80;
             this.funcPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.funcPanel_Paint);
+            // 
+            // MenuPanel
+            // 
+            this.MenuPanel.Controls.Add(this.uC_Homepage1);
+            this.MenuPanel.Location = new System.Drawing.Point(0, 60);
+            this.MenuPanel.Name = "MenuPanel";
+            this.MenuPanel.Size = new System.Drawing.Size(1088, 708);
+            this.MenuPanel.TabIndex = 82;
+            this.MenuPanel.Enter += new System.EventHandler(this.MenuPanel_Enter);
+            // 
+            // uC_Homepage1
+            // 
+            this.uC_Homepage1.BackColor = System.Drawing.Color.White;
+            this.uC_Homepage1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Homepage1.Name = "uC_Homepage1";
+            this.uC_Homepage1.Size = new System.Drawing.Size(1088, 708);
+            this.uC_Homepage1.TabIndex = 0;
             // 
             // UC_Menu
             // 
@@ -119,16 +130,18 @@
             this.Click += new System.EventHandler(this.UC_Menu_Enter);
             this.Enter += new System.EventHandler(this.UC_Menu_Enter);
             this.funcPanel.ResumeLayout(false);
+            this.MenuPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private UC_Add uC_Add1;
-        private System.Windows.Forms.Panel MenuPanel;
         private Guna.UI2.WinForms.Guna2Elipse elipseMenu;
         private Guna.UI2.WinForms.Guna2Panel funcPanel;
         private Guna.UI2.WinForms.Guna2Button btnBack;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
+        private System.Windows.Forms.Panel MenuPanel;
+        private UC_Homepage uC_Homepage1;
     }
 }

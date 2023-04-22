@@ -67,6 +67,7 @@
             this.Controls.Add(this.StatisticLabel);
             this.Name = "UC_Statistic";
             this.Size = new System.Drawing.Size(1088, 768);
+            this.Load += new System.EventHandler(this.UC_Statistic_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picStatistic)).EndInit();
             this.ResumeLayout(false);
 

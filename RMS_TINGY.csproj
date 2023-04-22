@@ -40,11 +40,14 @@
       <HintPath>packages\Guna.UI2.WinForms.2.0.4.4\lib\net48\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,6 +57,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AllUserControl\UC_Add.cs">
@@ -67,6 +71,12 @@
     </Compile>
     <Compile Include="AllUserControl\UC_AddToBill.Designer.cs">
       <DependentUpon>UC_AddToBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllUserControl\UC_Homepage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllUserControl\UC_Homepage.Designer.cs">
+      <DependentUpon>UC_Homepage.cs</DependentUpon>
     </Compile>
     <Compile Include="AllUserControl\UC_Menu.cs">
       <SubType>UserControl</SubType>
@@ -109,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllUserControl\UC_BillingStatus.resx">
       <DependentUpon>UC_BillingStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllUserControl\UC_Homepage.resx">
+      <DependentUpon>UC_Homepage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllUserControl\UC_Menu.resx">
       <DependentUpon>UC_Menu.cs</DependentUpon>

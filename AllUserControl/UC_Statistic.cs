@@ -16,5 +16,10 @@ namespace RMS_TINGY.AllUserControl
         {
             InitializeComponent();
         }
+
+        private void UC_Statistic_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

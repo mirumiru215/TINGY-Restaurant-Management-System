@@ -89,3 +89,4 @@ C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programmi
 C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\obj\Debug\RMS_TINGY.AllUserControl.UC_BillingStatus.resources
 C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\obj\Debug\RMS_TINGY.AllUserControl.UC_Menu.resources
 C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\obj\Debug\RMS_TINGY.AllUserControl.UC_Order.resources
+C:\Users\M S I\OneDrive\Documents\Curriculums\Sophomore\HK222\Advanced_Programming\Project_LTNC\obj\Debug\RMS_TINGY.AllUserControl.UC_Homepage.resources

@@ -77,7 +77,7 @@
             this.btnBrowse.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBrowse.ForeColor = System.Drawing.Color.White;
             this.btnBrowse.Location = new System.Drawing.Point(720, 440);
-            this.btnBrowse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBrowse.Margin = new System.Windows.Forms.Padding(2);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(110, 30);
             this.btnBrowse.TabIndex = 78;
@@ -90,7 +90,7 @@
             this.picsDisplay.FillColor = System.Drawing.Color.Transparent;
             this.picsDisplay.ImageRotate = 0F;
             this.picsDisplay.Location = new System.Drawing.Point(480, 300);
-            this.picsDisplay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picsDisplay.Margin = new System.Windows.Forms.Padding(2);
             this.picsDisplay.Name = "picsDisplay";
             this.picsDisplay.Size = new System.Drawing.Size(220, 170);
             this.picsDisplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -102,7 +102,7 @@
             this.labelImg.BackColor = System.Drawing.Color.Transparent;
             this.labelImg.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelImg.Location = new System.Drawing.Point(478, 268);
-            this.labelImg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelImg.Margin = new System.Windows.Forms.Padding(2);
             this.labelImg.Name = "labelImg";
             this.labelImg.Size = new System.Drawing.Size(58, 27);
             this.labelImg.TabIndex = 75;
@@ -119,7 +119,7 @@
             this.btnReset.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.White;
             this.btnReset.Location = new System.Drawing.Point(720, 535);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(2);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(120, 36);
             this.btnReset.TabIndex = 69;
@@ -139,7 +139,7 @@
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(570, 535);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(120, 36);
             this.btnSave.TabIndex = 68;
@@ -161,7 +161,7 @@
             "12 A.M - 2 P.M",
             "6 P.M - 8 P.M"});
             this.textServe.Location = new System.Drawing.Point(85, 535);
-            this.textServe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textServe.Margin = new System.Windows.Forms.Padding(2);
             this.textServe.Name = "textServe";
             this.textServe.Size = new System.Drawing.Size(280, 36);
             this.textServe.TabIndex = 66;
@@ -183,7 +183,7 @@
             "Dessert",
             "Other"});
             this.textType.Location = new System.Drawing.Point(85, 420);
-            this.textType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textType.Margin = new System.Windows.Forms.Padding(2);
             this.textType.Name = "textType";
             this.textType.Size = new System.Drawing.Size(280, 36);
             this.textType.TabIndex = 65;
@@ -233,7 +233,7 @@
             this.labelPrice.BackColor = System.Drawing.Color.Transparent;
             this.labelPrice.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPrice.Location = new System.Drawing.Point(480, 150);
-            this.labelPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelPrice.Margin = new System.Windows.Forms.Padding(2);
             this.labelPrice.Name = "labelPrice";
             this.labelPrice.Size = new System.Drawing.Size(48, 27);
             this.labelPrice.TabIndex = 61;
@@ -244,7 +244,7 @@
             this.labelServe.BackColor = System.Drawing.Color.Transparent;
             this.labelServe.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelServe.Location = new System.Drawing.Point(85, 495);
-            this.labelServe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelServe.Margin = new System.Windows.Forms.Padding(2);
             this.labelServe.Name = "labelServe";
             this.labelServe.Size = new System.Drawing.Size(128, 27);
             this.labelServe.TabIndex = 60;
@@ -255,7 +255,7 @@
             this.labelType.BackColor = System.Drawing.Color.Transparent;
             this.labelType.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelType.Location = new System.Drawing.Point(85, 375);
-            this.labelType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelType.Margin = new System.Windows.Forms.Padding(2);
             this.labelType.Name = "labelType";
             this.labelType.Size = new System.Drawing.Size(45, 27);
             this.labelType.TabIndex = 59;
@@ -266,7 +266,7 @@
             this.labelIngre.BackColor = System.Drawing.Color.Transparent;
             this.labelIngre.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelIngre.Location = new System.Drawing.Point(85, 260);
-            this.labelIngre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelIngre.Margin = new System.Windows.Forms.Padding(2);
             this.labelIngre.Name = "labelIngre";
             this.labelIngre.Size = new System.Drawing.Size(94, 27);
             this.labelIngre.TabIndex = 58;
@@ -277,7 +277,7 @@
             this.labelName.BackColor = System.Drawing.Color.Transparent;
             this.labelName.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelName.Location = new System.Drawing.Point(85, 150);
-            this.labelName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelName.Margin = new System.Windows.Forms.Padding(2);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(100, 27);
             this.labelName.TabIndex = 57;
@@ -290,7 +290,7 @@
             this.label.Font = new System.Drawing.Font("Segoe UI", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
             this.label.Location = new System.Drawing.Point(80, 15);
-            this.label.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label.Margin = new System.Windows.Forms.Padding(2);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(260, 50);
             this.label.TabIndex = 56;
