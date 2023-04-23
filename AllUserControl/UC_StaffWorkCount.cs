@@ -53,8 +53,7 @@ namespace RMS_TINGY.AllUserControl
                 namelabeld.Text = ds.Tables[0].Rows[0][1].ToString();
                 wclabel.Text = ds.Tables[0].Rows[0][5].ToString();
                 labelwc.Text = wclabel.Text;
-                labelsph.Text = ds.Tables[0].Rows[0][6].ToString();
-                labelsalary.Text = (Int64.Parse(labelwc.Text) * Int64.Parse(labelsph.Text)).ToString();
+                
                 byte[] picture = (byte[])ds.Tables[0].Rows[0][7];
                 String position = ds.Tables[0].Rows[0][4].ToString();
                 switch (position)
@@ -75,6 +74,8 @@ namespace RMS_TINGY.AllUserControl
                         salaryperhour = 20000;
                         break;
                 }
+                labelsph.Text = salaryperhour.ToString();
+                labelsalary.Text = (Int64.Parse(labelwc.Text) * Int64.Parse(labelsph.Text)).ToString();
                 if (picture == null)
                 {
                     picsDisplay.Image = null;
@@ -89,20 +90,36 @@ namespace RMS_TINGY.AllUserControl
 
         private void btnPlus_Click(object sender, EventArgs e)
         {
-            Int64 temp = Int64.Parse(wclabel.Text);
-            temp++;
-            wclabel.Text = temp.ToString();
-            labelwc.Text = wclabel.Text;
-            labelsalary.Text = (Int64.Parse(labelwc.Text) * salaryperhour).ToString();
+            if (wclabel.Text != "__")
+            {
+                Int64 temp = Int64.Parse(wclabel.Text);
+                temp++;
+                wclabel.Text = temp.ToString();
+                labelwc.Text = wclabel.Text;
+                labelsalary.Text = (Int64.Parse(labelwc.Text) * salaryperhour).ToString();
+            }
+            else
+            {
+                MessageBox.Show("Please pick any staff first!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
         }
 
         private void btnMinus_Click(object sender, EventArgs e)
         {
-            Int64 temp = int.Parse(wclabel.Text);
-            temp--;
-            wclabel.Text = temp.ToString();
-            labelwc.Text = wclabel.Text;
-            labelsalary.Text = (Int64.Parse(labelwc.Text) * salaryperhour).ToString();
+            
+            if (wclabel.Text != "__")
+            {
+                Int64 temp = int.Parse(wclabel.Text);
+                temp--;
+                wclabel.Text = temp.ToString();
+                labelwc.Text = wclabel.Text;
+                labelsalary.Text = (Int64.Parse(labelwc.Text) * salaryperhour).ToString();
+            }
+            else
+            {
+                MessageBox.Show("Please pick any staff first!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
@@ -123,7 +140,27 @@ namespace RMS_TINGY.AllUserControl
             else
             {
                 MessageBox.Show("Invalid WorkCount.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }    
+            }
+            query = "select * from staffDetails";
+            DataSet ds = fn.getData(query);
+            StaffWCGridDataView.DataSource = ds.Tables[0];
+            StaffWCGridDataView.Columns[StaffWCGridDataView.Columns.Count - 1].Visible = false;
+            StaffWCGridDataView.Columns[0].HeaderText = "ID";
+            StaffWCGridDataView.Columns[1].HeaderText = "Name";
+            StaffWCGridDataView.Columns[5].HeaderText = "Work Count";
+            StaffWCGridDataView.Columns[6].HeaderText = "Salary";
+        }
+
+        private void UC_StaffWorkCount_Click(object sender, EventArgs e)
+        {
+            query = "select * from staffDetails";
+            DataSet ds = fn.getData(query);
+            StaffWCGridDataView.DataSource = ds.Tables[0];
+            StaffWCGridDataView.Columns[StaffWCGridDataView.Columns.Count - 1].Visible = false;
+            StaffWCGridDataView.Columns[0].HeaderText = "ID";
+            StaffWCGridDataView.Columns[1].HeaderText = "Name";
+            StaffWCGridDataView.Columns[5].HeaderText = "Work Count";
+            StaffWCGridDataView.Columns[6].HeaderText = "Salary";
         }
     }
 }

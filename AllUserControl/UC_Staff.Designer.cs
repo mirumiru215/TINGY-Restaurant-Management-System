@@ -32,6 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Staff));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.uC_StaffWorkCount1 = new RMS_TINGY.AllUserControl.UC_StaffWorkCount();
+            this.uC_StaffInfo1 = new RMS_TINGY.AllUserControl.UC_StaffInfo();
+            this.uC_StaffAddEmployee1 = new RMS_TINGY.AllUserControl.UC_StaffAddEmployee();
             this.btnCntWrkday = new Guna.UI2.WinForms.Guna2Button();
             this.btnWorkSched = new Guna.UI2.WinForms.Guna2Button();
             this.btnStaffInfo = new Guna.UI2.WinForms.Guna2Button();
@@ -39,9 +42,6 @@
             this.ElipseStaff = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.funcPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
-            this.uC_StaffInfo1 = new RMS_TINGY.AllUserControl.UC_StaffInfo();
-            this.uC_StaffAddEmployee1 = new RMS_TINGY.AllUserControl.UC_StaffAddEmployee();
-            this.uC_StaffWorkCount1 = new RMS_TINGY.AllUserControl.UC_StaffWorkCount();
             this.panel1.SuspendLayout();
             this.funcPanel.SuspendLayout();
             this.SuspendLayout();
@@ -65,6 +65,30 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1088, 708);
             this.panel1.TabIndex = 0;
+            // 
+            // uC_StaffWorkCount1
+            // 
+            this.uC_StaffWorkCount1.BackColor = System.Drawing.Color.White;
+            this.uC_StaffWorkCount1.Location = new System.Drawing.Point(0, 0);
+            this.uC_StaffWorkCount1.Name = "uC_StaffWorkCount1";
+            this.uC_StaffWorkCount1.Size = new System.Drawing.Size(1088, 708);
+            this.uC_StaffWorkCount1.TabIndex = 10;
+            // 
+            // uC_StaffInfo1
+            // 
+            this.uC_StaffInfo1.BackColor = System.Drawing.Color.White;
+            this.uC_StaffInfo1.Location = new System.Drawing.Point(0, 0);
+            this.uC_StaffInfo1.Name = "uC_StaffInfo1";
+            this.uC_StaffInfo1.Size = new System.Drawing.Size(1088, 708);
+            this.uC_StaffInfo1.TabIndex = 9;
+            // 
+            // uC_StaffAddEmployee1
+            // 
+            this.uC_StaffAddEmployee1.BackColor = System.Drawing.Color.White;
+            this.uC_StaffAddEmployee1.Location = new System.Drawing.Point(0, 0);
+            this.uC_StaffAddEmployee1.Name = "uC_StaffAddEmployee1";
+            this.uC_StaffAddEmployee1.Size = new System.Drawing.Size(1088, 708);
+            this.uC_StaffAddEmployee1.TabIndex = 8;
             // 
             // btnCntWrkday
             // 
@@ -144,7 +168,7 @@
             // 
             // ElipseStaff
             // 
-            this.ElipseStaff.BorderRadius = 26;
+            this.ElipseStaff.BorderRadius = 0;
             this.ElipseStaff.TargetControl = this;
             // 
             // funcPanel
@@ -177,30 +201,6 @@
             this.btnBack.Size = new System.Drawing.Size(50, 50);
             this.btnBack.TabIndex = 1;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
-            // uC_StaffInfo1
-            // 
-            this.uC_StaffInfo1.BackColor = System.Drawing.Color.White;
-            this.uC_StaffInfo1.Location = new System.Drawing.Point(0, 0);
-            this.uC_StaffInfo1.Name = "uC_StaffInfo1";
-            this.uC_StaffInfo1.Size = new System.Drawing.Size(1088, 708);
-            this.uC_StaffInfo1.TabIndex = 9;
-            // 
-            // uC_StaffAddEmployee1
-            // 
-            this.uC_StaffAddEmployee1.BackColor = System.Drawing.Color.White;
-            this.uC_StaffAddEmployee1.Location = new System.Drawing.Point(0, 0);
-            this.uC_StaffAddEmployee1.Name = "uC_StaffAddEmployee1";
-            this.uC_StaffAddEmployee1.Size = new System.Drawing.Size(1088, 708);
-            this.uC_StaffAddEmployee1.TabIndex = 8;
-            // 
-            // uC_StaffWorkCount1
-            // 
-            this.uC_StaffWorkCount1.BackColor = System.Drawing.Color.White;
-            this.uC_StaffWorkCount1.Location = new System.Drawing.Point(0, 0);
-            this.uC_StaffWorkCount1.Name = "uC_StaffWorkCount1";
-            this.uC_StaffWorkCount1.Size = new System.Drawing.Size(1088, 708);
-            this.uC_StaffWorkCount1.TabIndex = 10;
             // 
             // UC_Staff
             // 
