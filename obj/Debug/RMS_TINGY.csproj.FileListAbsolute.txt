@@ -112,3 +112,8 @@ E:\Lap Trinh Nang Cao\Temp2\obj\Debug\RMS_TINGY.exe
 E:\Lap Trinh Nang Cao\Temp2\obj\Debug\RMS_TINGY.pdb
 E:\Lap Trinh Nang Cao\Temp2\obj\Debug\RMS_TINGY.AllUserControl.UC_Staff.resources
 E:\Lap Trinh Nang Cao\Temp2\obj\Debug\RMS_TINGY.AllUserControl.UC_StaffAddEmployee.resources
+C:\Users\ngock\OneDrive\Desktop\test\obj\Debug\RMS_TINGY.AllUserControl.UC_Homepage.resources
+C:\Users\ngock\OneDrive\Desktop\test\obj\Debug\RMS_TINGY.AllUserControl.UC_Staff.resources
+C:\Users\ngock\OneDrive\Desktop\test\obj\Debug\RMS_TINGY.AllUserControl.UC_StaffAddEmployee.resources
+C:\Users\ngock\OneDrive\Desktop\test\obj\Debug\RMS_TINGY.AllUserControl.UC_StaffInfo.resources
+C:\Users\ngock\OneDrive\Desktop\test\obj\Debug\RMS_TINGY.AllUserControl.UC_StaffWorkCount.resources

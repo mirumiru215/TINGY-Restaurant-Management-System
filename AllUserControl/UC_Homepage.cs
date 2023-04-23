@@ -79,41 +79,42 @@ namespace RMS_TINGY.AllUserControl
         int bid;
         private void MenuGridDataView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (MenuGridDataView.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
+            if (e.RowIndex >=0 && e.ColumnIndex >=0 && MenuGridDataView.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
             {
                 bid = int.Parse(MenuGridDataView.Rows[e.RowIndex].Cells[0].Value.ToString());
-            }
-            query = "select * from dishDetails where mid = " + bid + "";
-            DataSet ds = fn.getData(query);
-            labelNameDisplay.Text = ds.Tables[0].Rows[0][1].ToString();
-            labelTypeDisplay.Text = ds.Tables[0].Rows[0][2].ToString();
-            labelIngreDisplay.Text = ds.Tables[0].Rows[0][3].ToString();
-            labelTimeDisplay.Text = ds.Tables[0].Rows[0][4].ToString();
-            labelPriceDisplay.Text = ds.Tables[0].Rows[0][5].ToString();
-            byte[] picture = (byte[])ds.Tables[0].Rows[0][6];
-            if (picture == null)
-            {
-                picsDisplay.Image = null;
-            }
-            else
-            {
-                MemoryStream mstream = new MemoryStream(picture);
-                picsDisplay.Image = Image.FromStream(mstream);
+
+                query = "select * from dishDetails where mid = " + bid + "";
+                DataSet ds = fn.getData(query);
+                labelNameDisplay.Text = ds.Tables[0].Rows[0][1].ToString();
+                labelTypeDisplay.Text = ds.Tables[0].Rows[0][2].ToString();
+                labelIngreDisplay.Text = ds.Tables[0].Rows[0][3].ToString();
+                labelTimeDisplay.Text = ds.Tables[0].Rows[0][4].ToString();
+                labelPriceDisplay.Text = ds.Tables[0].Rows[0][5].ToString();
+                byte[] picture = (byte[])ds.Tables[0].Rows[0][6];
+                if (picture == null)
+                {
+                    picsDisplay.Image = null;
+                }
+                else
+                {
+                    MemoryStream mstream = new MemoryStream(picture);
+                    picsDisplay.Image = Image.FromStream(mstream);
+                }
             }
         }
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-            if (searchTextBox.Text != "")
-            {
-                query = "select * from dishDetails where cname like '" + searchTextBox.Text + "%'";
-                DataSet ds = fn.getData(query);
-                MenuGridDataView.DataSource = ds.Tables[0];
-            }
-            else 
+            if (searchTextBox.Text == "Search by name" || searchTextBox.Text == "")
             {
                 searchTextBox.Text = "Search by name";
                 query = "select * from dishDetails";
+                DataSet ds = fn.getData(query);
+                MenuGridDataView.DataSource = ds.Tables[0];
+            }
+            else
+            {
+                query = "select * from dishDetails where cname like '" + searchTextBox.Text + "%'";
                 DataSet ds = fn.getData(query);
                 MenuGridDataView.DataSource = ds.Tables[0];
             }

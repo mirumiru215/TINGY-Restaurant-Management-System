@@ -36,7 +36,7 @@ namespace RMS_TINGY.AllUserControl
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Coming soon . . .", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void UC_BillingStatus_Load(object sender, EventArgs e)

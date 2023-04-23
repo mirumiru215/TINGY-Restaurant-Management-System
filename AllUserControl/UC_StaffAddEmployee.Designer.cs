@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_StaffAddEmployee));
             this.picBoxImg = new Guna.UI2.WinForms.Guna2PictureBox();
             this.picBoxTime = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -47,8 +48,9 @@
             this.labelName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DayOfBirth = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.textPhoneNumber = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textName = new Guna.UI2.WinForms.Guna2TextBox();
             this.picBoxName = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.ElipsAddEmployee = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxType)).BeginInit();
@@ -129,12 +131,13 @@
             this.btnBrowse.FillColor2 = System.Drawing.Color.White;
             this.btnBrowse.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBrowse.ForeColor = System.Drawing.Color.White;
-            this.btnBrowse.Location = new System.Drawing.Point(760, 493);
+            this.btnBrowse.Location = new System.Drawing.Point(711, 493);
             this.btnBrowse.Margin = new System.Windows.Forms.Padding(2);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(110, 30);
             this.btnBrowse.TabIndex = 101;
             this.btnBrowse.Text = "Browse...";
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // picsDisplay
             // 
@@ -170,12 +173,13 @@
             this.btnReset.FillColor = System.Drawing.Color.Black;
             this.btnReset.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.White;
-            this.btnReset.Location = new System.Drawing.Point(799, 563);
+            this.btnReset.Location = new System.Drawing.Point(792, 564);
             this.btnReset.Margin = new System.Windows.Forms.Padding(2);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(120, 36);
             this.btnReset.TabIndex = 98;
             this.btnReset.Text = "RESET";
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnSave
             // 
@@ -189,12 +193,13 @@
             this.btnSave.FillColor2 = System.Drawing.Color.White;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(634, 564);
+            this.btnSave.Location = new System.Drawing.Point(641, 564);
             this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(120, 36);
             this.btnSave.TabIndex = 97;
             this.btnSave.Text = "SAVE";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // textPosition
             // 
@@ -313,27 +318,27 @@
             this.DayOfBirth.TabIndex = 109;
             this.DayOfBirth.UseTransparentBackground = true;
             this.DayOfBirth.Value = new System.DateTime(2023, 4, 23, 2, 7, 56, 324);
-            this.DayOfBirth.ValueChanged += new System.EventHandler(this.guna2DateTimePicker1_ValueChanged);
+            this.DayOfBirth.ValueChanged += new System.EventHandler(this.DayOfBirth_ValueChanged);
             // 
-            // textPhoneNumber
+            // textName
             // 
-            this.textPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textPhoneNumber.DefaultText = "";
-            this.textPhoneNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.textPhoneNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.textPhoneNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textPhoneNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textPhoneNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textPhoneNumber.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textPhoneNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textPhoneNumber.Location = new System.Drawing.Point(162, 260);
-            this.textPhoneNumber.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textPhoneNumber.Name = "textPhoneNumber";
-            this.textPhoneNumber.PasswordChar = '\0';
-            this.textPhoneNumber.PlaceholderText = "";
-            this.textPhoneNumber.SelectedText = "";
-            this.textPhoneNumber.Size = new System.Drawing.Size(280, 36);
-            this.textPhoneNumber.TabIndex = 110;
+            this.textName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textName.DefaultText = "";
+            this.textName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textName.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textName.Location = new System.Drawing.Point(162, 260);
+            this.textName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.textName.Name = "textName";
+            this.textName.PasswordChar = '\0';
+            this.textName.PlaceholderText = "";
+            this.textName.SelectedText = "";
+            this.textName.Size = new System.Drawing.Size(280, 36);
+            this.textName.TabIndex = 110;
             // 
             // picBoxName
             // 
@@ -346,12 +351,16 @@
             this.picBoxName.TabIndex = 103;
             this.picBoxName.TabStop = false;
             // 
+            // ElipsAddEmployee
+            // 
+            this.ElipsAddEmployee.BorderRadius = 0;
+            // 
             // UC_StaffAddEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.textPhoneNumber);
+            this.Controls.Add(this.textName);
             this.Controls.Add(this.DayOfBirth);
             this.Controls.Add(this.picBoxImg);
             this.Controls.Add(this.picBoxTime);
@@ -405,7 +414,8 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel labelName;
         private Guna.UI2.WinForms.Guna2HtmlLabel label;
         private Guna.UI2.WinForms.Guna2DateTimePicker DayOfBirth;
-        private Guna.UI2.WinForms.Guna2TextBox textPhoneNumber;
+        private Guna.UI2.WinForms.Guna2TextBox textName;
         private Guna.UI2.WinForms.Guna2PictureBox picBoxName;
+        private Guna.UI2.WinForms.Guna2Elipse ElipsAddEmployee;
     }
 }

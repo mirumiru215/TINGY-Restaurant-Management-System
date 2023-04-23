@@ -13,8 +13,6 @@ namespace RMS_TINGY.AllUserControl
 {
     public partial class UC_Menu : UserControl
     {
-        SQLControl fn = new SQLControl();
-        String query;
         public UC_Menu()
         {
             InitializeComponent();

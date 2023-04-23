@@ -96,6 +96,18 @@
     <Compile Include="AllUserControl\UC_StaffAddEmployee.Designer.cs">
       <DependentUpon>UC_StaffAddEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllUserControl\UC_StaffInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllUserControl\UC_StaffInfo.Designer.cs">
+      <DependentUpon>UC_StaffInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllUserControl\UC_StaffWorkCount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllUserControl\UC_StaffWorkCount.Designer.cs">
+      <DependentUpon>UC_StaffWorkCount.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllUserControl\UC_Statistic.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -146,6 +158,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllUserControl\UC_StaffAddEmployee.resx">
       <DependentUpon>UC_StaffAddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllUserControl\UC_StaffInfo.resx">
+      <DependentUpon>UC_StaffInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllUserControl\UC_StaffWorkCount.resx">
+      <DependentUpon>UC_StaffWorkCount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllUserControl\UC_Statistic.resx">
       <DependentUpon>UC_Statistic.cs</DependentUpon>

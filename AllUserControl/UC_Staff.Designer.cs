@@ -39,6 +39,9 @@
             this.ElipseStaff = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.funcPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
+            this.uC_StaffInfo1 = new RMS_TINGY.AllUserControl.UC_StaffInfo();
+            this.uC_StaffAddEmployee1 = new RMS_TINGY.AllUserControl.UC_StaffAddEmployee();
+            this.uC_StaffWorkCount1 = new RMS_TINGY.AllUserControl.UC_StaffWorkCount();
             this.panel1.SuspendLayout();
             this.funcPanel.SuspendLayout();
             this.SuspendLayout();
@@ -51,6 +54,9 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.uC_StaffWorkCount1);
+            this.panel1.Controls.Add(this.uC_StaffInfo1);
+            this.panel1.Controls.Add(this.uC_StaffAddEmployee1);
             this.panel1.Controls.Add(this.btnCntWrkday);
             this.panel1.Controls.Add(this.btnWorkSched);
             this.panel1.Controls.Add(this.btnStaffInfo);
@@ -77,6 +83,7 @@
             this.btnCntWrkday.PressedColor = System.Drawing.Color.Transparent;
             this.btnCntWrkday.Size = new System.Drawing.Size(452, 79);
             this.btnCntWrkday.TabIndex = 7;
+            this.btnCntWrkday.Click += new System.EventHandler(this.btnCntWrkday_Click);
             // 
             // btnWorkSched
             // 
@@ -95,6 +102,7 @@
             this.btnWorkSched.PressedColor = System.Drawing.Color.Transparent;
             this.btnWorkSched.Size = new System.Drawing.Size(451, 81);
             this.btnWorkSched.TabIndex = 6;
+            this.btnWorkSched.Click += new System.EventHandler(this.btnWorkSched_Click);
             // 
             // btnStaffInfo
             // 
@@ -113,6 +121,7 @@
             this.btnStaffInfo.PressedColor = System.Drawing.Color.Transparent;
             this.btnStaffInfo.Size = new System.Drawing.Size(452, 87);
             this.btnStaffInfo.TabIndex = 5;
+            this.btnStaffInfo.Click += new System.EventHandler(this.btnStaffInfo_Click);
             // 
             // btnAddEmployee
             // 
@@ -131,6 +140,7 @@
             this.btnAddEmployee.PressedColor = System.Drawing.Color.White;
             this.btnAddEmployee.Size = new System.Drawing.Size(436, 81);
             this.btnAddEmployee.TabIndex = 4;
+            this.btnAddEmployee.Click += new System.EventHandler(this.btnAddEmployee_Click);
             // 
             // ElipseStaff
             // 
@@ -166,6 +176,31 @@
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(50, 50);
             this.btnBack.TabIndex = 1;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // uC_StaffInfo1
+            // 
+            this.uC_StaffInfo1.BackColor = System.Drawing.Color.White;
+            this.uC_StaffInfo1.Location = new System.Drawing.Point(0, 0);
+            this.uC_StaffInfo1.Name = "uC_StaffInfo1";
+            this.uC_StaffInfo1.Size = new System.Drawing.Size(1088, 708);
+            this.uC_StaffInfo1.TabIndex = 9;
+            // 
+            // uC_StaffAddEmployee1
+            // 
+            this.uC_StaffAddEmployee1.BackColor = System.Drawing.Color.White;
+            this.uC_StaffAddEmployee1.Location = new System.Drawing.Point(0, 0);
+            this.uC_StaffAddEmployee1.Name = "uC_StaffAddEmployee1";
+            this.uC_StaffAddEmployee1.Size = new System.Drawing.Size(1088, 708);
+            this.uC_StaffAddEmployee1.TabIndex = 8;
+            // 
+            // uC_StaffWorkCount1
+            // 
+            this.uC_StaffWorkCount1.BackColor = System.Drawing.Color.White;
+            this.uC_StaffWorkCount1.Location = new System.Drawing.Point(0, 0);
+            this.uC_StaffWorkCount1.Name = "uC_StaffWorkCount1";
+            this.uC_StaffWorkCount1.Size = new System.Drawing.Size(1088, 708);
+            this.uC_StaffWorkCount1.TabIndex = 10;
             // 
             // UC_Staff
             // 
@@ -176,6 +211,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "UC_Staff";
             this.Size = new System.Drawing.Size(1088, 768);
+            this.Load += new System.EventHandler(this.UC_Staff_Load);
             this.panel1.ResumeLayout(false);
             this.funcPanel.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -192,5 +228,8 @@
         private Guna.UI2.WinForms.Guna2Elipse ElipseStaff;
         private Guna.UI2.WinForms.Guna2Panel funcPanel;
         private Guna.UI2.WinForms.Guna2Button btnBack;
+        private UC_StaffAddEmployee uC_StaffAddEmployee1;
+        private UC_StaffInfo uC_StaffInfo1;
+        private UC_StaffWorkCount uC_StaffWorkCount1;
     }
 }

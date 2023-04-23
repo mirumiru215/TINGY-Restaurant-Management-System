@@ -78,3 +78,17 @@ dprice bigint not null
 
 select * from TableBill6
 GO
+
+create table staffDetails(
+staffid int NOT NULL IDENTITY(1,1) primary key,
+sname varchar(250) not null,
+dom varchar(250) not null,
+phonenum varchar(250) not null,
+position varchar(250) not null,
+workcount bigint not null,
+salary bigint not null,
+picture image not null
+);
+
+select * from staffDetails
+GO
