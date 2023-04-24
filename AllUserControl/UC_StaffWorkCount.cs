@@ -107,8 +107,16 @@ namespace RMS_TINGY.AllUserControl
 
         private void btnMinus_Click(object sender, EventArgs e)
         {
-            
-            if (wclabel.Text != "__")
+            if (wclabel.Text == "__")
+            {
+                MessageBox.Show("Please pick any staff first!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (Int64.Parse(wclabel.Text) < 1)
+            {
+                MessageBox.Show("Workcount can't be les than zero", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else
             {
                 Int64 temp = int.Parse(wclabel.Text);
                 temp--;
@@ -116,15 +124,11 @@ namespace RMS_TINGY.AllUserControl
                 labelwc.Text = wclabel.Text;
                 labelsalary.Text = (Int64.Parse(labelwc.Text) * salaryperhour).ToString();
             }
-            else
-            {
-                MessageBox.Show("Please pick any staff first!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            if (Int64.Parse(wclabel.Text) >= 1)
+            if (Int64.Parse(wclabel.Text) >= 0)
             {
                 Int64 workcount = Int64.Parse(wclabel.Text);
                 Int64 salary = Int64.Parse(labelsalary.Text);
@@ -133,10 +137,10 @@ namespace RMS_TINGY.AllUserControl
                 //query = "update staffDetails set salary = " + salary + " where staffid = " + bid + "";
                 //fn.setData(query);
             }
-            else if (Int64.Parse(wclabel.Text) == 0)
-            {
-                MessageBox.Show("Nothing changed.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            //else if (Int64.Parse(wclabel.Text) == 0)
+            //{
+            //    MessageBox.Show("Nothing changed.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
             else
             {
                 MessageBox.Show("Invalid WorkCount.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -161,6 +165,11 @@ namespace RMS_TINGY.AllUserControl
             StaffWCGridDataView.Columns[1].HeaderText = "Name";
             StaffWCGridDataView.Columns[5].HeaderText = "Work Count";
             StaffWCGridDataView.Columns[6].HeaderText = "Salary";
+        }
+
+        private void btnDisburse_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Coming soon . . .", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

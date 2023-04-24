@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.UCPanel = new System.Windows.Forms.Panel();
-            this.uC_Order1 = new RMS_TINGY.AllUserControl.UC_Order();
-            this.uC_Menu1 = new RMS_TINGY.AllUserControl.UC_Menu();
             this.sidebarPanel = new System.Windows.Forms.Panel();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.btnStaff = new Guna.UI2.WinForms.Guna2Button();
@@ -43,6 +41,9 @@
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.uC_Staff1 = new RMS_TINGY.AllUserControl.UC_Staff();
+            this.uC_Order1 = new RMS_TINGY.AllUserControl.UC_Order();
+            this.uC_Menu1 = new RMS_TINGY.AllUserControl.UC_Menu();
+            this.uC_Statistic1 = new RMS_TINGY.AllUserControl.UC_Statistic();
             this.UCPanel.SuspendLayout();
             this.sidebarPanel.SuspendLayout();
             this.SuspendLayout();
@@ -50,6 +51,7 @@
             // UCPanel
             // 
             this.UCPanel.BackColor = System.Drawing.Color.White;
+            this.UCPanel.Controls.Add(this.uC_Statistic1);
             this.UCPanel.Controls.Add(this.uC_Staff1);
             this.UCPanel.Controls.Add(this.uC_Order1);
             this.UCPanel.Controls.Add(this.uC_Menu1);
@@ -58,28 +60,6 @@
             this.UCPanel.Name = "UCPanel";
             this.UCPanel.Size = new System.Drawing.Size(1088, 768);
             this.UCPanel.TabIndex = 1;
-            this.UCPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.UCPanel_Paint);
-            // 
-            // uC_Order1
-            // 
-            this.uC_Order1.BackColor = System.Drawing.Color.White;
-            this.uC_Order1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uC_Order1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Order1.Margin = new System.Windows.Forms.Padding(6);
-            this.uC_Order1.Name = "uC_Order1";
-            this.uC_Order1.Size = new System.Drawing.Size(1088, 768);
-            this.uC_Order1.TabIndex = 1;
-            this.uC_Order1.Load += new System.EventHandler(this.uC_Order1_Load);
-            // 
-            // uC_Menu1
-            // 
-            this.uC_Menu1.BackColor = System.Drawing.Color.White;
-            this.uC_Menu1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Menu1.Margin = new System.Windows.Forms.Padding(4);
-            this.uC_Menu1.Name = "uC_Menu1";
-            this.uC_Menu1.Size = new System.Drawing.Size(1088, 768);
-            this.uC_Menu1.TabIndex = 0;
-            this.uC_Menu1.Load += new System.EventHandler(this.uC_Menu1_Load);
             // 
             // sidebarPanel
             // 
@@ -94,7 +74,6 @@
             this.sidebarPanel.Name = "sidebarPanel";
             this.sidebarPanel.Size = new System.Drawing.Size(272, 768);
             this.sidebarPanel.TabIndex = 0;
-            this.sidebarPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.sidebarPanel_Paint);
             // 
             // btnExit
             // 
@@ -183,7 +162,6 @@
             this.logoPanel.Name = "logoPanel";
             this.logoPanel.Size = new System.Drawing.Size(220, 100);
             this.logoPanel.TabIndex = 0;
-            this.logoPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.logoPanel_Paint);
             // 
             // btnMenu
             // 
@@ -226,6 +204,33 @@
             this.uC_Staff1.Size = new System.Drawing.Size(1088, 768);
             this.uC_Staff1.TabIndex = 2;
             // 
+            // uC_Order1
+            // 
+            this.uC_Order1.BackColor = System.Drawing.Color.White;
+            this.uC_Order1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uC_Order1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Order1.Margin = new System.Windows.Forms.Padding(6);
+            this.uC_Order1.Name = "uC_Order1";
+            this.uC_Order1.Size = new System.Drawing.Size(1088, 768);
+            this.uC_Order1.TabIndex = 1;
+            // 
+            // uC_Menu1
+            // 
+            this.uC_Menu1.BackColor = System.Drawing.Color.White;
+            this.uC_Menu1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Menu1.Margin = new System.Windows.Forms.Padding(4);
+            this.uC_Menu1.Name = "uC_Menu1";
+            this.uC_Menu1.Size = new System.Drawing.Size(1088, 768);
+            this.uC_Menu1.TabIndex = 0;
+            // 
+            // uC_Statistic1
+            // 
+            this.uC_Statistic1.BackColor = System.Drawing.Color.White;
+            this.uC_Statistic1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Statistic1.Name = "uC_Statistic1";
+            this.uC_Statistic1.Size = new System.Drawing.Size(1088, 768);
+            this.uC_Statistic1.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -261,6 +266,7 @@
         private AllUserControl.UC_Order uC_Order1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private AllUserControl.UC_Staff uC_Staff1;
+        private AllUserControl.UC_Statistic uC_Statistic1;
     }
 }
 

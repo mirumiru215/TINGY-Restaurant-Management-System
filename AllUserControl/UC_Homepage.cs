@@ -24,44 +24,6 @@ namespace RMS_TINGY.AllUserControl
         {
             InitializeComponent();
         }
-
-        private void MenuDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void picsDisplay_Click(object sender, EventArgs e) { }
-
-        private void labelName_Click(object sender, EventArgs e) { }
-
-        private void labelType_Click(object sender, EventArgs e) { }
-
-        private void labelPrice_Click(object sender, EventArgs e) { }
-
-        private void labelIngredient_Click(object sender, EventArgs e) { }
-
-        private void labelServableTime_Click(object sender, EventArgs e) { }
-
-        private void labelNameDisplay_Click(object sender, EventArgs e) { }
-
-        private void labelTypeDisplay_Click(object sender, EventArgs e) { }
-
-        private void labelPriceDisplay_Click(object sender, EventArgs e) { }
-
-        private void labelServableTimeDisplay_Click(object sender, EventArgs e) { }
-
-        private void labelIngredientDisplay_Click(object sender, EventArgs e) { }
-
-        private void picBoxName_Click(object sender, EventArgs e) { }
-
-        private void picBoxIngre_Click(object sender, EventArgs e) { }
-
-        private void picBoxType_Click(object sender, EventArgs e) { }
-
-        private void picBoxTime_Click(object sender, EventArgs e) { }
-
-        private void picBoxMoney_Click(object sender, EventArgs e) { }
-
         private void UC_Homepage_Load(object sender, EventArgs e)
         {
             query = "select * from dishDetails";
@@ -123,6 +85,18 @@ namespace RMS_TINGY.AllUserControl
         private void searchTextBox_Click(object sender, EventArgs e)
         {
             searchTextBox.Text = string.Empty;
+        }
+
+        private void searchTextBox_TextChanged(object sender, EventArgs e)
+        {
+            query = "select * from dishDetails where cname like '" + searchTextBox.Text + "%'";
+            DataSet ds = fn.getData(query);
+            MenuGridDataView.DataSource = ds.Tables[0];
+        }
+
+        private void UC_Homepage_Click(object sender, EventArgs e)
+        {
+           //searchTextBox.Text = "Search by name";
         }
     }
 }

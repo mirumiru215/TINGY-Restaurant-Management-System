@@ -121,7 +121,7 @@
   <data name="picStatistic.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACNFSURBVHhe7d19
+        vwAADr8BOAVTJAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACNFSURBVHhe7d19
         sPd5Xddx9haQRVkXSIJAUIk78S7HaIgci3BMLQkzSRlQpzTQxqnGUUulMcUZp2yGm5YyCSQtMyzvkiQT
         MRI1ZEAXQVdMlI0VXG7kZpel3p+BM3vttZ/rus77c36/7/v7+X4fj5nnPzt6Xb89v8O+X+ec3znnbgCQ
         dHX0pOgF0a9EN0cfiv7fBvpAdFP0qui7o8+JLo8AYLeujb4nelfUO55b7a3Rs6KrIgDYlXYA3xH1DuRe
@@ -277,5 +277,8 @@
   </data>
   <metadata name="ElipseStatistic.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>32</value>
   </metadata>
 </root>

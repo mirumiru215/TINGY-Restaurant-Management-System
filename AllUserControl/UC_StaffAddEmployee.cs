@@ -46,30 +46,12 @@ namespace RMS_TINGY.AllUserControl
                 String phonenum = textPhone.Text;
                 String position = textPosition.Text;
                 Int64 workcount = 0;
-                Int64 salary;
-                switch (position)
-                {
-                    case "Chef":
-                        salary = 100000;
-                        break;
-                    case "Waiter":
-                        salary = 70000;
-                        break;
-                    case "Busser":
-                        salary = 50000;
-                        break;
-                    case "Laborer":
-                        salary = 30000;
-                        break;
-                    default:
-                        salary = 20000;
-                        break;
-                }    
+                Int64 salary = 0;   
                 byte[] images = null;
                 FileStream streem = new FileStream(imgLocation, FileMode.Open, FileAccess.Read);
                 BinaryReader brs = new BinaryReader(streem);
                 images = brs.ReadBytes((int)streem.Length);
-                query = "insert into staffDetails (sname,dom,phonenum,position,workcount,salary,picture) values('" + sname + "','" + dom + "','" + phonenum + "','" + position + "'," + workcount + "," + salary*workcount + ",@images)";
+                query = "insert into staffDetails (sname,dom,phonenum,position,workcount,salary,picture) values('" + sname + "','" + dom + "','" + phonenum + "','" + position + "'," + workcount + "," + salary + ",@images)";
                 fn.setData(query, images);
             }
             else

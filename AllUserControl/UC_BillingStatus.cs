@@ -52,7 +52,7 @@ namespace RMS_TINGY.AllUserControl
             //DataSet ds = fn.getData(query);
             //BillStatusDataView.DataSource = ds.Tables[0];
         }
-
+        Int64 totalPriceforcloseBill = 0;
         private void UC_BillingStatus_VisibleChanged(object sender, EventArgs e)
         {
             string number = Number;
@@ -96,11 +96,80 @@ namespace RMS_TINGY.AllUserControl
                 totalP += price;
             }
             totalprice.Text = totalP.ToString();
+            totalPriceforcloseBill = totalP;
         }
 
         private void BillStatusDataView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            string number = Number;
+            tbnlabel.Text = number;
+            if (MessageBox.Show("Are you sure that you want to close the bill?", "Confirmation",MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            {
+                DateTime currenttime = DateTime.Now;
+                int ngay = currenttime.Day;
+                int thang = currenttime.Month;
+                int nam = currenttime.Year;
+                //query = "insert into statisticBill (tablenumber,totalprice,ngay,thang,nam) values(" + number + "," + totalPriceforcloseBill + "," + ngay + "," + thang + "," + nam + ")";
+                //fn.setData(query);
+                string query2;
+                switch (number)
+                {
+                    case "1":
+                        query2 = "delete  from TableBill1";
+                        break;
+                    case "2":
+                        query2 = "delete from TableBill2";
+                        break;
+                    case "3":
+                        query2 = "delete  from TableBill3";
+                        break;
+                    case "4":
+                        query2 = "delete from TableBill4";
+                        break;
+                    case "5":
+                        query2 = "delete  from TableBill5";
+                        break;
+                    case "6":
+                        query2 = "delete from TableBill6";
+                        break;
+                    default:
+                        query2 = "delete from TableBill1";
+                        break;
+                }
+                query = "insert into statisticBill (tablenumber,totalprice,ngay,thang,nam) values(" + number + "," + totalPriceforcloseBill + "," + ngay + "," + thang + "," + nam + ") " + query2 + "";
+                fn.setData(query);
+                switch (number)
+                {
+                    case "1":
+                        query = "select * from TableBill1";
+                        break;
+                    case "2":
+                        query = "select * from TableBill2";
+                        break;
+                    case "3":
+                        query = "select * from TableBill3";
+                        break;
+                    case "4":
+                        query = "select * from TableBill4";
+                        break;
+                    case "5":
+                        query = "select * from TableBill5";
+                        break;
+                    case "6":
+                        query = "select * from TableBill6";
+                        break;
+                    default:
+                        query = "select * from TableBill1";
+                        break;
+                }
+                DataSet ds = fn.getData(query);
+                BillStatusDataView.DataSource = ds.Tables[0];
+            }
         }
     }
 }

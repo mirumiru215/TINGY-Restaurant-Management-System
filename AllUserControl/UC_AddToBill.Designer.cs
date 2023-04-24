@@ -366,6 +366,7 @@
             this.Controls.Add(this.label);
             this.Name = "UC_AddToBill";
             this.Size = new System.Drawing.Size(800, 712);
+            this.VisibleChanged += new System.EventHandler(this.UC_AddToBill_Enter);
             this.Enter += new System.EventHandler(this.UC_AddToBill_Enter);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxAdd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AddToBillDataView)).EndInit();

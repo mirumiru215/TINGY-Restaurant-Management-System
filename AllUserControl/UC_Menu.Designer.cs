@@ -122,6 +122,7 @@
             this.uC_Homepage1.Name = "uC_Homepage1";
             this.uC_Homepage1.Size = new System.Drawing.Size(1088, 768);
             this.uC_Homepage1.TabIndex = 0;
+            this.uC_Homepage1.VisibleChanged += new System.EventHandler(this.UC_Menu_Load);
             // 
             // UC_Menu
             // 

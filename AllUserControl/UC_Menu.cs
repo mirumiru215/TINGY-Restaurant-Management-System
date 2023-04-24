@@ -22,18 +22,8 @@ namespace RMS_TINGY.AllUserControl
         {
             btnBack.Visible = false;
             uC_Add1.Visible = false;
-            MenuPanel.Visible = true;
-            //query = "select * from dishDetails";
-            //DataSet ds = fn.getData(query);
-            //MenuDataView.DataSource = ds.Tables[0];
-            //MenuDataView.Columns[MenuDataView.Columns.Count - 1].Visible = false;
-            //MenuDataView.Columns[0].HeaderText = "ID";
-            //MenuDataView.Columns[1].HeaderText = "Name";
-            //MenuDataView.Columns[2].HeaderText = "Type";
-            //MenuDataView.Columns[3].HeaderText = "Ingredient";
-            //MenuDataView.Columns[4].HeaderText = "Servable Time";
-            //MenuDataView.Columns[5].HeaderText = "Price";
-
+            uC_Homepage1.Visible = true;
+            uC_Homepage1.BringToFront();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -58,16 +48,6 @@ namespace RMS_TINGY.AllUserControl
 
         private void UC_Menu_Enter(object sender, EventArgs e)
         {
-            //query = "select * from dishDetails";
-            //DataSet ds = fn.getData(query);
-            //MenuDataView.DataSource = ds.Tables[0];
-            //MenuDataView.Columns[MenuDataView.Columns.Count - 1].Visible = false;
-            //MenuDataView.Columns[0].HeaderText = "ID";
-            //MenuDataView.Columns[1].HeaderText = "Name";
-            //MenuDataView.Columns[2].HeaderText = "Type";
-            //MenuDataView.Columns[3].HeaderText = "Ingredient";
-            //MenuDataView.Columns[4].HeaderText = "Servable Time";
-            //MenuDataView.Columns[5].HeaderText = "Price";
         }
 
         private void MenuPanel_Enter(object sender, EventArgs e)

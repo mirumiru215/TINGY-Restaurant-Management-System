@@ -90,5 +90,14 @@ salary bigint not null,
 picture image not null
 );
 
-select * from staffDetails
+create table statisticBill(
+billid int NOT NULL IDENTITY(1,1) primary key,
+tablenumber bigint not null,
+totalprice bigint not null,
+ngay bigint not null,
+thang bigint not null,
+nam bigint not null
+);
+
+select * from statisticBill
 GO

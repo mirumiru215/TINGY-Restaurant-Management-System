@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Homepage));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.picsDisplay = new Guna.UI2.WinForms.Guna2PictureBox();
             this.labelName = new System.Windows.Forms.Label();
             this.labelType = new System.Windows.Forms.Label();
@@ -53,6 +53,7 @@
             this.searchButton = new Guna.UI2.WinForms.Guna2Button();
             this.homepageElipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.MenuGridDataView = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.label = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.picsDisplay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxIngre)).BeginInit();
@@ -72,7 +73,6 @@
             this.picsDisplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picsDisplay.TabIndex = 1;
             this.picsDisplay.TabStop = false;
-            this.picsDisplay.Click += new System.EventHandler(this.picsDisplay_Click);
             // 
             // labelName
             // 
@@ -84,7 +84,6 @@
             this.labelName.TabIndex = 2;
             this.labelName.Text = "Name:";
             this.labelName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelName.Click += new System.EventHandler(this.labelName_Click);
             // 
             // labelType
             // 
@@ -96,7 +95,6 @@
             this.labelType.TabIndex = 3;
             this.labelType.Text = "Type:";
             this.labelType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelType.Click += new System.EventHandler(this.labelType_Click);
             // 
             // labelPrice
             // 
@@ -108,7 +106,6 @@
             this.labelPrice.TabIndex = 4;
             this.labelPrice.Text = "Price:";
             this.labelPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelPrice.Click += new System.EventHandler(this.labelPrice_Click);
             // 
             // labelIngre
             // 
@@ -120,7 +117,6 @@
             this.labelIngre.TabIndex = 5;
             this.labelIngre.Text = "Ingredient:";
             this.labelIngre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelIngre.Click += new System.EventHandler(this.labelIngredient_Click);
             // 
             // labelTime
             // 
@@ -132,7 +128,6 @@
             this.labelTime.TabIndex = 6;
             this.labelTime.Text = "Servable Time:";
             this.labelTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelTime.Click += new System.EventHandler(this.labelServableTime_Click);
             // 
             // labelNameDisplay
             // 
@@ -143,7 +138,6 @@
             this.labelNameDisplay.Size = new System.Drawing.Size(38, 21);
             this.labelNameDisplay.TabIndex = 7;
             this.labelNameDisplay.Text = "____";
-            this.labelNameDisplay.Click += new System.EventHandler(this.labelNameDisplay_Click);
             // 
             // labelTypeDisplay
             // 
@@ -154,7 +148,6 @@
             this.labelTypeDisplay.Size = new System.Drawing.Size(38, 21);
             this.labelTypeDisplay.TabIndex = 8;
             this.labelTypeDisplay.Text = "____";
-            this.labelTypeDisplay.Click += new System.EventHandler(this.labelTypeDisplay_Click);
             // 
             // labelPriceDisplay
             // 
@@ -165,7 +158,6 @@
             this.labelPriceDisplay.Size = new System.Drawing.Size(38, 21);
             this.labelPriceDisplay.TabIndex = 9;
             this.labelPriceDisplay.Text = "____";
-            this.labelPriceDisplay.Click += new System.EventHandler(this.labelPriceDisplay_Click);
             // 
             // labelTimeDisplay
             // 
@@ -176,7 +168,6 @@
             this.labelTimeDisplay.Size = new System.Drawing.Size(38, 21);
             this.labelTimeDisplay.TabIndex = 10;
             this.labelTimeDisplay.Text = "____";
-            this.labelTimeDisplay.Click += new System.EventHandler(this.labelServableTimeDisplay_Click);
             // 
             // labelIngreDisplay
             // 
@@ -187,7 +178,6 @@
             this.labelIngreDisplay.Size = new System.Drawing.Size(38, 21);
             this.labelIngreDisplay.TabIndex = 11;
             this.labelIngreDisplay.Text = "____";
-            this.labelIngreDisplay.Click += new System.EventHandler(this.labelIngredientDisplay_Click);
             // 
             // picBoxName
             // 
@@ -199,7 +189,6 @@
             this.picBoxName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxName.TabIndex = 81;
             this.picBoxName.TabStop = false;
-            this.picBoxName.Click += new System.EventHandler(this.picBoxName_Click);
             // 
             // picBoxIngre
             // 
@@ -211,7 +200,6 @@
             this.picBoxIngre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxIngre.TabIndex = 82;
             this.picBoxIngre.TabStop = false;
-            this.picBoxIngre.Click += new System.EventHandler(this.picBoxIngre_Click);
             // 
             // picBoxType
             // 
@@ -224,7 +212,6 @@
             this.picBoxType.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxType.TabIndex = 83;
             this.picBoxType.TabStop = false;
-            this.picBoxType.Click += new System.EventHandler(this.picBoxType_Click);
             // 
             // picBoxTime
             // 
@@ -236,7 +223,6 @@
             this.picBoxTime.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxTime.TabIndex = 84;
             this.picBoxTime.TabStop = false;
-            this.picBoxTime.Click += new System.EventHandler(this.picBoxTime_Click);
             // 
             // picBoxMoney
             // 
@@ -248,7 +234,6 @@
             this.picBoxMoney.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxMoney.TabIndex = 85;
             this.picBoxMoney.TabStop = false;
-            this.picBoxMoney.Click += new System.EventHandler(this.picBoxMoney_Click);
             // 
             // searchTextBox
             // 
@@ -269,6 +254,7 @@
             this.searchTextBox.SelectedText = "";
             this.searchTextBox.Size = new System.Drawing.Size(250, 30);
             this.searchTextBox.TabIndex = 86;
+            this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
             this.searchTextBox.Click += new System.EventHandler(this.searchTextBox_Click);
             // 
             // searchButton
@@ -299,24 +285,24 @@
             this.MenuGridDataView.AllowUserToDeleteRows = false;
             this.MenuGridDataView.AllowUserToResizeColumns = false;
             this.MenuGridDataView.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.MenuGridDataView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.MenuGridDataView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.MenuGridDataView.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.MenuGridDataView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.MenuGridDataView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.MenuGridDataView.DefaultCellStyle = dataGridViewCellStyle15;
             this.MenuGridDataView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.MenuGridDataView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.MenuGridDataView.Location = new System.Drawing.Point(0, 100);
@@ -349,11 +335,25 @@
             this.MenuGridDataView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.MenuGridDataView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.MenuGridDataView_CellClick);
             // 
+            // label
+            // 
+            this.label.AutoSize = false;
+            this.label.BackColor = System.Drawing.Color.Transparent;
+            this.label.Font = new System.Drawing.Font("Segoe UI", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.ForeColor = System.Drawing.Color.Black;
+            this.label.Location = new System.Drawing.Point(32, 20);
+            this.label.Margin = new System.Windows.Forms.Padding(2);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(348, 53);
+            this.label.TabIndex = 113;
+            this.label.Text = "Menu Details";
+            // 
             // UC_Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label);
             this.Controls.Add(this.MenuGridDataView);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.searchTextBox);
@@ -376,6 +376,8 @@
             this.Name = "UC_Homepage";
             this.Size = new System.Drawing.Size(1088, 768);
             this.Load += new System.EventHandler(this.UC_Homepage_Load);
+            this.VisibleChanged += new System.EventHandler(this.UC_Homepage_Load);
+            this.Click += new System.EventHandler(this.UC_Homepage_Click);
             this.Enter += new System.EventHandler(this.UC_Homepage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picsDisplay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxName)).EndInit();
@@ -410,5 +412,6 @@
         private Guna.UI2.WinForms.Guna2Button searchButton;
         private Guna.UI2.WinForms.Guna2Elipse homepageElipse;
         private Guna.UI2.WinForms.Guna2DataGridView MenuGridDataView;
+        private Guna.UI2.WinForms.Guna2HtmlLabel label;
     }
 }

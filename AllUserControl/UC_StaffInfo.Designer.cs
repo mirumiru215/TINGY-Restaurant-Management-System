@@ -51,6 +51,7 @@
             this.picCalendar = new Guna.UI2.WinForms.Guna2PictureBox();
             this.picBoxImg = new Guna.UI2.WinForms.Guna2PictureBox();
             this.ElipseStaffInfo = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.label = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.StaffGridDataView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picsDisplay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxName)).BeginInit();
@@ -311,11 +312,25 @@
             this.ElipseStaffInfo.BorderRadius = 0;
             this.ElipseStaffInfo.TargetControl = this;
             // 
+            // label
+            // 
+            this.label.AutoSize = false;
+            this.label.BackColor = System.Drawing.Color.Transparent;
+            this.label.Font = new System.Drawing.Font("Segoe UI", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.ForeColor = System.Drawing.Color.Black;
+            this.label.Location = new System.Drawing.Point(33, 21);
+            this.label.Margin = new System.Windows.Forms.Padding(2);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(348, 53);
+            this.label.TabIndex = 112;
+            this.label.Text = "Staff Infomation";
+            // 
             // UC_StaffInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label);
             this.Controls.Add(this.picBoxImg);
             this.Controls.Add(this.picBoxTime);
             this.Controls.Add(this.picBoxType);
@@ -336,6 +351,7 @@
             this.Name = "UC_StaffInfo";
             this.Size = new System.Drawing.Size(1088, 708);
             this.Load += new System.EventHandler(this.UC_StaffInfo_Load);
+            this.VisibleChanged += new System.EventHandler(this.UC_StaffInfo_Load);
             this.Enter += new System.EventHandler(this.UC_StaffInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.StaffGridDataView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picsDisplay)).EndInit();
@@ -369,5 +385,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox picCalendar;
         private Guna.UI2.WinForms.Guna2PictureBox picBoxImg;
         private Guna.UI2.WinForms.Guna2Elipse ElipseStaffInfo;
+        private Guna.UI2.WinForms.Guna2HtmlLabel label;
     }
 }

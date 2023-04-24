@@ -42,6 +42,7 @@
             this.BillStatusDataView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.tbnlabel = new System.Windows.Forms.Label();
             this.totalprice = new System.Windows.Forms.Label();
+            this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.BillStatusDataView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,7 +90,7 @@
             this.btnMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.btnMenu.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenu.ForeColor = System.Drawing.Color.Black;
-            this.btnMenu.Location = new System.Drawing.Point(55, 620);
+            this.btnMenu.Location = new System.Drawing.Point(54, 582);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(175, 30);
             this.btnMenu.TabIndex = 2;
@@ -191,12 +192,33 @@
             this.totalprice.TabIndex = 85;
             this.totalprice.Text = "____";
             // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.BorderRadius = 15;
+            this.btnClose.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnClose.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(113)))), ((int)(((byte)(127)))));
+            this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClose.FillColor = System.Drawing.Color.Red;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.Black;
+            this.btnClose.Location = new System.Drawing.Point(54, 645);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(175, 30);
+            this.btnClose.TabIndex = 86;
+            this.btnClose.Text = "Close Bill";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // UC_BillingStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.totalprice);
             this.Controls.Add(this.tbnlabel);
             this.Controls.Add(this.BillStatusDataView);
@@ -229,5 +251,6 @@
         private Guna.UI2.WinForms.Guna2DataGridView BillStatusDataView;
         private System.Windows.Forms.Label tbnlabel;
         private System.Windows.Forms.Label totalprice;
+        private Guna.UI2.WinForms.Guna2Button btnClose;
     }
 }
