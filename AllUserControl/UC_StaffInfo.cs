@@ -28,6 +28,7 @@ namespace RMS_TINGY.AllUserControl
 
         private void UC_StaffInfo_Load(object sender, EventArgs e)
         {
+            searchTextBox.Text = "Search by name";
             query = "select * from staffDetails";
             DataSet ds = fn.getData(query);
             StaffGridDataView.DataSource = ds.Tables[0];
@@ -87,6 +88,13 @@ namespace RMS_TINGY.AllUserControl
         private void searchTextBox_Click(object sender, EventArgs e)
         {
             searchTextBox.Text = string.Empty;
+        }
+
+        private void searchTextBox_TextChanged(object sender, EventArgs e)
+        {
+            query = "select * from staffDetails where sname like '" + searchTextBox.Text + "%'";
+            DataSet ds = fn.getData(query);
+            StaffGridDataView.DataSource = ds.Tables[0];
         }
     }
 }

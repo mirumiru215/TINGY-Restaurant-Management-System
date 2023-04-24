@@ -26,6 +26,7 @@ namespace RMS_TINGY.AllUserControl
         }
         private void UC_Homepage_Load(object sender, EventArgs e)
         {
+            searchTextBox.Text = "Search by name";
             query = "select * from dishDetails";
             DataSet ds = fn.getData(query);
             MenuGridDataView.DataSource = ds.Tables[0];
@@ -35,7 +36,8 @@ namespace RMS_TINGY.AllUserControl
             MenuGridDataView.Columns[2].HeaderText = "Type"; 
             MenuGridDataView.Columns[3].HeaderText = "Ingredient"; 
             MenuGridDataView.Columns[4].HeaderText = "Servable Time"; 
-            MenuGridDataView.Columns[5].HeaderText = "Price"; 
+            MenuGridDataView.Columns[5].HeaderText = "Price";
+            
         }
 
         int bid;

@@ -91,5 +91,33 @@ namespace RMS_TINGY.AllUserControl
 
         }
 
+        private void searchTextBox_TextChanged(object sender, EventArgs e)
+        {
+            query = "select * from dishDetails where cname like '" + searchTextBox.Text + "%'";
+            DataSet ds = fn.getData(query);
+            AddToBillDataView.DataSource = ds.Tables[0];
+        }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            if (searchTextBox.Text == "Search by name" || searchTextBox.Text == "")
+            {
+                searchTextBox.Text = "Search by name";
+                query = "select * from dishDetails";
+                DataSet ds = fn.getData(query);
+                AddToBillDataView.DataSource = ds.Tables[0];
+            }
+            else
+            {
+                query = "select * from dishDetails where cname like '" + searchTextBox.Text + "%'";
+                DataSet ds = fn.getData(query);
+                AddToBillDataView.DataSource = ds.Tables[0];
+            }
+        }
+
+        private void searchTextBox_Click(object sender, EventArgs e)
+        {
+            searchTextBox.Text = string.Empty;
+        }
     }
 }
