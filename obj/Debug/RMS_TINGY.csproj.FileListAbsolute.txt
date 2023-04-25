@@ -117,3 +117,10 @@ C:\Users\ngock\OneDrive\Desktop\test\obj\Debug\RMS_TINGY.AllUserControl.UC_Staff
 C:\Users\ngock\OneDrive\Desktop\test\obj\Debug\RMS_TINGY.AllUserControl.UC_StaffAddEmployee.resources
 C:\Users\ngock\OneDrive\Desktop\test\obj\Debug\RMS_TINGY.AllUserControl.UC_StaffInfo.resources
 C:\Users\ngock\OneDrive\Desktop\test\obj\Debug\RMS_TINGY.AllUserControl.UC_StaffWorkCount.resources
+D:\STUDY\CODE\HK222_LTNC\Learn\wpf\obj\Debug\RMS_TINGY.AllUserControl.UC_AddToBill.resources
+D:\STUDY\CODE\HK222_LTNC\Learn\wpf\obj\Debug\RMS_TINGY.AllUserControl.UC_Homepage.resources
+D:\STUDY\CODE\HK222_LTNC\Learn\wpf\obj\Debug\RMS_TINGY.AllUserControl.UC_Login.resources
+D:\STUDY\CODE\HK222_LTNC\Learn\wpf\obj\Debug\RMS_TINGY.AllUserControl.UC_Staff.resources
+D:\STUDY\CODE\HK222_LTNC\Learn\wpf\obj\Debug\RMS_TINGY.AllUserControl.UC_StaffAddEmployee.resources
+D:\STUDY\CODE\HK222_LTNC\Learn\wpf\obj\Debug\RMS_TINGY.AllUserControl.UC_StaffInfo.resources
+D:\STUDY\CODE\HK222_LTNC\Learn\wpf\obj\Debug\RMS_TINGY.AllUserControl.UC_StaffWorkCount.resources
