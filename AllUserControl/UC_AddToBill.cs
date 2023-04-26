@@ -85,12 +85,6 @@ namespace RMS_TINGY.AllUserControl
             }
             
         }
-
-        private void AddToBillDataView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void searchTextBox_TextChanged(object sender, EventArgs e)
         {
             query = "select * from dishDetails where cname like '" + searchTextBox.Text + "%'";

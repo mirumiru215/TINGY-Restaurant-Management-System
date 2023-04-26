@@ -126,5 +126,10 @@ namespace RMS_TINGY.AllUserControl
         {
 
         }
+        public void reset()
+        {
+            btnBack.PerformClick();
+            uC_BillingStatus1.Visible = false;
+        }
     }
 }

@@ -31,6 +31,10 @@ namespace RMS_TINGY.AllUserControl
             uC_StaffWorkCount1.Visible=false;
             btnBack.Visible=false;
         }
+        public void reset()
+        {
+            btnBack.PerformClick();
+        }
 
         private void UC_Staff_Load(object sender, EventArgs e)
         {

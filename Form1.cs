@@ -26,8 +26,7 @@ namespace RMS_TINGY
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            
-
+            uC_Menu1.reset();
             uC_Order1.Visible = false;
             uC_Staff1.Visible = false;
             uC_Statistic1.Visible = false;
@@ -55,6 +54,7 @@ namespace RMS_TINGY
         
         private void btnOrder_Click(object sender, EventArgs e)
         {
+            uC_Order1.reset();
             uC_Menu1.Visible = false;
             uC_Order1.Visible = false;
             uC_Staff1.Visible = false;
@@ -72,6 +72,7 @@ namespace RMS_TINGY
             }
             else
             {
+                uC_Staff1.reset();
                 uC_Menu1.Visible = false;
                 uC_Order1.Visible = false;
                 uC_Staff1.Visible = false;
@@ -95,16 +96,17 @@ namespace RMS_TINGY
         {
             if (!uC_Login1.Visible) {
                 sidebarPanel.Visible = true;
-                btnMenu.PerformClick();
                 admin = uC_Login1.adminaccess;
                 btnexitnum2.Visible = false;
                 if (admin == true)
                 {
+                    btnMenu.PerformClick();
                     uC_Menu1.adminmenu = true;
                     usernamelabel.Text = "Admin";
                 }
                 else
                 {
+                    btnOrder.PerformClick();
                     uC_Menu1.adminmenu = false;
                     usernamelabel.Text = "Staff";
                 }
