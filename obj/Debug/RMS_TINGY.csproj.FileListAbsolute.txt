@@ -125,3 +125,28 @@ D:\STUDY\CODE\HK222_LTNC\Learn\wpf\obj\Debug\RMS_TINGY.AllUserControl.UC_StaffAd
 D:\STUDY\CODE\HK222_LTNC\Learn\wpf\obj\Debug\RMS_TINGY.AllUserControl.UC_StaffInfo.resources
 D:\STUDY\CODE\HK222_LTNC\Learn\wpf\obj\Debug\RMS_TINGY.AllUserControl.UC_StaffWorkCount.resources
 C:\Users\ngock\OneDrive\Desktop\test\obj\Debug\RMS_TINGY.AllUserControl.UC_Login.resources
+E:\Lap Trinh Nang Cao\tmp3\bin\Debug\RMS_TINGY.exe.config
+E:\Lap Trinh Nang Cao\tmp3\bin\Debug\RMS_TINGY.exe
+E:\Lap Trinh Nang Cao\tmp3\bin\Debug\RMS_TINGY.pdb
+E:\Lap Trinh Nang Cao\tmp3\bin\Debug\Guna.UI2.dll
+E:\Lap Trinh Nang Cao\tmp3\obj\Debug\RMS_TINGY.csproj.AssemblyReference.cache
+E:\Lap Trinh Nang Cao\tmp3\obj\Debug\RMS_TINGY.csproj.SuggestedBindingRedirects.cache
+E:\Lap Trinh Nang Cao\tmp3\obj\Debug\RMS_TINGY.AllUserControl.UC_Add.resources
+E:\Lap Trinh Nang Cao\tmp3\obj\Debug\RMS_TINGY.AllUserControl.UC_AddToBill.resources
+E:\Lap Trinh Nang Cao\tmp3\obj\Debug\RMS_TINGY.AllUserControl.UC_BillingStatus.resources
+E:\Lap Trinh Nang Cao\tmp3\obj\Debug\RMS_TINGY.AllUserControl.UC_Homepage.resources
+E:\Lap Trinh Nang Cao\tmp3\obj\Debug\RMS_TINGY.AllUserControl.UC_Login.resources
+E:\Lap Trinh Nang Cao\tmp3\obj\Debug\RMS_TINGY.AllUserControl.UC_Menu.resources
+E:\Lap Trinh Nang Cao\tmp3\obj\Debug\RMS_TINGY.AllUserControl.UC_Order.resources
+E:\Lap Trinh Nang Cao\tmp3\obj\Debug\RMS_TINGY.AllUserControl.UC_Staff.resources
+E:\Lap Trinh Nang Cao\tmp3\obj\Debug\RMS_TINGY.AllUserControl.UC_StaffAddEmployee.resources
+E:\Lap Trinh Nang Cao\tmp3\obj\Debug\RMS_TINGY.AllUserControl.UC_StaffInfo.resources
+E:\Lap Trinh Nang Cao\tmp3\obj\Debug\RMS_TINGY.AllUserControl.UC_StaffWorkCount.resources
+E:\Lap Trinh Nang Cao\tmp3\obj\Debug\RMS_TINGY.AllUserControl.UC_Statistic.resources
+E:\Lap Trinh Nang Cao\tmp3\obj\Debug\RMS_TINGY.Form1.resources
+E:\Lap Trinh Nang Cao\tmp3\obj\Debug\RMS_TINGY.Properties.Resources.resources
+E:\Lap Trinh Nang Cao\tmp3\obj\Debug\RMS_TINGY.csproj.GenerateResource.cache
+E:\Lap Trinh Nang Cao\tmp3\obj\Debug\RMS_TINGY.csproj.CoreCompileInputs.cache
+E:\Lap Trinh Nang Cao\tmp3\obj\Debug\RMS_TINGY.csproj.CopyComplete
+E:\Lap Trinh Nang Cao\tmp3\obj\Debug\RMS_TINGY.exe
+E:\Lap Trinh Nang Cao\tmp3\obj\Debug\RMS_TINGY.pdb

@@ -96,5 +96,15 @@ namespace RMS_TINGY.AllUserControl
             DataSet ds = fn.getData(query);
             StaffGridDataView.DataSource = ds.Tables[0];
         }
+
+        private void domlabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picBoxAdd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
