@@ -135,9 +135,7 @@
             this.Name = "UC_Menu";
             this.Size = new System.Drawing.Size(1088, 768);
             this.Load += new System.EventHandler(this.UC_Menu_Load);
-            this.VisibleChanged += new System.EventHandler(this.UC_Menu_Enter);
             this.Click += new System.EventHandler(this.UC_Menu_Enter);
-            this.Enter += new System.EventHandler(this.UC_Menu_Enter);
             this.funcPanel.ResumeLayout(false);
             this.MenuPanel.ResumeLayout(false);
             this.ResumeLayout(false);

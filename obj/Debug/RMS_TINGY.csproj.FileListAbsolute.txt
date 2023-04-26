@@ -124,3 +124,4 @@ D:\STUDY\CODE\HK222_LTNC\Learn\wpf\obj\Debug\RMS_TINGY.AllUserControl.UC_Staff.r
 D:\STUDY\CODE\HK222_LTNC\Learn\wpf\obj\Debug\RMS_TINGY.AllUserControl.UC_StaffAddEmployee.resources
 D:\STUDY\CODE\HK222_LTNC\Learn\wpf\obj\Debug\RMS_TINGY.AllUserControl.UC_StaffInfo.resources
 D:\STUDY\CODE\HK222_LTNC\Learn\wpf\obj\Debug\RMS_TINGY.AllUserControl.UC_StaffWorkCount.resources
+C:\Users\ngock\OneDrive\Desktop\test\obj\Debug\RMS_TINGY.AllUserControl.UC_Login.resources

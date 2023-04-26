@@ -31,7 +31,16 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.UCPanel = new System.Windows.Forms.Panel();
+            this.btnexitnum2 = new Guna.UI2.WinForms.Guna2Button();
+            this.uC_Login1 = new RMS_TINGY.AllUserControl.UC_Login();
+            this.uC_Statistic1 = new RMS_TINGY.AllUserControl.UC_Statistic();
+            this.uC_Staff1 = new RMS_TINGY.AllUserControl.UC_Staff();
+            this.uC_Order1 = new RMS_TINGY.AllUserControl.UC_Order();
+            this.uC_Menu1 = new RMS_TINGY.AllUserControl.UC_Menu();
             this.sidebarPanel = new System.Windows.Forms.Panel();
+            this.usernamelabel = new System.Windows.Forms.Label();
+            this.usernameIcon = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.btnStaff = new Guna.UI2.WinForms.Guna2Button();
             this.btnStatistic = new Guna.UI2.WinForms.Guna2Button();
@@ -40,17 +49,16 @@
             this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_Staff1 = new RMS_TINGY.AllUserControl.UC_Staff();
-            this.uC_Order1 = new RMS_TINGY.AllUserControl.UC_Order();
-            this.uC_Menu1 = new RMS_TINGY.AllUserControl.UC_Menu();
-            this.uC_Statistic1 = new RMS_TINGY.AllUserControl.UC_Statistic();
             this.UCPanel.SuspendLayout();
             this.sidebarPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.usernameIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // UCPanel
             // 
             this.UCPanel.BackColor = System.Drawing.Color.White;
+            this.UCPanel.Controls.Add(this.btnexitnum2);
+            this.UCPanel.Controls.Add(this.uC_Login1);
             this.UCPanel.Controls.Add(this.uC_Statistic1);
             this.UCPanel.Controls.Add(this.uC_Staff1);
             this.UCPanel.Controls.Add(this.uC_Order1);
@@ -61,9 +69,75 @@
             this.UCPanel.Size = new System.Drawing.Size(1088, 768);
             this.UCPanel.TabIndex = 1;
             // 
+            // btnexitnum2
+            // 
+            this.btnexitnum2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
+            this.btnexitnum2.BorderRadius = 18;
+            this.btnexitnum2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnexitnum2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnexitnum2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnexitnum2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnexitnum2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
+            this.btnexitnum2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexitnum2.ForeColor = System.Drawing.Color.White;
+            this.btnexitnum2.Location = new System.Drawing.Point(302, 686);
+            this.btnexitnum2.Name = "btnexitnum2";
+            this.btnexitnum2.Size = new System.Drawing.Size(150, 45);
+            this.btnexitnum2.TabIndex = 5;
+            this.btnexitnum2.Text = "Exit";
+            this.btnexitnum2.Click += new System.EventHandler(this.btnexitnum2_Click);
+            // 
+            // uC_Login1
+            // 
+            this.uC_Login1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
+            this.uC_Login1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Login1.Name = "uC_Login1";
+            this.uC_Login1.Size = new System.Drawing.Size(1088, 768);
+            this.uC_Login1.TabIndex = 4;
+            this.uC_Login1.VisibleChanged += new System.EventHandler(this.uC_Login1_VisibleChanged);
+            // 
+            // uC_Statistic1
+            // 
+            this.uC_Statistic1.AutoSize = true;
+            this.uC_Statistic1.BackColor = System.Drawing.Color.White;
+            this.uC_Statistic1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Statistic1.Name = "uC_Statistic1";
+            this.uC_Statistic1.Size = new System.Drawing.Size(1088, 769);
+            this.uC_Statistic1.TabIndex = 3;
+            // 
+            // uC_Staff1
+            // 
+            this.uC_Staff1.BackColor = System.Drawing.Color.White;
+            this.uC_Staff1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Staff1.Name = "uC_Staff1";
+            this.uC_Staff1.Size = new System.Drawing.Size(1088, 768);
+            this.uC_Staff1.TabIndex = 2;
+            // 
+            // uC_Order1
+            // 
+            this.uC_Order1.BackColor = System.Drawing.Color.White;
+            this.uC_Order1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uC_Order1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Order1.Margin = new System.Windows.Forms.Padding(6);
+            this.uC_Order1.Name = "uC_Order1";
+            this.uC_Order1.Size = new System.Drawing.Size(1088, 768);
+            this.uC_Order1.TabIndex = 1;
+            // 
+            // uC_Menu1
+            // 
+            this.uC_Menu1.BackColor = System.Drawing.Color.White;
+            this.uC_Menu1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Menu1.Margin = new System.Windows.Forms.Padding(4);
+            this.uC_Menu1.Name = "uC_Menu1";
+            this.uC_Menu1.Size = new System.Drawing.Size(1088, 768);
+            this.uC_Menu1.TabIndex = 0;
+            // 
             // sidebarPanel
             // 
             this.sidebarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
+            this.sidebarPanel.Controls.Add(this.usernamelabel);
+            this.sidebarPanel.Controls.Add(this.usernameIcon);
+            this.sidebarPanel.Controls.Add(this.btnLogout);
             this.sidebarPanel.Controls.Add(this.btnExit);
             this.sidebarPanel.Controls.Add(this.btnStaff);
             this.sidebarPanel.Controls.Add(this.btnStatistic);
@@ -75,6 +149,45 @@
             this.sidebarPanel.Size = new System.Drawing.Size(272, 768);
             this.sidebarPanel.TabIndex = 0;
             // 
+            // usernamelabel
+            // 
+            this.usernamelabel.AutoSize = true;
+            this.usernamelabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernamelabel.Location = new System.Drawing.Point(102, 595);
+            this.usernamelabel.Name = "usernamelabel";
+            this.usernamelabel.Size = new System.Drawing.Size(98, 30);
+            this.usernamelabel.TabIndex = 9;
+            this.usernamelabel.Text = "Login As";
+            // 
+            // usernameIcon
+            // 
+            this.usernameIcon.Image = ((System.Drawing.Image)(resources.GetObject("usernameIcon.Image")));
+            this.usernameIcon.ImageRotate = 0F;
+            this.usernameIcon.Location = new System.Drawing.Point(54, 595);
+            this.usernameIcon.Name = "usernameIcon";
+            this.usernameIcon.Size = new System.Drawing.Size(42, 39);
+            this.usernameIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.usernameIcon.TabIndex = 8;
+            this.usernameIcon.TabStop = false;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
+            this.btnLogout.BorderRadius = 18;
+            this.btnLogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLogout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
+            this.btnLogout.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Location = new System.Drawing.Point(59, 646);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(150, 45);
+            this.btnLogout.TabIndex = 6;
+            this.btnLogout.Text = "Log Out";
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // btnExit
             // 
             this.btnExit.BorderRadius = 18;
@@ -85,7 +198,7 @@
             this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.btnExit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(60, 637);
+            this.btnExit.Location = new System.Drawing.Point(59, 711);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(150, 45);
             this.btnExit.TabIndex = 4;
@@ -196,46 +309,11 @@
             this.guna2Elipse1.BorderRadius = 0;
             this.guna2Elipse1.TargetControl = this;
             // 
-            // uC_Staff1
-            // 
-            this.uC_Staff1.BackColor = System.Drawing.Color.White;
-            this.uC_Staff1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Staff1.Name = "uC_Staff1";
-            this.uC_Staff1.Size = new System.Drawing.Size(1088, 768);
-            this.uC_Staff1.TabIndex = 2;
-            // 
-            // uC_Order1
-            // 
-            this.uC_Order1.BackColor = System.Drawing.Color.White;
-            this.uC_Order1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uC_Order1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Order1.Margin = new System.Windows.Forms.Padding(6);
-            this.uC_Order1.Name = "uC_Order1";
-            this.uC_Order1.Size = new System.Drawing.Size(1088, 768);
-            this.uC_Order1.TabIndex = 1;
-            // 
-            // uC_Menu1
-            // 
-            this.uC_Menu1.BackColor = System.Drawing.Color.White;
-            this.uC_Menu1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Menu1.Margin = new System.Windows.Forms.Padding(4);
-            this.uC_Menu1.Name = "uC_Menu1";
-            this.uC_Menu1.Size = new System.Drawing.Size(1088, 768);
-            this.uC_Menu1.TabIndex = 0;
-            // 
-            // uC_Statistic1
-            // 
-            this.uC_Statistic1.BackColor = System.Drawing.Color.White;
-            this.uC_Statistic1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Statistic1.Name = "uC_Statistic1";
-            this.uC_Statistic1.Size = new System.Drawing.Size(1088, 768);
-            this.uC_Statistic1.TabIndex = 3;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(85)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
             this.ClientSize = new System.Drawing.Size(1360, 768);
             this.Controls.Add(this.sidebarPanel);
             this.Controls.Add(this.UCPanel);
@@ -247,7 +325,10 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.UCPanel.ResumeLayout(false);
+            this.UCPanel.PerformLayout();
             this.sidebarPanel.ResumeLayout(false);
+            this.sidebarPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.usernameIcon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -260,13 +341,18 @@
         private Guna.UI2.WinForms.Guna2Button btnStaff;
         private Guna.UI2.WinForms.Guna2Button btnStatistic;
         private Guna.UI2.WinForms.Guna2Button btnOrder;
-        private Guna.UI2.WinForms.Guna2Button btnExit;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private AllUserControl.UC_Menu uC_Menu1;
         private AllUserControl.UC_Order uC_Order1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private AllUserControl.UC_Staff uC_Staff1;
         private AllUserControl.UC_Statistic uC_Statistic1;
+        private AllUserControl.UC_Login uC_Login1;
+        private Guna.UI2.WinForms.Guna2Button btnExit;
+        private Guna.UI2.WinForms.Guna2Button btnexitnum2;
+        private Guna.UI2.WinForms.Guna2Button btnLogout;
+        private Guna.UI2.WinForms.Guna2PictureBox usernameIcon;
+        private System.Windows.Forms.Label usernamelabel;
     }
 }
 

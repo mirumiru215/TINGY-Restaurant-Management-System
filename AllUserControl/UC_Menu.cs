@@ -13,6 +13,7 @@ namespace RMS_TINGY.AllUserControl
 {
     public partial class UC_Menu : UserControl
     {
+        public bool adminmenu = false;
         public UC_Menu()
         {
             InitializeComponent();
@@ -25,20 +26,32 @@ namespace RMS_TINGY.AllUserControl
             uC_Homepage1.Visible = true;
             uC_Homepage1.BringToFront();
         }
+        public void reset ()
+        {
+            btnBack.PerformClick();
+        }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            btnBack.Visible = true;
-            btnAdd.Visible = false;
-            MenuPanel.Visible = false;
-            uC_Add1.Visible =true;
-            uC_Add1.BringToFront();
-            
+            if (adminmenu == false)
+            {
+                MessageBox.Show("You can't access this!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                btnBack.Visible = true;
+                btnBack.BringToFront();
+                btnAdd.Visible = false;
+                MenuPanel.Visible = false;
+                uC_Add1.Visible = true;
+                uC_Add1.BringToFront();
+            }    
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
             btnAdd.Visible = true;
+            btnAdd.BringToFront();
             btnBack.Visible = false;
             uC_Add1.Visible = false;
             MenuPanel.Visible = false;
