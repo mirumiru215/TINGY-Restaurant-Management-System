@@ -53,11 +53,13 @@
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.uC_BillingStatus1);
-            this.panel1.Location = new System.Drawing.Point(800, 0);
+            this.panel1.Location = new System.Drawing.Point(1067, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(288, 770);
+            this.panel1.Size = new System.Drawing.Size(383, 947);
             this.panel1.TabIndex = 0;
             // 
             // uC_BillingStatus1
@@ -65,15 +67,16 @@
             this.uC_BillingStatus1.BackColor = System.Drawing.Color.White;
             this.uC_BillingStatus1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.uC_BillingStatus1.Location = new System.Drawing.Point(0, -1);
-            this.uC_BillingStatus1.Margin = new System.Windows.Forms.Padding(4);
+            this.uC_BillingStatus1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.uC_BillingStatus1.Name = "uC_BillingStatus1";
             this.uC_BillingStatus1.Number = null;
-            this.uC_BillingStatus1.Size = new System.Drawing.Size(285, 770);
+            this.uC_BillingStatus1.Size = new System.Drawing.Size(379, 947);
             this.uC_BillingStatus1.TabIndex = 0;
             this.uC_BillingStatus1.Load += new System.EventHandler(this.uC_BillingStatus1_Load);
             // 
             // Table_1
             // 
+            this.Table_1.BackColor = System.Drawing.Color.Transparent;
             this.Table_1.BorderColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Table_1.BorderRadius = 45;
             this.Table_1.BorderThickness = 5;
@@ -85,15 +88,17 @@
             this.Table_1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.Table_1.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Table_1.ForeColor = System.Drawing.Color.Black;
-            this.Table_1.Location = new System.Drawing.Point(30, 120);
+            this.Table_1.Location = new System.Drawing.Point(40, 148);
+            this.Table_1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Table_1.Name = "Table_1";
-            this.Table_1.Size = new System.Drawing.Size(250, 150);
+            this.Table_1.Size = new System.Drawing.Size(333, 185);
             this.Table_1.TabIndex = 1;
             this.Table_1.Text = "Table 1";
             this.Table_1.Click += new System.EventHandler(this.Table_1_Click);
             // 
             // Table_3
             // 
+            this.Table_3.BackColor = System.Drawing.Color.Transparent;
             this.Table_3.BorderColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Table_3.BorderRadius = 45;
             this.Table_3.BorderThickness = 5;
@@ -105,15 +110,17 @@
             this.Table_3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.Table_3.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Table_3.ForeColor = System.Drawing.Color.Black;
-            this.Table_3.Location = new System.Drawing.Point(30, 320);
+            this.Table_3.Location = new System.Drawing.Point(40, 394);
+            this.Table_3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Table_3.Name = "Table_3";
-            this.Table_3.Size = new System.Drawing.Size(250, 150);
+            this.Table_3.Size = new System.Drawing.Size(333, 185);
             this.Table_3.TabIndex = 1;
             this.Table_3.Text = "Table 3";
             this.Table_3.Click += new System.EventHandler(this.Table_3_Click);
             // 
             // Table_4
             // 
+            this.Table_4.BackColor = System.Drawing.Color.Transparent;
             this.Table_4.BorderColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Table_4.BorderRadius = 45;
             this.Table_4.BorderThickness = 5;
@@ -125,15 +132,17 @@
             this.Table_4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.Table_4.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Table_4.ForeColor = System.Drawing.Color.Black;
-            this.Table_4.Location = new System.Drawing.Point(430, 320);
+            this.Table_4.Location = new System.Drawing.Point(573, 394);
+            this.Table_4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Table_4.Name = "Table_4";
-            this.Table_4.Size = new System.Drawing.Size(250, 150);
+            this.Table_4.Size = new System.Drawing.Size(333, 185);
             this.Table_4.TabIndex = 1;
             this.Table_4.Text = "Table 4";
             this.Table_4.Click += new System.EventHandler(this.Table_4_Click);
             // 
             // Table_5
             // 
+            this.Table_5.BackColor = System.Drawing.Color.Transparent;
             this.Table_5.BorderColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Table_5.BorderRadius = 45;
             this.Table_5.BorderThickness = 5;
@@ -145,15 +154,17 @@
             this.Table_5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.Table_5.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Table_5.ForeColor = System.Drawing.Color.Black;
-            this.Table_5.Location = new System.Drawing.Point(30, 520);
+            this.Table_5.Location = new System.Drawing.Point(40, 640);
+            this.Table_5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Table_5.Name = "Table_5";
-            this.Table_5.Size = new System.Drawing.Size(250, 150);
+            this.Table_5.Size = new System.Drawing.Size(333, 185);
             this.Table_5.TabIndex = 1;
             this.Table_5.Text = "Table 5";
             this.Table_5.Click += new System.EventHandler(this.Table_5_Click);
             // 
             // Table_6
             // 
+            this.Table_6.BackColor = System.Drawing.Color.Transparent;
             this.Table_6.BorderColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Table_6.BorderRadius = 45;
             this.Table_6.BorderThickness = 5;
@@ -165,15 +176,17 @@
             this.Table_6.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.Table_6.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Table_6.ForeColor = System.Drawing.Color.Black;
-            this.Table_6.Location = new System.Drawing.Point(430, 520);
+            this.Table_6.Location = new System.Drawing.Point(573, 640);
+            this.Table_6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Table_6.Name = "Table_6";
-            this.Table_6.Size = new System.Drawing.Size(250, 150);
+            this.Table_6.Size = new System.Drawing.Size(333, 185);
             this.Table_6.TabIndex = 1;
             this.Table_6.Text = "Table 6";
             this.Table_6.Click += new System.EventHandler(this.Table_6_Click);
             // 
             // Table_2
             // 
+            this.Table_2.BackColor = System.Drawing.Color.Transparent;
             this.Table_2.BorderColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Table_2.BorderRadius = 45;
             this.Table_2.BorderThickness = 5;
@@ -185,9 +198,10 @@
             this.Table_2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.Table_2.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Table_2.ForeColor = System.Drawing.Color.Black;
-            this.Table_2.Location = new System.Drawing.Point(430, 120);
+            this.Table_2.Location = new System.Drawing.Point(573, 148);
+            this.Table_2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Table_2.Name = "Table_2";
-            this.Table_2.Size = new System.Drawing.Size(250, 150);
+            this.Table_2.Size = new System.Drawing.Size(333, 185);
             this.Table_2.TabIndex = 1;
             this.Table_2.Text = "Table 2";
             this.Table_2.Click += new System.EventHandler(this.Table_2_Click);
@@ -210,20 +224,23 @@
             this.btnAddToBill.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(217)))), ((int)(((byte)(234)))));
             this.btnAddToBill.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddToBill.ForeColor = System.Drawing.Color.Black;
-            this.btnAddToBill.Location = new System.Drawing.Point(90, 5);
+            this.btnAddToBill.Location = new System.Drawing.Point(120, 6);
+            this.btnAddToBill.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddToBill.Name = "btnAddToBill";
-            this.btnAddToBill.Size = new System.Drawing.Size(200, 30);
+            this.btnAddToBill.Size = new System.Drawing.Size(267, 37);
             this.btnAddToBill.TabIndex = 5;
             this.btnAddToBill.Text = "Add To Bill";
             this.btnAddToBill.Click += new System.EventHandler(this.btnAddToBill_Click);
             // 
             // panelforbtn
             // 
+            this.panelforbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelforbtn.BackgroundImage")));
             this.panelforbtn.Controls.Add(this.btnAddToBill);
             this.panelforbtn.Controls.Add(this.btnBack);
-            this.panelforbtn.Location = new System.Drawing.Point(0, 10);
+            this.panelforbtn.Location = new System.Drawing.Point(0, 12);
+            this.panelforbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelforbtn.Name = "panelforbtn";
-            this.panelforbtn.Size = new System.Drawing.Size(310, 40);
+            this.panelforbtn.Size = new System.Drawing.Size(413, 49);
             this.panelforbtn.TabIndex = 2;
             // 
             // btnBack
@@ -237,28 +254,31 @@
             this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
             this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
             this.btnBack.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnBack.Location = new System.Drawing.Point(20, 5);
+            this.btnBack.Location = new System.Drawing.Point(27, 6);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(30, 30);
+            this.btnBack.Size = new System.Drawing.Size(40, 37);
             this.btnBack.TabIndex = 2;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // uC_AddToBill1
             // 
             this.uC_AddToBill1.BackColor = System.Drawing.Color.White;
+            this.uC_AddToBill1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("uC_AddToBill1.BackgroundImage")));
             this.uC_AddToBill1.Location = new System.Drawing.Point(0, 0);
-            this.uC_AddToBill1.Margin = new System.Windows.Forms.Padding(4);
+            this.uC_AddToBill1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.uC_AddToBill1.Name = "uC_AddToBill1";
-            this.uC_AddToBill1.Size = new System.Drawing.Size(800, 712);
+            this.uC_AddToBill1.Size = new System.Drawing.Size(1067, 876);
             this.uC_AddToBill1.TabIndex = 0;
             this.uC_AddToBill1.tableNumber = null;
             // 
             // OrderPanel
             // 
             this.OrderPanel.Controls.Add(this.uC_AddToBill1);
-            this.OrderPanel.Location = new System.Drawing.Point(0, 56);
+            this.OrderPanel.Location = new System.Drawing.Point(0, 69);
+            this.OrderPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.OrderPanel.Name = "OrderPanel";
-            this.OrderPanel.Size = new System.Drawing.Size(800, 712);
+            this.OrderPanel.Size = new System.Drawing.Size(1067, 876);
             this.OrderPanel.TabIndex = 3;
             // 
             // btnRefresh
@@ -274,18 +294,19 @@
             this.btnRefresh.ForeColor = System.Drawing.Color.White;
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
             this.btnRefresh.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnRefresh.Location = new System.Drawing.Point(750, 15);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRefresh.Location = new System.Drawing.Point(1000, 18);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(30, 30);
+            this.btnRefresh.Size = new System.Drawing.Size(40, 37);
             this.btnRefresh.TabIndex = 87;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // UC_Order
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.OrderPanel);
             this.Controls.Add(this.panelforbtn);
@@ -296,8 +317,9 @@
             this.Controls.Add(this.Table_2);
             this.Controls.Add(this.Table_1);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UC_Order";
-            this.Size = new System.Drawing.Size(1088, 768);
+            this.Size = new System.Drawing.Size(1451, 945);
             this.Load += new System.EventHandler(this.UC_Order_Load);
             this.panel1.ResumeLayout(false);
             this.panelforbtn.ResumeLayout(false);

@@ -44,10 +44,11 @@
             // uC_Add1
             // 
             this.uC_Add1.BackColor = System.Drawing.Color.White;
-            this.uC_Add1.Location = new System.Drawing.Point(3, 62);
-            this.uC_Add1.Margin = new System.Windows.Forms.Padding(4);
+            this.uC_Add1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("uC_Add1.BackgroundImage")));
+            this.uC_Add1.Location = new System.Drawing.Point(4, 76);
+            this.uC_Add1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.uC_Add1.Name = "uC_Add1";
-            this.uC_Add1.Size = new System.Drawing.Size(1088, 768);
+            this.uC_Add1.Size = new System.Drawing.Size(1451, 945);
             this.uC_Add1.TabIndex = 81;
             // 
             // elipseMenu
@@ -66,9 +67,10 @@
             this.btnAdd.FillColor = System.Drawing.Color.White;
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
-            this.btnAdd.Location = new System.Drawing.Point(20, 5);
+            this.btnAdd.Location = new System.Drawing.Point(27, 6);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(250, 50);
+            this.btnAdd.Size = new System.Drawing.Size(333, 62);
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Add New Dish";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -86,9 +88,10 @@
             this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
             this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
             this.btnBack.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnBack.Location = new System.Drawing.Point(20, 5);
+            this.btnBack.Location = new System.Drawing.Point(27, 6);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(50, 50);
+            this.btnBack.Size = new System.Drawing.Size(67, 62);
             this.btnBack.TabIndex = 1;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
@@ -100,40 +103,45 @@
             this.funcPanel.Controls.Add(this.btnAdd);
             this.funcPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
             this.funcPanel.Location = new System.Drawing.Point(0, 0);
-            this.funcPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.funcPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.funcPanel.Name = "funcPanel";
-            this.funcPanel.Size = new System.Drawing.Size(1088, 60);
+            this.funcPanel.Size = new System.Drawing.Size(1451, 74);
             this.funcPanel.TabIndex = 80;
             this.funcPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.funcPanel_Paint);
             // 
             // MenuPanel
             // 
             this.MenuPanel.Controls.Add(this.uC_Homepage1);
-            this.MenuPanel.Location = new System.Drawing.Point(0, 60);
+            this.MenuPanel.Location = new System.Drawing.Point(0, 74);
+            this.MenuPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MenuPanel.Name = "MenuPanel";
-            this.MenuPanel.Size = new System.Drawing.Size(1088, 708);
+            this.MenuPanel.Size = new System.Drawing.Size(1451, 871);
             this.MenuPanel.TabIndex = 82;
             this.MenuPanel.Enter += new System.EventHandler(this.MenuPanel_Enter);
             // 
             // uC_Homepage1
             // 
             this.uC_Homepage1.BackColor = System.Drawing.Color.White;
+            this.uC_Homepage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("uC_Homepage1.BackgroundImage")));
             this.uC_Homepage1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Homepage1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.uC_Homepage1.Name = "uC_Homepage1";
-            this.uC_Homepage1.Size = new System.Drawing.Size(1088, 768);
+            this.uC_Homepage1.Size = new System.Drawing.Size(1451, 945);
             this.uC_Homepage1.TabIndex = 0;
             this.uC_Homepage1.VisibleChanged += new System.EventHandler(this.UC_Menu_Load);
             // 
             // UC_Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.MenuPanel);
             this.Controls.Add(this.funcPanel);
             this.Controls.Add(this.uC_Add1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UC_Menu";
-            this.Size = new System.Drawing.Size(1088, 768);
+            this.Size = new System.Drawing.Size(1451, 945);
             this.Load += new System.EventHandler(this.UC_Menu_Load);
             this.Click += new System.EventHandler(this.UC_Menu_Enter);
             this.funcPanel.ResumeLayout(false);
