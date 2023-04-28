@@ -130,5 +130,54 @@ namespace RMS_TINGY
             
         }
 
+        private void uC_Login1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uC_Statistic1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uC_Staff1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uC_Order1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uC_Menu1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sidebarPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usernamelabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usernameIcon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UCPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
