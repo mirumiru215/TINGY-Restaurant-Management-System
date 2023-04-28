@@ -27,10 +27,10 @@
 
 * Trong thư mục vừa giải nén, mở file RMS_TINGY.sln
 * Nhấn Ctrl + F5 để chạy chương trình
->Tài khoản admin:
+* Tài khoản admin:
 Username: admin
 Password: admin
->Tài khoản staff:
+* Tài khoản staff:
 Username: staff
 Password: staff
 
