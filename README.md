@@ -1,4 +1,7 @@
 # TINGY-Restaurant-Management-System
+## Demo
+* [Youtube](https://youtu.be/hlcqpo9kQOA)
+* [Google Drive](https://drive.google.com/drive/folders/1ntA6WZt2r0GQblNjTq-4pjSgZiCU55y3?usp=sharing)
 ## Hướng dẫn sử dụng
 1. Cài đặt các phần mềm cần thiết:
 * Visual Studio
